@@ -9,7 +9,7 @@ export function MatrixViz({ v }: { v: MatrixVisual }) {
   return (
     <div className="flex flex-col items-center gap-1">
       {v.title && <div className="text-xs font-medium text-fg-muted">{v.title}</div>}
-      <svg width={lx + cols * cell + 1} height={ly + rows * cell + 1} className="max-w-full" style={{ fontFamily: 'var(--font-mono)' }}>
+      <svg viewBox={`0 0 ${lx + cols * cell + 1} ${ly + rows * cell + 1}`} width={lx + cols * cell + 1} height={ly + rows * cell + 1} style={{ maxWidth: '100%', height: 'auto', fontFamily: 'var(--font-mono)' }}>
         {v.colLabels?.map((l, c) => <text key={c} x={lx + c * cell + cell / 2} y={14} textAnchor="middle" fontSize={11} fill="var(--fg-muted)">{l}</text>)}
         {v.rowLabels?.map((l, r) => <text key={r} x={lx - 8} y={ly + r * cell + cell / 2 + 4} textAnchor="end" fontSize={11} fill="var(--fg-muted)">{l}</text>)}
         {v.cells.map((row, r) =>

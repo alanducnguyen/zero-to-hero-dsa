@@ -9,7 +9,7 @@ export function GraphViz({ v }: { v: GraphVisual }) {
   return (
     <div className="flex flex-col items-center gap-1">
       {v.title && <div className="text-xs font-medium text-fg-muted">{v.title}</div>}
-      <svg width={maxX} height={maxY} className="max-w-full overflow-visible" style={{ fontFamily: 'var(--font-mono)' }}>
+      <svg viewBox={`0 0 ${maxX} ${maxY}`} width={maxX} height={maxY} style={{ maxWidth: '100%', height: 'auto', fontFamily: 'var(--font-mono)' }} className="overflow-visible">
         <defs>
           <marker id="g-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="var(--fg-muted)" /></marker>
         </defs>

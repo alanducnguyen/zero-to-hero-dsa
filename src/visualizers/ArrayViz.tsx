@@ -23,7 +23,7 @@ export function ArrayViz({ v }: { v: ArrayVisual }) {
   return (
     <div className="flex flex-col items-center gap-1">
       {v.title && <div className="text-xs font-medium text-fg-muted">{v.title}</div>}
-      <svg width={width + 2} height={height} viewBox={`-1 0 ${width + 2} ${height}`} className="max-w-full overflow-visible" style={{ fontFamily: 'var(--font-mono)' }}>
+      <svg width={width + 2} height={height} viewBox={`-1 0 ${width + 2} ${height}`} style={{ maxWidth: '100%', height: 'auto', fontFamily: 'var(--font-mono)' }} className="overflow-visible">
         {v.ranges?.map((r, k) => (
           <g key={k}>
             <rect x={x(r.from)} y={2} width={x(r.to) - x(r.from) + cell} height={rangeH + barH + cell - 4} rx={8} fill={HL_COLOR[r.color ?? 'range']} opacity={0.12} />

@@ -32,7 +32,7 @@ export function TreeViz({ v }: { v: TreeVisual }) {
   return (
     <div className="flex flex-col items-center gap-1">
       {v.title && <div className="text-xs font-medium text-fg-muted">{v.title}</div>}
-      <svg width={width} height={height} className="max-w-full overflow-visible" style={{ fontFamily: 'var(--font-mono)' }}>
+      <svg viewBox={`0 0 ${width} ${height}`} width={width} height={height} style={{ maxWidth: '100%', height: 'auto', fontFamily: 'var(--font-mono)' }} className="overflow-visible">
         {v.nodes.map((n) => {
           const p = pos.get(n.id);
           if (!p) return null;

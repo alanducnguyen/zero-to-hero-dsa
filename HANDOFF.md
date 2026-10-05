@@ -18,9 +18,9 @@
 | basic | bubble-sort | array bars | ✅ |
 | basic | binary-search | array + ranges | ✅ |
 | basic | valid-parentheses | stackqueue | ✅ |
-| intermediate | longest-substring-no-repeat (sliding window) | composite array+map | ⬜ |
-| intermediate | quick-sort | array + callStack | ⬜ |
-| intermediate | reverse-linked-list | linkedlist | ⬜ |
+| intermediate | longest-substring-no-repeat (sliding window) | composite array+map | ✅ |
+| intermediate | quick-sort | array + callStack | ✅ |
+| intermediate | reverse-linked-list | linkedlist | ✅ |
 | advanced | bfs-grid-shortest-path | matrix | ⬜ |
 | advanced | dijkstra | composite graph+matrix(dist) | ⬜ |
 | advanced | kth-largest-heap | heap | ⬜ |

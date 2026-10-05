@@ -16,7 +16,7 @@ export function LinkedListViz({ v }: { v: LinkedListVisual }) {
   return (
     <div className="flex flex-col items-center gap-1">
       {v.title && <div className="text-xs font-medium text-fg-muted">{v.title}</div>}
-      <svg width={width} height={height} className="max-w-full overflow-visible" style={{ fontFamily: 'var(--font-mono)' }}>
+      <svg viewBox={`0 0 ${width} ${height}`} width={width} height={height} style={{ maxWidth: '100%', height: 'auto', fontFamily: 'var(--font-mono)' }} className="overflow-visible">
         <defs>
           <marker id="ll-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--fg-muted)" /></marker>
         </defs>
@@ -35,7 +35,7 @@ export function LinkedListViz({ v }: { v: LinkedListVisual }) {
               const dir = target > i ? 1 : -1;
               const sx = dir > 0 ? x(i) + W : x(i);
               const ex = dir > 0 ? tx - 4 : tx + W + 4;
-              path = `M${sx},${ny + H / 2} C${sx + dir * 30},${ny - 30} ${ex - dir * 30},${ny - 30} ${ex},${ny + H / 2}`;
+              path = `M${sx},${ny + H / 2} Q${(sx + ex) / 2},${ny - 46} ${ex},${ny + H / 2}`;
             }
           }
           return (
