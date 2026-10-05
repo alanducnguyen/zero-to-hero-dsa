@@ -7,6 +7,7 @@ import { GraphViz } from './GraphViz';
 import { MatrixViz } from './MatrixViz';
 import { HeapViz } from './HeapViz';
 import { MapViz } from './MapViz';
+import { EventLoopViz } from './EventLoopViz';
 
 export function Visual({ v }: { v: VisualState }) {
   switch (v.kind) {
@@ -18,6 +19,7 @@ export function Visual({ v }: { v: VisualState }) {
     case 'matrix': return <MatrixViz v={v} />;
     case 'heap': return <HeapViz v={v} />;
     case 'map': return <MapViz v={v} />;
+    case 'eventloop': return <EventLoopViz v={v} />;
     case 'composite':
       return (
         <div className={v.layout === 'row' ? 'flex flex-wrap items-start justify-center gap-8' : 'flex flex-col items-center gap-6'}>
