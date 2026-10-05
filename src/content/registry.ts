@@ -10,6 +10,7 @@ import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
 import topologicalSort from '@/algorithms/advanced/topological-sort';
 import nQueens from '@/algorithms/advanced/n-queens';
+import houseRobber from '@/algorithms/advanced/house-robber';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -30,6 +31,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   kthLargest,
   topologicalSort,
   nQueens,
+  houseRobber,
   // Siêu cấp
   editDistance,
   trie,
