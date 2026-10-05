@@ -6,6 +6,7 @@ import { LevelBadge, Tag } from '@/components/Badge';
 import { Markdown } from '@/components/Markdown';
 import { DebuggerPanel } from '@/debugger/DebuggerPanel';
 import { useProgress } from '@/lib/progress';
+import { patternsForAlgorithm } from '@/content/patterns';
 import { cn } from '@/lib/cn';
 
 const TABS = [
@@ -34,7 +35,9 @@ export function AlgorithmPage() {
     <div className={cn('mx-auto px-4 py-6 md:px-8', tab === 'debug' ? 'max-w-[1600px]' : 'max-w-4xl')}>
       <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start">
         <div className="min-w-0 flex-1">
-          <div className="mb-1 flex items-center gap-2"><LevelBadge level={meta.level} /><Tag>{meta.category}</Tag></div>
+          <div className="mb-1 flex flex-wrap items-center gap-2"><LevelBadge level={meta.level} /><Tag>{meta.category}</Tag>
+            {patternsForAlgorithm(meta.id).map((p) => <Link key={p.id} to={`/patterns/${p.id}`} className="rounded-md border border-accent/30 bg-accent/10 px-1.5 py-0.5 text-[11px] font-medium text-accent hover:bg-accent/20">pattern: {p.title}</Link>)}
+          </div>
           <h1 className="text-2xl font-bold md:text-3xl">{meta.title}</h1>
           <p className="mt-1 text-fg-muted">{meta.subtitle}</p>
         </div>

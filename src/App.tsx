@@ -4,6 +4,7 @@ import { HomePage } from '@/pages/HomePage';
 import { LevelPage } from '@/pages/LevelPage';
 import { AlgorithmPage } from '@/pages/AlgorithmPage';
 import { EventLoopPage } from '@/pages/EventLoopPage';
+import { PatternsPage } from '@/pages/PatternsPage';
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
           <Route path="level/:level" element={<LevelPage />} />
           <Route path="algo/:id" element={<AlgorithmPage />} />
           <Route path="event-loop" element={<EventLoopPage />} />
+          <Route path="patterns" element={<PatternsPage />} />
+          <Route path="patterns/:id" element={<PatternsPage />} />
           <Route path="*" element={<HomePage />} />
         </Route>
       </Routes>

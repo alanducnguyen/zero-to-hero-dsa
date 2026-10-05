@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Bug, Code2, Layers, RefreshCw, Sparkles } from 'lucide-react';
+import { ArrowRight, Bug, Code2, Layers, RefreshCw, Shapes, Sparkles } from 'lucide-react';
 import { LEVELS } from '@/content/levels';
 import { ALGORITHMS, byLevel } from '@/content/registry';
 import { useProgress } from '@/lib/progress';
@@ -17,6 +17,7 @@ export function HomePage() {
           {next && <Link to={`/algo/${next.meta.id}`} className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 font-semibold text-accent-fg shadow-sm hover:bg-accent/90">{Object.keys(completed).length ? 'Học tiếp' : 'Bắt đầu'}: {next.meta.title} <ArrowRight size={16} /></Link>}
           <Link to="/level/basic" className="inline-flex items-center gap-2 rounded-xl border border-border px-5 py-2.5 font-semibold hover:bg-surface-3">Xem lộ trình</Link>
           <Link to="/event-loop" className="inline-flex items-center gap-2 rounded-xl border border-border px-5 py-2.5 font-semibold hover:bg-surface-3"><RefreshCw size={16} className="text-accent" /> Node.js Event Loop</Link>
+          <Link to="/patterns" className="inline-flex items-center gap-2 rounded-xl border border-border px-5 py-2.5 font-semibold hover:bg-surface-3"><Shapes size={16} className="text-accent" /> Nhận diện pattern</Link>
         </div>
       </section>
 
