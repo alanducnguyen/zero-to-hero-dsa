@@ -11,6 +11,7 @@ import mergeSort from '@/algorithms/intermediate/merge-sort';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
 import linkedListCycle from '@/algorithms/intermediate/linked-list-cycle';
+import lruCache from '@/algorithms/intermediate/lru-cache';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
@@ -41,6 +42,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   quickSort,
   reverseLinkedList,
   linkedListCycle,
+  lruCache,
   binaryTreeTraversal,
   // Nâng cao
   bfsGrid,
