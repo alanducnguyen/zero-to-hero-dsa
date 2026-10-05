@@ -6,7 +6,7 @@ code TypeScript chạy trên Node.js và **chế độ Debug line-by-line** vớ
 
 ## Tính năng
 
-- **4 cấp độ, 24 thuật toán:** Cơ bản → Middle → Nâng cao → Siêu cấp, 6 bài mỗi cấp.
+- **4 cấp độ, 40 thuật toán:** Cơ bản → Middle → Nâng cao → Siêu cấp, 10 bài mỗi cấp.
 - **Debug line-by-line:** highlight dòng đang chạy, breakpoint, tiến/lùi từng bước, auto-play, timeline,
   biến & call stack thay đổi theo thời gian thực. Phím tắt `←` `→` `Space` `F8`.
 - **8 visualizer SVG:** mảng/cột, stack/queue, linked list, cây, đồ thị, ma trận (DP/lưới), heap, hashmap.
