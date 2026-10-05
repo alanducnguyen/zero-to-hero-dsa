@@ -3,8 +3,12 @@ import linearSearch from '@/algorithms/basic/linear-search';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
 import selectionSort from '@/algorithms/basic/selection-sort';
+import countingSort from '@/algorithms/basic/counting-sort';
 import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
+import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
+import prefixSum from '@/algorithms/basic/prefix-sum';
+import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
@@ -32,7 +36,11 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bubbleSort,
   selectionSort,
   insertionSort,
+  countingSort,
   validParentheses,
+  twoSumHashmap,
+  prefixSum,
+  queueTwoStacks,
   // Middle
   twoSumSorted,
   slidingWindow,
