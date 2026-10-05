@@ -9,6 +9,7 @@ import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
 import editDistance from '@/algorithms/expert/edit-distance';
+import trie from '@/algorithms/expert/trie';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -26,6 +27,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   kthLargest,
   // Siêu cấp
   editDistance,
+  trie,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));

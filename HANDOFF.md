@@ -25,7 +25,7 @@
 | advanced | dijkstra | composite graph+matrix(dist) | ✅ |
 | advanced | kth-largest-heap | heap | ✅ |
 | expert | edit-distance | matrix | ✅ |
-| expert | trie | tree | ⬜ |
+| expert | trie | tree | ✅ |
 | expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ⬜ |
 
 ## Việc tiếp theo (theo thứ tự)
