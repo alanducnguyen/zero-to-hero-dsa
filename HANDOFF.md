@@ -31,7 +31,7 @@
 ## Phiên bản đầu: HOÀN THÀNH (12/12 bài, deploy workflow, README, đã kiểm tra desktop/mobile/dark)
 
 ## Việc tiếp theo (theo thứ tự)
-1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, bật GitHub Pages (Settings → Pages → Source: GitHub Actions).
+1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
 2. Đợt 2 – thêm bài, **mỗi bài một commit riêng** (yêu cầu của chủ repo): Linear Search, Selection/Insertion Sort,
    Two Sum sorted (two pointers), Merge Sort, Tree DFS/BFS, Topological Sort, N-Queens (backtracking),
    House Robber (DP 1D), Union-Find, Bit Manipulation, Kadane/Prefix Sum.
@@ -46,4 +46,5 @@
 - TypeScript phải là bản 5 (typescript-eslint chưa hỗ trợ TS 7).
 - Tailwind v4 dùng `@theme static` để các biến `--color-*` dùng được trong `style={{}}` inline.
 - eslint `react-hooks/set-state-in-effect` cấm setState trong effect → xử lý trong handler.
+- Deploy: Vercel (vercel.json), BrowserRouter + rewrite về index.html. Không dùng GitHub Pages.
 - Playwright: dùng `executablePath: '/opt/pw-browsers/chromium'`, không chạy `playwright install`.

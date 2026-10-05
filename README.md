@@ -42,7 +42,10 @@ src/content/registry.ts   đăng ký thuật toán
 Thêm thuật toán mới: copy thư mục `src/algorithms/basic/bubble-sort`, sửa và đăng ký trong `registry.ts`.
 Chi tiết trong `CLAUDE.md`.
 
-## Deploy
+## Deploy (Vercel)
 
-GitHub Actions (`.github/workflows/deploy.yml`) build và deploy lên GitHub Pages khi push `main`.
-Bật Pages với source **GitHub Actions** trong Settings → Pages.
+1. Vào [vercel.com/new](https://vercel.com/new), import repo `zero-to-hero-dsa`.
+2. Vercel tự đọc `vercel.json` (framework Vite, build `pnpm test && pnpm build`, output `dist`). Không cần cấu hình thêm.
+3. Mỗi push lên `main` sẽ deploy production; mỗi PR có preview URL riêng.
+
+Muốn site riêng tư: Settings → Deployment Protection → bật Password Protection hoặc Vercel Authentication (gói Pro).
