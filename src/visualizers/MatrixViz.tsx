@@ -17,10 +17,12 @@ export function MatrixViz({ v }: { v: MatrixVisual }) {
             const h = v.highlights?.[`${r},${c}`];
             const str = val === null ? '' : String(val);
             const isWall = val === '#';
+            const isMuted = h === 'muted';
             return (
               <g key={`${r}-${c}`}>
-                <rect x={lx + c * cell + 0.5} y={ly + r * cell + 0.5} width={cell} height={cell} rx={4} fill={isWall ? 'var(--fg-muted)' : fillFor(h)} opacity={h || isWall ? 1 : 0.35} stroke="var(--border)" style={{ transition: 'fill .15s' }} />
-                {!isWall && <text x={lx + c * cell + cell / 2} y={ly + r * cell + cell / 2 + 4} textAnchor="middle" fontSize={str.length > 2 ? 10 : 12} fontWeight={h ? 700 : 500} fill={h ? '#fff' : 'var(--fg)'}>{str}</text>}
+                <rect x={lx + c * cell + 0.5} y={ly + r * cell + 0.5} width={cell} height={cell} rx={4} fill={isWall || isMuted ? 'var(--fg-muted)' : fillFor(h)} opacity={isWall ? 1 : isMuted ? 0.35 : h ? 1 : 0.35} stroke="var(--border)" style={{ transition: 'fill .15s' }} />
+                {isMuted && <line x1={lx + c * cell + 6} y1={ly + r * cell + 6} x2={lx + (c + 1) * cell - 6} y2={ly + (r + 1) * cell - 6} stroke="var(--fg-muted)" strokeWidth={1.5} opacity={0.6} />}
+                {!isWall && <text x={lx + c * cell + cell / 2} y={ly + r * cell + cell / 2 + 4} textAnchor="middle" fontSize={str.length > 2 ? 10 : 12} fontWeight={h && !isMuted ? 700 : 500} fill={h && !isMuted ? '#fff' : 'var(--fg)'}>{str}</text>}
               </g>
             );
           }),
