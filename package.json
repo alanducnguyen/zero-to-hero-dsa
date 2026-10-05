@@ -10,7 +10,9 @@
     "typecheck": "tsc -p tsconfig.app.json --noEmit",
     "lint": "eslint src scripts",
     "test": "vitest run",
-    "algo": "tsx scripts/run.ts"
+    "algo": "tsx scripts/run.ts",
+    "docker:up": "docker compose up --build",
+    "docker:dev": "docker compose --profile dev up"
   },
   "dependencies": {
     "clsx": "^2.1.1",
