@@ -20,6 +20,7 @@ import houseRobber from '@/algorithms/advanced/house-robber';
 import coinChange from '@/algorithms/advanced/coin-change';
 import knapsack01 from '@/algorithms/advanced/knapsack-01';
 import kruskalMst from '@/algorithms/advanced/kruskal-mst';
+import mergeIntervals from '@/algorithms/advanced/merge-intervals';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -53,6 +54,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   coinChange,
   knapsack01,
   kruskalMst,
+  mergeIntervals,
   // Siêu cấp
   editDistance,
   trie,
