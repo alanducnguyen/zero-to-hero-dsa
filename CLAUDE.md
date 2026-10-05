@@ -40,6 +40,10 @@ Copy cấu trúc `src/algorithms/basic/bubble-sort/`:
 7. `impl.test.ts` – test impl với case biên + `checkModule(mod, [...])` từ `@/engine/testUtils`.
 8. Thêm vào `ALGORITHMS` trong `src/content/registry.ts`.
 
+## Mục ngoài DSA
+- `src/content/patterns.ts` – danh mục pattern (bài mới phải được gắn vào ≥ 1 pattern, test bắt buộc).
+- `src/eventloop/` – mô phỏng event loop Node: thêm kịch bản vào `presets.ts` (DSL, không thông dịch JS) và thêm kỳ vọng output vào `simulate.test.ts`; test tự chạy code sinh ra bằng Node thật để đối chiếu. Kịch bản phụ thuộc thứ tự timeout(0)/immediate ở top-level phải đặt `nondeterministic: true`.
+
 ## Git
 - **Tên nhánh theo Conventional Branch:** `feat/<mô-tả>`, `fix/<mô-tả>`, `docs/<mô-tả>`, `refactor/<mô-tả>`, `chore/<mô-tả>`, `test/<mô-tả>`.
   Mô tả ngắn, kebab-case, tiếng Anh. Ví dụ: `feat/merge-sort`, `fix/heap-sift-down`, `docs/readme-docker`.

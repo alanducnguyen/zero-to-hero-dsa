@@ -40,6 +40,8 @@
 | `feat/advanced-batch-3` | coin-change, knapsack-01, kruskal-mst, merge-intervals | ✅ PR #9 |
 | `feat/expert-batch-3` | sliding-window-maximum (deque), lis-patience, kmp, segment-tree | ✅ PR #10 |
 
+- Mục **Node.js Event Loop** (`/event-loop`): `src/eventloop/` gồm `scenario.ts` (DSL + sinh code JS có số dòng), `simulate.ts` (mô phỏng libuv: nextTick → microtask → timers → pending → poll (ngủ/tua giờ ảo) → check → close), `presets.ts` (7 kịch bản), `content.md`, `interview.md`, `simulate.test.ts` (**chạy code sinh ra bằng Node thật** và so output). Visual kind mới `eventloop` (`src/visualizers/EventLoopViz.tsx`, dùng container query). Trang `src/pages/EventLoopPage.tsx` tái dùng DebuggerPanel qua AlgorithmModule giả (`inputs: []`). Thêm kịch bản = thêm vào `PRESETS` + test kỳ vọng output.
+
 Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
 
 ## Việc tiếp theo (theo thứ tự)
