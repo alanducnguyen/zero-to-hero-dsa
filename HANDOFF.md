@@ -21,9 +21,9 @@
 | intermediate | longest-substring-no-repeat (sliding window) | composite array+map | ✅ |
 | intermediate | quick-sort | array + callStack | ✅ |
 | intermediate | reverse-linked-list | linkedlist | ✅ |
-| advanced | bfs-grid-shortest-path | matrix | ⬜ |
-| advanced | dijkstra | composite graph+matrix(dist) | ⬜ |
-| advanced | kth-largest-heap | heap | ⬜ |
+| advanced | bfs-grid-shortest-path | matrix | ✅ |
+| advanced | dijkstra | composite graph+matrix(dist) | ✅ |
+| advanced | kth-largest-heap | heap | ✅ |
 | expert | edit-distance | matrix | ⬜ |
 | expert | trie | tree | ⬜ |
 | expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ⬜ |

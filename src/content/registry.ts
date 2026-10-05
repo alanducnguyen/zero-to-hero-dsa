@@ -5,6 +5,9 @@ import validParentheses from '@/algorithms/basic/valid-parentheses';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
+import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
+import dijkstra from '@/algorithms/advanced/dijkstra';
+import kthLargest from '@/algorithms/advanced/kth-largest-heap';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -16,6 +19,10 @@ export const ALGORITHMS: AlgorithmModule[] = [
   slidingWindow,
   quickSort,
   reverseLinkedList,
+  // Nâng cao
+  bfsGrid,
+  dijkstra,
+  kthLargest,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
