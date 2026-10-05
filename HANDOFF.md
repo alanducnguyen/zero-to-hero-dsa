@@ -28,19 +28,23 @@
 | expert | trie | tree | ✅ |
 | expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ✅ |
 
-## Phiên bản đầu: HOÀN THÀNH (12/12 bài). Đợt 2 (lên 24 bài) đang làm.
+## Tiến độ
+- Phiên bản đầu: 12 bài (3/cấp) – đã merge.
+- Đợt 2: 24 bài (6/cấp) – đã merge (PR #3–#6).
+- Đợt 3: 40 bài (10/cấp) – 4 PR (#7–#10), mỗi cấp một nhánh, mỗi bài một commit.
 
-## Đợt 2 – mỗi cấp một nhánh/PR, mỗi bài một commit
-| Nhánh | Bài | Trạng thái |
+| Nhánh đợt 3 | Bài | Trạng thái |
 |---|---|---|
-| `feat/basic-batch-2` | linear-search, selection-sort, insertion-sort | ✅ (PR mở) |
-| `feat/intermediate-batch-2` | two-sum-sorted, merge-sort, binary-tree-traversal | ⬜ |
-| `feat/advanced-batch-2` | topological-sort, n-queens, house-robber | ⬜ |
-| `feat/expert-batch-2` | union-find, single-number-bits, max-subarray-kadane | ⬜ |
+| `feat/basic-batch-3` | two-sum-hashmap, counting-sort, prefix-sum, queue-two-stacks | ✅ PR #7 |
+| `feat/intermediate-batch-3` | linked-list-cycle (Floyd), lru-cache, bst-operations, number-of-islands (DFS) | ✅ PR #8 |
+| `feat/advanced-batch-3` | coin-change, knapsack-01, kruskal-mst, merge-intervals | ✅ PR #9 |
+| `feat/expert-batch-3` | sliding-window-maximum (deque), lis-patience, kmp, segment-tree | ✅ PR #10 |
+
+Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
 
 ## Việc tiếp theo (theo thứ tự)
 1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
-2. Đợt 2: xem bảng trên. Mỗi nhánh tạo từ `origin/main`.
+2. Đợt 3 đã xong. Merge PR #7 → #8 → #9 → #10; conflict ở `registry.ts` hoặc `HANDOFF.md` thì giữ cả hai phía (HANDOFF lấy bản của PR #10).
 3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
    trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
 
