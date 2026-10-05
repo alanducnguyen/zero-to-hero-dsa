@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
-import { BookmarkCheck, CheckCircle2, Code, Menu, Moon, Search, Sun, X } from 'lucide-react';
+import { BookmarkCheck, CheckCircle2, Code, Menu, Moon, Search, Shapes, Sun, X } from 'lucide-react';
 import { LEVELS } from '@/content/levels';
 import { ALGORITHMS, byLevel } from '@/content/registry';
 import { useProgress } from '@/lib/progress';
@@ -26,6 +26,9 @@ export function Layout() {
 
   const sidebar = (
     <nav className="flex h-full flex-col gap-4 overflow-y-auto p-3">
+      <NavLink to="/patterns" className={({ isActive }) => cn('flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium transition', isActive ? 'border-accent/40 bg-accent/12 text-accent' : 'border-border bg-surface hover:bg-surface-3')}>
+        <Shapes size={16} className="text-accent" /> Nhận diện pattern
+      </NavLink>
       {LEVELS.map((l) => {
         const list = byLevel(l.id);
         return (
