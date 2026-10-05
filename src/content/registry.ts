@@ -8,6 +8,7 @@ import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
+import topologicalSort from '@/algorithms/advanced/topological-sort';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -26,6 +27,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bfsGrid,
   dijkstra,
   kthLargest,
+  topologicalSort,
   // Siêu cấp
   editDistance,
   trie,
