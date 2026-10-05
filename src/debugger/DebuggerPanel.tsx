@@ -104,8 +104,12 @@ export function DebuggerPanel({ mod }: { mod: AlgorithmModule }) {
           <div className="min-h-0 flex-1">{visualPane}</div>
         </div>
         <div className="hidden w-[24%] min-w-[220px] flex-col border-l border-border lg:flex">
-          <PaneHeader icon={<SlidersHorizontal size={14} />} title="Input" />
-          <div className="max-h-[45%] overflow-auto border-b border-border">{inputPane}</div>
+          {mod.meta.inputs.length > 0 && (
+            <>
+              <PaneHeader icon={<SlidersHorizontal size={14} />} title="Input" />
+              <div className="max-h-[45%] overflow-auto border-b border-border">{inputPane}</div>
+            </>
+          )}
           <PaneHeader icon={<Variable size={14} />} title="Biến & Call stack" />
           <div className="min-h-0 flex-1 overflow-auto">{varsPane}</div>
         </div>
