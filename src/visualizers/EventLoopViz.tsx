@@ -31,7 +31,7 @@ export function EventLoopViz({ v }: { v: EventLoopVisual }) {
   const cx = 110, cy = 110, R = 78;
   const inLoop = RING.some((r) => r.id === v.phase) || v.phase === 'idle';
   return (
-    <div className="grid w-full max-w-[980px] gap-3 lg:grid-cols-[1fr_240px_1fr]">
+    <div className="@container w-full max-w-[980px]"><div className="grid gap-3 grid-cols-1 @md:grid-cols-2 @2xl:grid-cols-[1fr_240px_1fr]">
       {/* trái: call stack + microtask */}
       <div className="flex flex-col gap-2">
         <div className={cn('rounded-xl border p-2', v.phase === 'main' || v.changed === 'stack' ? 'border-viz-active bg-viz-active/10' : 'border-border bg-surface-2/60')}>
@@ -50,7 +50,7 @@ export function EventLoopViz({ v }: { v: EventLoopVisual }) {
       </div>
 
       {/* giữa: vòng phase */}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center @md:col-span-2 @2xl:col-span-1 @md:order-first @2xl:order-none">
         <svg viewBox="0 0 220 220" width={220} height={220} style={{ maxWidth: '100%', height: 'auto' }}>
           <circle cx={cx} cy={cy} r={R} fill="none" stroke="var(--border)" strokeWidth={10} />
           <defs><marker id="el-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--fg-muted)" /></marker></defs>
@@ -83,6 +83,7 @@ export function EventLoopViz({ v }: { v: EventLoopVisual }) {
           <pre className="min-h-[60px] whitespace-pre-wrap font-mono text-xs leading-5">{v.output.length ? v.output.map((o, i) => <div key={i} className={i === v.output.length - 1 && v.changed === 'output' ? 'text-viz-done' : ''}>{o}</div>) : <span className="text-fg-muted">—</span>}</pre>
         </div>
       </div>
+    </div>
     </div>
   );
 }

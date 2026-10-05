@@ -59,6 +59,7 @@ export function InputForm({ meta, value, onRun }: Props) {
     const vals = Object.fromEntries(meta.inputs.filter((f) => ['number[]', 'number', 'string'].includes(f.type)).map((f) => [f.key, randomFor(f)]));
     applyPreset(vals);
   };
+  const canRandomize = meta.inputs.some((f) => ['number[]', 'number', 'string'].includes(f.type));
   return (
     <form className="flex flex-col gap-2 p-3" onSubmit={(e) => { e.preventDefault(); onRun(build()); }}>
       {meta.inputs.map((f) => {
@@ -78,7 +79,7 @@ export function InputForm({ meta, value, onRun }: Props) {
       })}
       <div className="flex flex-wrap items-center gap-1.5 pt-1">
         <button type="submit" className="inline-flex items-center gap-1 rounded-lg bg-accent px-3 py-1.5 text-xs font-semibold text-accent-fg hover:bg-accent/90"><Play size={12} /> Chạy lại</button>
-        <button type="button" onClick={randomize} className="inline-flex items-center gap-1 rounded-lg border border-border px-2.5 py-1.5 text-xs hover:bg-surface-3"><Shuffle size={12} /> Ngẫu nhiên</button>
+        {canRandomize && <button type="button" onClick={randomize} className="inline-flex items-center gap-1 rounded-lg border border-border px-2.5 py-1.5 text-xs hover:bg-surface-3"><Shuffle size={12} /> Ngẫu nhiên</button>}
         {meta.presets?.map((p) => (
           <button key={p.label} type="button" onClick={() => applyPreset(p.values)} className={cn('rounded-lg border border-border px-2.5 py-1.5 text-xs hover:bg-surface-3')}>{p.label}</button>
         ))}
