@@ -3,6 +3,7 @@ import linearSearch from '@/algorithms/basic/linear-search';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
 import selectionSort from '@/algorithms/basic/selection-sort';
+import countingSort from '@/algorithms/basic/counting-sort';
 import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
 import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
@@ -33,6 +34,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bubbleSort,
   selectionSort,
   insertionSort,
+  countingSort,
   validParentheses,
   twoSumHashmap,
   // Middle
