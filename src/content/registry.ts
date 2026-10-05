@@ -10,6 +10,7 @@ import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat
 import mergeSort from '@/algorithms/intermediate/merge-sort';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
+import linkedListCycle from '@/algorithms/intermediate/linked-list-cycle';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
@@ -39,6 +40,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   mergeSort,
   quickSort,
   reverseLinkedList,
+  linkedListCycle,
   binaryTreeTraversal,
   // Nâng cao
   bfsGrid,
