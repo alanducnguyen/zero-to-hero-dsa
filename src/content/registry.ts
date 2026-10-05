@@ -25,6 +25,7 @@ import bitManipulation from '@/algorithms/expert/single-number-bits';
 import kadane from '@/algorithms/expert/max-subarray-kadane';
 import slidingWindowMaximum from '@/algorithms/expert/sliding-window-maximum';
 import lisPatience from '@/algorithms/expert/lis-patience';
+import kmp from '@/algorithms/expert/kmp';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -58,6 +59,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   kadane,
   slidingWindowMaximum,
   lisPatience,
+  kmp,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
