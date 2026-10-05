@@ -5,9 +5,12 @@ import bubbleSort from '@/algorithms/basic/bubble-sort';
 import selectionSort from '@/algorithms/basic/selection-sort';
 import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
+import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
+import mergeSort from '@/algorithms/intermediate/merge-sort';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
+import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -25,9 +28,12 @@ export const ALGORITHMS: AlgorithmModule[] = [
   insertionSort,
   validParentheses,
   // Middle
+  twoSumSorted,
   slidingWindow,
+  mergeSort,
   quickSort,
   reverseLinkedList,
+  binaryTreeTraversal,
   // Nâng cao
   bfsGrid,
   dijkstra,

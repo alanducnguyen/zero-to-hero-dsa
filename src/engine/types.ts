@@ -53,6 +53,8 @@ export interface TreeNode {
   id: string;
   label: string;
   children: string[];
+  /** node giữ chỗ (vd. con trái rỗng của cây nhị phân) – chiếm cột nhưng không vẽ */
+  hidden?: boolean;
 }
 export interface TreeVisual {
   kind: 'tree';

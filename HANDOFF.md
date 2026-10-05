@@ -54,6 +54,7 @@
 - TypeScript phải là bản 5 (typescript-eslint chưa hỗ trợ TS 7).
 - Tailwind v4 dùng `@theme static` để các biến `--color-*` dùng được trong `style={{}}` inline.
 - eslint `react-hooks/set-state-in-effect` cấm setState trong effect → xử lý trong handler.
+- `TreeNode.hidden` (engine/types.ts): node giữ chỗ để cây nhị phân lệch vẽ đúng trái/phải; TreeViz bỏ qua khi vẽ.
 - Docker: `Dockerfile` multi-stage (node build → nginx), `docker/nginx.conf` SPA fallback, `docker-compose.yml` có profile `dev`.
 - Deploy: Vercel (vercel.json), BrowserRouter + rewrite về index.html. Không dùng GitHub Pages.
 - Playwright: dùng `executablePath: '/opt/pw-browsers/chromium'`, không chạy `playwright install`.
