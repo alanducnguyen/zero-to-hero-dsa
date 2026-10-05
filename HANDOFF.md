@@ -38,9 +38,11 @@
 3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
    trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
 
-## Quy ước commit (chủ repo yêu cầu)
+## Quy ước git (chủ repo yêu cầu – chi tiết trong CLAUDE.md)
+- Nhánh: `feat/...`, `fix/...`, `docs/...`, `chore/...`; KHÔNG dùng `claude/...`.
 - Tác giả `@Ethan <alanducnguyen@gmail.com>` (đã set trong git config của repo). KHÔNG thêm Co-Authored-By / dấu vết AI.
 - Mỗi thuật toán / module một commit riêng, message tiếng Anh ngắn gọn.
+- Lịch sử hiện tại nằm trên nhánh `claude/friendly-lovelace-xncix4` (tạo trước khi có quy ước); chủ repo merge vào `main` rồi xoá.
 
 ## Lưu ý kỹ thuật đã gặp
 - TypeScript phải là bản 5 (typescript-eslint chưa hỗ trợ TS 7).

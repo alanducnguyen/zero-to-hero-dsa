@@ -16,7 +16,7 @@ pnpm typecheck && pnpm lint && pnpm build   # phải sạch trước khi commit
 pnpm algo <id>      # chạy impl trên Node với input mẫu (scripts/run.ts)
 ```
 Kiểm tra UI: `pnpm preview --port 4173` rồi dùng Playwright (Chromium tại /opt/pw-browsers/chromium) chụp
-`http://localhost:4173/#/algo/<id>?tab=debug`.
+`http://localhost:4173/algo/<id>?tab=debug` (BrowserRouter, không dùng hash).
 
 ## Kiến trúc
 - `src/engine/types.ts` – `Frame`, `VisualState` (array | stackqueue | linkedlist | tree | graph | matrix | heap | map | composite), `AlgorithmModule`, `InputField`.
@@ -40,8 +40,14 @@ Copy cấu trúc `src/algorithms/basic/bubble-sort/`:
 7. `impl.test.ts` – test impl với case biên + `checkModule(mod, [...])` từ `@/engine/testUtils`.
 8. Thêm vào `ALGORITHMS` trong `src/content/registry.ts`.
 
+## Git
+- **Tên nhánh theo Conventional Branch:** `feat/<mô-tả>`, `fix/<mô-tả>`, `docs/<mô-tả>`, `refactor/<mô-tả>`, `chore/<mô-tả>`, `test/<mô-tả>`.
+  Mô tả ngắn, kebab-case, tiếng Anh. Ví dụ: `feat/merge-sort`, `fix/heap-sift-down`, `docs/readme-docker`.
+  **KHÔNG** dùng tiền tố `claude/...` hay tên nhánh tự sinh. Nếu phiên làm việc được giao một nhánh `claude/...`, tạo nhánh đúng quy ước từ đó và làm việc trên nhánh đó.
+- Tác giả commit: `@Ethan <alanducnguyen@gmail.com>`. **KHÔNG** thêm `Co-Authored-By`, `Claude-Session` hay bất kỳ dấu vết AI/agent nào trong commit, PR, code.
+- Mỗi thuật toán / module một commit riêng. Message tiếng Anh, ngắn gọn, mô tả rõ (dạng `Add X`, `Fix Y`).
+- Chạy `pnpm test && pnpm typecheck && pnpm lint` trước mỗi commit. Không commit `dist/`.
+
 ## Quy ước
 - Tiếng Việt có dấu trong UI/nội dung; thuật ngữ kỹ thuật giữ tiếng Anh.
 - Màu highlight: compare=vàng, swap=đỏ, done=xanh lá, pointer=xanh dương, visited=xám, active=tím, range=cyan.
-- Không commit `dist/`. Commit message tiếng Anh, mô tả rõ. Không đưa tên model vào code/commit.
-- Chạy `pnpm test && pnpm typecheck && pnpm lint` trước mỗi commit.
