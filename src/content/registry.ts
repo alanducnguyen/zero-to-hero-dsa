@@ -5,6 +5,7 @@ import bubbleSort from '@/algorithms/basic/bubble-sort';
 import selectionSort from '@/algorithms/basic/selection-sort';
 import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
+import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
@@ -33,6 +34,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   selectionSort,
   insertionSort,
   validParentheses,
+  twoSumHashmap,
   // Middle
   twoSumSorted,
   slidingWindow,
