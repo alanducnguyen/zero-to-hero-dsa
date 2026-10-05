@@ -1,4 +1,5 @@
 import type { AlgorithmModule, Level } from '@/engine/types';
+import linearSearch from '@/algorithms/basic/linear-search';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
@@ -15,6 +16,7 @@ import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
   // Cơ bản
+  linearSearch,
   binarySearch,
   bubbleSort,
   validParentheses,
