@@ -3,6 +3,7 @@ import linearSearch from '@/algorithms/basic/linear-search';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
 import selectionSort from '@/algorithms/basic/selection-sort';
+import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import quickSort from '@/algorithms/intermediate/quick-sort';
@@ -21,6 +22,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   binarySearch,
   bubbleSort,
   selectionSort,
+  insertionSort,
   validParentheses,
   // Middle
   slidingWindow,
