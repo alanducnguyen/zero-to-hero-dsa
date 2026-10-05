@@ -40,6 +40,8 @@
 | `feat/advanced-batch-3` | coin-change, knapsack-01, kruskal-mst, merge-intervals | ✅ PR #9 |
 | `feat/expert-batch-3` | sliding-window-maximum (deque), lis-patience, kmp, segment-tree | ✅ PR #10 |
 
+- Trang **Nhận diện pattern** (`/patterns`, `/patterns/:id`): dữ liệu ở `src/content/patterns.ts` (22 pattern: signals, avoid, steps, template, realWorld, algorithms, leetcode) + `DECISION_TREE`; trang `src/pages/PatternsPage.tsx`; chip pattern trên trang thuật toán; test `patterns.test.ts` bắt buộc mọi thuật toán thuộc ≥ 1 pattern (thêm bài mới ⇒ thêm id vào pattern).
+
 Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
 
 ## Việc tiếp theo (theo thứ tự)
