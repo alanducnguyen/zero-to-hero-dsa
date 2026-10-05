@@ -36,15 +36,16 @@ export function TreeViz({ v }: { v: TreeVisual }) {
         {v.nodes.map((n) => {
           const p = pos.get(n.id);
           if (!p) return null;
+          if (n.hidden) return null;
           return n.children.map((c) => {
             const q = pos.get(c);
-            if (!q) return null;
+            if (!q || byId.get(c)?.hidden) return null;
             return <line key={`${n.id}-${c}`} x1={px(p.x)} y1={py(p.y)} x2={px(q.x)} y2={py(q.y)} stroke="var(--border)" strokeWidth={2} />;
           });
         })}
         {v.nodes.map((n) => {
           const p = pos.get(n.id);
-          if (!p) return null;
+          if (!p || n.hidden) return null;
           const h = v.highlights?.[n.id];
           return (
             <motion.g key={n.id} initial={false} animate={{ x: px(p.x), y: py(p.y) }} transition={{ type: 'spring', stiffness: 300, damping: 30 }}>
