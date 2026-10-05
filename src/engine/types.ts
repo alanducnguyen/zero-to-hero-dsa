@@ -100,6 +100,24 @@ export interface MapVisual {
   highlights?: Record<string, Highlight>;
 }
 
+export type EventLoopPhase = 'main' | 'nextTick' | 'microtask' | 'timers' | 'pending' | 'poll' | 'check' | 'close' | 'idle' | 'exit';
+
+export interface EventLoopVisual {
+  kind: 'eventloop';
+  phase: EventLoopPhase;
+  /** đồng hồ ảo (ms) */
+  now: number;
+  callStack: string[];
+  nextTick: string[];
+  microtasks: string[];
+  timers: { label: string; due: number }[];
+  io: { label: string; due: number }[];
+  immediates: string[];
+  output: string[];
+  /** mục vừa thay đổi để tô màu: 'stack' | 'nextTick' | 'microtasks' | 'timers' | 'io' | 'immediates' | 'output' */
+  changed?: string;
+}
+
 export interface CompositeVisual {
   kind: 'composite';
   parts: VisualState[];
@@ -115,6 +133,7 @@ export type VisualState =
   | MatrixVisual
   | HeapVisual
   | MapVisual
+  | EventLoopVisual
   | CompositeVisual;
 
 export interface Frame {
