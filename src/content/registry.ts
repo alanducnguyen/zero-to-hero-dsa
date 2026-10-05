@@ -13,6 +13,7 @@ import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
 import linkedListCycle from '@/algorithms/intermediate/linked-list-cycle';
 import lruCache from '@/algorithms/intermediate/lru-cache';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
+import bstOperations from '@/algorithms/intermediate/bst-operations';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -44,6 +45,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   linkedListCycle,
   lruCache,
   binaryTreeTraversal,
+  bstOperations,
   // Nâng cao
   bfsGrid,
   dijkstra,
