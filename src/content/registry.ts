@@ -2,6 +2,7 @@ import type { AlgorithmModule, Level } from '@/engine/types';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
+import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
@@ -19,6 +20,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bubbleSort,
   validParentheses,
   // Middle
+  twoSumSorted,
   slidingWindow,
   quickSort,
   reverseLinkedList,
