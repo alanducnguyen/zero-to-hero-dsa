@@ -4,6 +4,7 @@ import bubbleSort from '@/algorithms/basic/bubble-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
+import mergeSort from '@/algorithms/intermediate/merge-sort';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
@@ -22,6 +23,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   // Middle
   twoSumSorted,
   slidingWindow,
+  mergeSort,
   quickSort,
   reverseLinkedList,
   // Nâng cao
