@@ -8,6 +8,7 @@ import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
+import editDistance from '@/algorithms/expert/edit-distance';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -23,6 +24,8 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bfsGrid,
   dijkstra,
   kthLargest,
+  // Siêu cấp
+  editDistance,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
