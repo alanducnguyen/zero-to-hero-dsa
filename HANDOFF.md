@@ -28,13 +28,19 @@
 | expert | trie | tree | ✅ |
 | expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ✅ |
 
-## Phiên bản đầu: HOÀN THÀNH (12/12 bài, deploy workflow, README, đã kiểm tra desktop/mobile/dark)
+## Phiên bản đầu: HOÀN THÀNH (12/12 bài). Đợt 2 (lên 24 bài) đang làm.
+
+## Đợt 2 – mỗi cấp một nhánh/PR, mỗi bài một commit
+| Nhánh | Bài | Trạng thái |
+|---|---|---|
+| `feat/basic-batch-2` | linear-search, selection-sort, insertion-sort | ✅ (PR mở) |
+| `feat/intermediate-batch-2` | two-sum-sorted, merge-sort, binary-tree-traversal | ⬜ |
+| `feat/advanced-batch-2` | topological-sort, n-queens, house-robber | ⬜ |
+| `feat/expert-batch-2` | union-find, single-number-bits, max-subarray-kadane | ⬜ |
 
 ## Việc tiếp theo (theo thứ tự)
 1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
-2. Đợt 2 – thêm bài, **mỗi bài một commit riêng** (yêu cầu của chủ repo): Linear Search, Selection/Insertion Sort,
-   Two Sum sorted (two pointers), Merge Sort, Tree DFS/BFS, Topological Sort, N-Queens (backtracking),
-   House Robber (DP 1D), Union-Find, Bit Manipulation, Kadane/Prefix Sum.
+2. Đợt 2: xem bảng trên. Mỗi nhánh tạo từ `origin/main`.
 3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
    trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
 

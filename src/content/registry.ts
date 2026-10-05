@@ -1,6 +1,9 @@
 import type { AlgorithmModule, Level } from '@/engine/types';
+import linearSearch from '@/algorithms/basic/linear-search';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
+import selectionSort from '@/algorithms/basic/selection-sort';
+import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import quickSort from '@/algorithms/intermediate/quick-sort';
@@ -15,8 +18,11 @@ import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
   // Cơ bản
+  linearSearch,
   binarySearch,
   bubbleSort,
+  selectionSort,
+  insertionSort,
   validParentheses,
   // Middle
   slidingWindow,
