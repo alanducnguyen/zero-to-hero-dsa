@@ -7,7 +7,9 @@ const spring = { type: 'spring', stiffness: 400, damping: 32 } as const;
 export function ArrayViz({ v }: { v: ArrayVisual }) {
   const n = v.items.length;
   const mode = v.mode ?? 'cells';
-  const cell = n > 20 ? 30 : n > 12 ? 40 : 52;
+  const maxLen = Math.max(1, ...v.items.map((x) => String(x).length));
+  const baseCell = n > 20 ? 30 : n > 12 ? 40 : 52;
+  const cell = maxLen <= 3 ? baseCell : Math.min(180, Math.max(baseCell, maxLen * 7.5 + 16));
   const gap = 6;
   const pointerRows = groupPointers(v.pointers ?? []);
   const pointerH = pointerRows.length * 22;
@@ -37,7 +39,7 @@ export function ArrayViz({ v }: { v: ArrayVisual }) {
             <motion.g key={i} initial={false} animate={{ x: x(i) }} transition={spring}>
               {bh > 0 && <motion.rect x={0} animate={{ y: topY + barH - bh, height: bh }} transition={spring} width={cell} rx={4} fill={fillFor(h)} opacity={0.9} />}
               <rect x={0} y={topY + barH} width={cell} height={cell} rx={8} fill={fillFor(h)} opacity={h ? 1 : 0.55} stroke="var(--border)" />
-              <text x={cell / 2} y={topY + barH + cell / 2 + 5} textAnchor="middle" fontSize={n > 20 ? 11 : 14} fontWeight={600} fill={h ? '#fff' : 'var(--fg)'}>{String(val)}</text>
+              <text x={cell / 2} y={topY + barH + cell / 2 + 5} textAnchor="middle" fontSize={maxLen > 3 ? 12 : n > 20 ? 11 : 14} fontWeight={600} fill={h ? '#fff' : 'var(--fg)'}>{String(val)}</text>
               <text x={cell / 2} y={topY + barH + cell + 13} textAnchor="middle" fontSize={10} fill="var(--fg-muted)">{i}</text>
             </motion.g>
           );
