@@ -12,6 +12,7 @@ import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
 import unionFind from '@/algorithms/expert/union-find';
+import bitManipulation from '@/algorithms/expert/single-number-bits';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -32,6 +33,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   trie,
   monotonicStack,
   unionFind,
+  bitManipulation,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
