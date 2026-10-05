@@ -26,7 +26,7 @@
 | advanced | kth-largest-heap | heap | ✅ |
 | expert | edit-distance | matrix | ✅ |
 | expert | trie | tree | ✅ |
-| expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ⬜ |
+| expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ✅ |
 
 ## Việc tiếp theo (theo thứ tự)
 1. Viết các bài còn lại theo bảng trên, mỗi cấp 1 commit. Cập nhật bảng này.
