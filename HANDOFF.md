@@ -45,6 +45,18 @@ Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8);
 ## Việc tiếp theo (theo thứ tự)
 1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
 2. Đợt 3 đã xong. Merge PR #7 → #8 → #9 → #10; conflict ở `registry.ts` hoặc `HANDOFF.md` thì giữ cả hai phía (HANDOFF lấy bản của PR #10).
+- Đợt 3: lên 40 bài (10/cấp) – đang làm, mỗi cấp một nhánh/PR, mỗi bài một commit.
+
+| Nhánh đợt 3 | Bài | Trạng thái |
+|---|---|---|
+| `feat/basic-batch-3` | two-sum-hashmap, counting-sort, prefix-sum, queue-two-stacks | ✅ (PR mở) |
+| `feat/intermediate-batch-3` | linked-list-cycle (Floyd), lru-cache, bst-operations, number-of-islands (DFS) | ⬜ |
+| `feat/advanced-batch-3` | coin-change, knapsack-01, kruskal-mst, merge-intervals | ⬜ |
+| `feat/expert-batch-3` | sliding-window-maximum (deque), lis-patience, kmp, segment-tree | ⬜ |
+
+## Việc tiếp theo (theo thứ tự)
+1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
+2. Đợt 3: xem bảng trên. Mỗi nhánh tạo từ `origin/main`. Merge PR theo thứ tự cấp; conflict ở registry.ts hoặc HANDOFF.md thì giữ cả hai phía.
 3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
    trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
 

@@ -3,20 +3,32 @@ import linearSearch from '@/algorithms/basic/linear-search';
 import binarySearch from '@/algorithms/basic/binary-search';
 import bubbleSort from '@/algorithms/basic/bubble-sort';
 import selectionSort from '@/algorithms/basic/selection-sort';
+import countingSort from '@/algorithms/basic/counting-sort';
 import insertionSort from '@/algorithms/basic/insertion-sort';
 import validParentheses from '@/algorithms/basic/valid-parentheses';
+import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
+import prefixSum from '@/algorithms/basic/prefix-sum';
+import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
 import quickSort from '@/algorithms/intermediate/quick-sort';
 import reverseLinkedList from '@/algorithms/intermediate/reverse-linked-list';
+import linkedListCycle from '@/algorithms/intermediate/linked-list-cycle';
+import lruCache from '@/algorithms/intermediate/lru-cache';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
+import bstOperations from '@/algorithms/intermediate/bst-operations';
+import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
 import topologicalSort from '@/algorithms/advanced/topological-sort';
 import nQueens from '@/algorithms/advanced/n-queens';
 import houseRobber from '@/algorithms/advanced/house-robber';
+import coinChange from '@/algorithms/advanced/coin-change';
+import knapsack01 from '@/algorithms/advanced/knapsack-01';
+import kruskalMst from '@/algorithms/advanced/kruskal-mst';
+import mergeIntervals from '@/algorithms/advanced/merge-intervals';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -36,14 +48,22 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bubbleSort,
   selectionSort,
   insertionSort,
+  countingSort,
   validParentheses,
+  twoSumHashmap,
+  prefixSum,
+  queueTwoStacks,
   // Middle
   twoSumSorted,
   slidingWindow,
   mergeSort,
   quickSort,
   reverseLinkedList,
+  linkedListCycle,
+  lruCache,
   binaryTreeTraversal,
+  bstOperations,
+  numberOfIslands,
   // Nâng cao
   bfsGrid,
   dijkstra,
@@ -51,6 +71,10 @@ export const ALGORITHMS: AlgorithmModule[] = [
   topologicalSort,
   nQueens,
   houseRobber,
+  coinChange,
+  knapsack01,
+  kruskalMst,
+  mergeIntervals,
   // Siêu cấp
   editDistance,
   trie,

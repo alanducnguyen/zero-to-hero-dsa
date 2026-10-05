@@ -5,7 +5,8 @@ export function MatrixViz({ v }: { v: MatrixVisual }) {
   const rows = v.cells.length;
   const cols = Math.max(0, ...v.cells.map((r) => r.length));
   const cell = cols > 14 ? 28 : cols > 9 ? 36 : 44;
-  const lx = v.rowLabels ? 28 : 0, ly = v.colLabels ? 20 : 0;
+  const maxRowLabel = v.rowLabels ? Math.max(1, ...v.rowLabels.map((l) => l.length)) : 0;
+  const lx = v.rowLabels ? Math.max(28, maxRowLabel * 6.5 + 10) : 0, ly = v.colLabels ? 20 : 0;
   return (
     <div className="flex flex-col items-center gap-1">
       {v.title && <div className="text-xs font-medium text-fg-muted">{v.title}</div>}
