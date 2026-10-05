@@ -23,6 +23,13 @@ pnpm build        # typecheck + build static vào dist/
 pnpm algo <id>    # chạy thuật toán trên Node, vd: pnpm algo binary-search
 ```
 
+## Chạy bằng Docker
+
+```bash
+docker compose up --build            # build + nginx, mở http://localhost:8080
+docker compose --profile dev up      # dev server hot reload, mở http://localhost:5173
+```
+
 ## Cấu trúc
 
 ```
