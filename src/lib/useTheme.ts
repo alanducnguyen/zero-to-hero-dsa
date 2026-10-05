@@ -1,17 +1,27 @@
-import { useCallback, useEffect, useState } from 'react';
+import { create } from 'zustand';
 
 const KEY = 'dsa-theme';
 
-export function useTheme() {
-  const [dark, setDark] = useState(() => document.documentElement.classList.contains('dark'));
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark);
-    try {
-      localStorage.setItem(KEY, dark ? 'dark' : 'light');
-    } catch {
-      /* ignore */
-    }
-  }, [dark]);
-  const toggle = useCallback(() => setDark((d) => !d), []);
-  return { dark, toggle };
+interface ThemeState {
+  dark: boolean;
+  toggle: () => void;
 }
+
+function apply(dark: boolean) {
+  document.documentElement.classList.toggle('dark', dark);
+  try {
+    localStorage.setItem(KEY, dark ? 'dark' : 'light');
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Theme dùng chung toàn app (một nguồn sự thật). */
+export const useTheme = create<ThemeState>()((set, get) => ({
+  dark: typeof document !== 'undefined' && document.documentElement.classList.contains('dark'),
+  toggle: () => {
+    const dark = !get().dark;
+    apply(dark);
+    set({ dark });
+  },
+}));

@@ -13,14 +13,22 @@ interface Props {
 export function CodePane({ source, activeLine, breakpoints, onToggleBreakpoint }: Props) {
   const { dark } = useTheme();
   const activeRef = useRef<HTMLDivElement>(null);
+  const preRef = useRef<HTMLPreElement>(null);
+  // Cuộn chỉ trong khung code (không dùng scrollIntoView để tránh cuộn cả trang).
   useEffect(() => {
-    activeRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    const el = activeRef.current;
+    const box = preRef.current;
+    if (!el || !box) return;
+    const top = el.offsetTop - box.offsetTop;
+    const bottom = top + el.offsetHeight;
+    if (top < box.scrollTop) box.scrollTo({ top: top - 40, behavior: 'smooth' });
+    else if (bottom > box.scrollTop + box.clientHeight) box.scrollTo({ top: bottom - box.clientHeight + 40, behavior: 'smooth' });
   }, [activeLine]);
 
   return (
     <Highlight code={source.trimEnd()} language="tsx" theme={dark ? themes.nightOwl : themes.github}>
       {({ tokens, getLineProps, getTokenProps }) => (
-        <pre className="h-full overflow-auto bg-transparent p-0 font-mono text-[12.5px] leading-[1.55]">
+        <pre ref={preRef} className="relative h-full overflow-auto bg-transparent p-0 font-mono text-[12.5px] leading-[1.55]">
           {tokens.map((line, i) => {
             const ln = i + 1;
             const active = ln === activeLine;

@@ -28,11 +28,19 @@
 | expert | trie | tree | ✅ |
 | expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ✅ |
 
+## Phiên bản đầu: HOÀN THÀNH (12/12 bài, deploy workflow, README, đã kiểm tra desktop/mobile/dark)
+
 ## Việc tiếp theo (theo thứ tự)
-1. Viết các bài còn lại theo bảng trên, mỗi cấp 1 commit. Cập nhật bảng này.
-2. `.github/workflows/deploy.yml` deploy GitHub Pages (build `pnpm build`, upload `dist`). README hướng dẫn.
-3. Kiểm tra UI bằng Playwright ở 1440px và 390px, dark mode.
-4. Đợt sau (ngoài phạm vi phiên bản đầu): Linear Search, Selection/Insertion Sort, Two Sum sorted, Merge Sort, Tree DFS/BFS, Topological Sort, N-Queens, House Robber, Union-Find, Bit Manipulation, Kadane/Prefix Sum.
+1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, bật GitHub Pages (Settings → Pages → Source: GitHub Actions).
+2. Đợt 2 – thêm bài, **mỗi bài một commit riêng** (yêu cầu của chủ repo): Linear Search, Selection/Insertion Sort,
+   Two Sum sorted (two pointers), Merge Sort, Tree DFS/BFS, Topological Sort, N-Queens (backtracking),
+   House Robber (DP 1D), Union-Find, Bit Manipulation, Kadane/Prefix Sum.
+3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
+   trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
+
+## Quy ước commit (chủ repo yêu cầu)
+- Tác giả `@Ethan <alanducnguyen@gmail.com>` (đã set trong git config của repo). KHÔNG thêm Co-Authored-By / dấu vết AI.
+- Mỗi thuật toán / module một commit riêng, message tiếng Anh ngắn gọn.
 
 ## Lưu ý kỹ thuật đã gặp
 - TypeScript phải là bản 5 (typescript-eslint chưa hỗ trợ TS 7).

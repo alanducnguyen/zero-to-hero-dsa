@@ -32,7 +32,7 @@ export function AlgorithmPage() {
 
   return (
     <div className={cn('mx-auto px-4 py-6 md:px-8', tab === 'debug' ? 'max-w-[1600px]' : 'max-w-4xl')}>
-      <div className="mb-4 flex flex-wrap items-start gap-3">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start">
         <div className="min-w-0 flex-1">
           <div className="mb-1 flex items-center gap-2"><LevelBadge level={meta.level} /><Tag>{meta.category}</Tag></div>
           <h1 className="text-2xl font-bold md:text-3xl">{meta.title}</h1>
