@@ -40,6 +40,7 @@ import lisPatience from '@/algorithms/expert/lis-patience';
 import kmp from '@/algorithms/expert/kmp';
 import segmentTree from '@/algorithms/expert/segment-tree';
 import fenwickTree from '@/algorithms/expert/fenwick-tree';
+import bellmanFord from '@/algorithms/expert/bellman-ford';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -88,6 +89,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   kmp,
   segmentTree,
   fenwickTree,
+  bellmanFord,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
