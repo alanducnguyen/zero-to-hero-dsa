@@ -11,6 +11,7 @@ code TypeScript chạy trên Node.js và **chế độ Debug line-by-line** vớ
   biến & call stack thay đổi theo thời gian thực. Phím tắt `←` `→` `Space` `F8`.
 - **8 visualizer SVG:** mảng/cột, stack/queue, linked list, cây, đồ thị, ma trận (DP/lưới), heap, hashmap.
 - **Node.js Event Loop:** mô phỏng từng bước call stack → nextTick → microtask → timers → poll → check với 7 kịch bản; test chạy chính code đó bằng Node thật để đối chiếu thứ tự output.
+- **Nhiều lời giải:** 10 bài phỏng vấn kinh điển, mỗi bài 3–4 cách giải (brute force → tối ưu), mỗi cách chạy được ở chế độ Debug, kèm bảng so sánh, xếp hạng và kịch bản trình bày.
 - **Nhận diện pattern:** 22 pattern với dấu hiệu nhận biết, khi nào không dùng, khung code, ví dụ thực tế, cây quyết định nhanh và liên kết tới bài có debug.
 - **Input tuỳ chỉnh + preset** cho từng bài (case biên, worst case, ngẫu nhiên).
 - Tiến độ học, bookmark (localStorage), dark mode, tìm kiếm `⌘K`, responsive.
