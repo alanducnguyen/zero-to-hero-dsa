@@ -970,7 +970,7 @@ put(k, v) { if (map.has(k)) { update, unlink, pushFront; return; }
       { domain: 'Lập trình hàm', example: 'Banker\'s queue (hai list bất biến) trong Clojure/Scala.' },
       { domain: 'Game / lấy mẫu', example: 'Chọn ngẫu nhiên phần tử với thêm/xoá O(1) (loot table, matchmaking pool).' },
     ],
-    algorithms: ['lru-cache', 'queue-two-stacks', 'kth-largest-heap', 'trie'],
+    algorithms: ['lru-cache', 'min-stack', 'queue-two-stacks', 'kth-largest-heap', 'trie'],
     leetcode: [
       { id: 146, title: 'LRU Cache', slug: 'lru-cache' },
       { id: 380, title: 'Insert Delete GetRandom O(1)', slug: 'insert-delete-getrandom-o1' },
