@@ -29,46 +29,64 @@
 | expert | largest-rectangle-histogram (monotonic stack) | composite array+stackqueue | ✅ |
 
 ## Tiến độ
-- Phiên bản đầu: 12 bài (3/cấp) – đã merge.
-- Đợt 2: 24 bài (6/cấp) – đã merge (PR #3–#6).
-- Đợt 3: 40 bài (10/cấp) – 4 PR (#7–#10), mỗi cấp một nhánh, mỗi bài một commit.
 
-| Nhánh đợt 3 | Bài | Trạng thái |
+| Mốc | Nội dung | Trạng thái |
 |---|---|---|
-| `feat/basic-batch-3` | two-sum-hashmap, counting-sort, prefix-sum, queue-two-stacks | ✅ PR #7 |
-| `feat/intermediate-batch-3` | linked-list-cycle (Floyd), lru-cache, bst-operations, number-of-islands (DFS) | ✅ PR #8 |
-| `feat/advanced-batch-3` | coin-change, knapsack-01, kruskal-mst, merge-intervals | ✅ PR #9 |
-| `feat/expert-batch-3` | sliding-window-maximum (deque), lis-patience, kmp, segment-tree | ✅ PR #10 |
+| Phiên bản đầu | 12 bài (3/cấp), engine, debugger, UI | ✅ merged |
+| Đợt 2 (PR #3–#6) | 24 bài (6/cấp) | ✅ merged |
+| Đợt 3 (PR #7–#10) | 40 bài (10/cấp) | ✅ merged |
+| PR #11 | Trang Nhận diện pattern (22 pattern) | ✅ merged |
+| PR #12 | Node.js Event Loop (7 kịch bản) | ✅ merged |
+| Đợt 4 (PR #13–#16) | 52 bài (13/cấp) | ⏳ PR mở, chưa merge |
+| Đợt 5 (PR #17–#20) | 64 bài (16/cấp) | ⏳ PR mở, chưa merge |
+| PR #21 | Mục Nhiều lời giải – pilot 10 bài, 36 lời giải | ⏳ PR mở, chưa merge |
 
-- Mục **Node.js Event Loop** (`/event-loop`): `src/eventloop/` gồm `scenario.ts` (DSL + sinh code JS có số dòng), `simulate.ts` (mô phỏng libuv: nextTick → microtask → timers → pending → poll (ngủ/tua giờ ảo) → check → close), `presets.ts` (7 kịch bản), `content.md`, `interview.md`, `simulate.test.ts` (**chạy code sinh ra bằng Node thật** và so output). Visual kind mới `eventloop` (`src/visualizers/EventLoopViz.tsx`, dùng container query). Trang `src/pages/EventLoopPage.tsx` tái dùng DebuggerPanel qua AlgorithmModule giả (`inputs: []`). Thêm kịch bản = thêm vào `PRESETS` + test kỳ vọng output.
-- Mục **Nhiều lời giải** (`/compare`, `/compare/:id`, PR #21): một bài toán – nhiều cách giải, so sánh và xếp hạng, **mỗi lời giải có Debug trace riêng**. Dữ liệu ở `src/compare/`: `types.ts` (`CompareProblem`, `Solution` có `rank`, `source`, `run`, `trace`), `toModule.ts` (gói solution thành `AlgorithmModule` cho `DebuggerPanel`/`checkModule`), `registry.ts` (`PROBLEMS`), `problems/<id>/{problem.md, comparison.md, interview.md, index.ts, solutions/<sol>/{impl.ts, trace.ts}}`. Trang `src/pages/ComparePage.tsx` (tab Đề bài / Lời giải (sub-tab theo thứ tự trình bày brute→tối ưu) / So sánh & xếp hạng (bảng tự sinh + markdown) / Phỏng vấn). Test `registry.test.ts`: mỗi solution trace == impl và **mọi solution cho cùng kết quả** trên default + presets. Pilot 10 bài: two-sum, kth-largest, valid-anagram, majority-element, max-subarray, fibonacci, trapping-rain-water, find-duplicate, longest-palindromic-substring, merge-k-sorted. Thêm bài = tạo thư mục + import vào `PROBLEMS`; nếu id trùng với bài thuật toán thì trang thuật toán tự hiện link "so sánh nhiều lời giải". ⌘K đã index cả problems, patterns, event loop.
-- Trang **Nhận diện pattern** (`/patterns`, `/patterns/:id`): dữ liệu ở `src/content/patterns.ts` (22 pattern: signals, avoid, steps, template, realWorld, algorithms, leetcode) + `DECISION_TREE`; trang `src/pages/PatternsPage.tsx`; chip pattern trên trang thuật toán; test `patterns.test.ts` bắt buộc mọi thuật toán thuộc ≥ 1 pattern (thêm bài mới ⇒ thêm id vào pattern).
+`main` hiện có **40 bài**; sau khi merge hết 9 PR sẽ có 64 bài + patterns + event loop + compare.
 
-Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
-
-## Việc tiếp theo (theo thứ tự)
-1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
-2. Đợt 3 đã xong. Merge PR #7 → #8 → #9 → #10; conflict ở `registry.ts` hoặc `HANDOFF.md` thì giữ cả hai phía (HANDOFF lấy bản của PR #10).
-- Đợt 3: lên 40 bài (10/cấp) – đang làm, mỗi cấp một nhánh/PR, mỗi bài một commit.
-
-| Nhánh đợt 3 | Bài | Trạng thái |
+| PR | Nhánh | Bài |
 |---|---|---|
-| `feat/basic-batch-3` | two-sum-hashmap, counting-sort, prefix-sum, queue-two-stacks | ✅ (PR mở) |
-| `feat/intermediate-batch-3` | linked-list-cycle (Floyd), lru-cache, bst-operations, number-of-islands (DFS) | ⬜ |
-| `feat/advanced-batch-3` | coin-change, knapsack-01, kruskal-mst, merge-intervals | ⬜ |
-| `feat/expert-batch-3` | sliding-window-maximum (deque), lis-patience, kmp, segment-tree | ⬜ |
+| #13 | `feat/basic-batch-4` | valid-anagram, rotate-array, min-stack |
+| #14 | `feat/intermediate-batch-4` | merge-two-sorted-lists, lowest-common-ancestor, group-anagrams |
+| #15 | `feat/advanced-batch-4` | longest-common-subsequence, word-break, floyd-warshall |
+| #16 | `feat/expert-batch-4` | fenwick-tree, bellman-ford, rabin-karp |
+| #17 | `feat/basic-batch-5` | climbing-stairs, majority-element, merge-sorted-arrays |
+| #18 | `feat/intermediate-batch-5` | subsets, top-k-frequent, bipartite-check |
+| #19 | `feat/advanced-batch-5` | merge-k-sorted-lists, daily-temperatures, counting-bits |
+| #20 | `feat/expert-batch-5` | trapping-rain-water, median-two-sorted-arrays, quickselect |
+| #21 | `feat/compare-solutions` | compare: two-sum, kth-largest, valid-anagram, majority-element, max-subarray, fibonacci, trapping-rain-water, find-duplicate, longest-palindromic-substring, merge-k-sorted |
 
-## Việc tiếp theo (theo thứ tự)
-1. Chủ repo: merge nhánh `claude/friendly-lovelace-xncix4` vào `main`, import repo vào Vercel (vercel.com/new).
-2. Đợt 3: xem bảng trên. Mỗi nhánh tạo từ `origin/main`. Merge PR theo thứ tự cấp; conflict ở registry.ts hoặc HANDOFF.md thì giữ cả hai phía.
-3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
-   trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
+### Các mục ngoài DSA
+- **Node.js Event Loop** (`/event-loop`): `src/eventloop/` gồm `scenario.ts` (DSL + sinh code JS có số dòng), `simulate.ts` (mô phỏng libuv: nextTick → microtask → timers → pending → poll (ngủ/tua giờ ảo) → check → close), `presets.ts` (7 kịch bản), `content.md`, `interview.md`, `simulate.test.ts` (**chạy code sinh ra bằng Node thật** và so output). Visual kind `eventloop` (`src/visualizers/EventLoopViz.tsx`). Trang `src/pages/EventLoopPage.tsx` tái dùng DebuggerPanel qua AlgorithmModule giả (`inputs: []`). Thêm kịch bản = thêm vào `PRESETS` + test kỳ vọng output.
+- **Nhận diện pattern** (`/patterns`, `/patterns/:id`): `src/content/patterns.ts` (22 pattern: signals, avoid, steps, template, realWorld, algorithms, leetcode) + `DECISION_TREE`; trang `src/pages/PatternsPage.tsx`; chip pattern trên trang thuật toán; test `patterns.test.ts` bắt buộc mọi thuật toán thuộc ≥ 1 pattern (thêm bài mới ⇒ thêm id vào pattern).
+- **Nhiều lời giải** (`/compare`, `/compare/:id`): một bài toán – nhiều cách giải, so sánh và xếp hạng, **mỗi lời giải có Debug trace riêng**. `src/compare/`: `types.ts` (`CompareProblem`, `Solution` có `rank` 1 = tối ưu, `source`, `run`, `trace`), `toModule.ts` (gói solution thành `AlgorithmModule` cho `DebuggerPanel`/`checkModule`), `registry.ts` (`PROBLEMS`), `problems/<id>/{problem.md, comparison.md, interview.md, index.ts, solutions/<sol>/{impl.ts, trace.ts}}`. Trang `src/pages/ComparePage.tsx`: tab Đề bài / Lời giải (sub-tab theo thứ tự trình bày brute → tối ưu, `?tab=solutions&sol=<id>`) / So sánh & xếp hạng (bảng tự sinh từ `solutions` + markdown) / Phỏng vấn. Test `src/compare/registry.test.ts`: cấu trúc, mỗi solution `checkModule`, và **mọi solution cho cùng kết quả** trên default + presets (dùng hàm `norm` trong `index.ts` để chuẩn hoá input/kết quả khi cần). Thêm bài = copy `problems/two-sum/`, import vào `PROBLEMS`; nếu id trùng id thuật toán thì trang thuật toán tự hiện link "so sánh nhiều lời giải". ⌘K (`SearchDialog.tsx`) index cả algorithms, problems, patterns, event loop.
+
+Sửa visualizer: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
+
+## Hướng dẫn merge 9 PR đang mở (chủ repo làm)
+Cả 9 nhánh đều tạo từ `main` (40 bài) nên các PR sau sẽ conflict với PR trước ở file dùng chung. Thứ tự: **#13 → #14 → #15 → #16 → #17 → #18 → #19 → #20 → #21**.
+- `src/content/registry.ts`, `src/content/patterns.ts`: giữ **cả hai phía** (thêm import + phần tử của cả hai; thứ tự trong mảng theo cấp).
+- `HANDOFF.md`, `README.md`, `CLAUDE.md`: lấy bản của **PR #21** (mới nhất, đã gộp đủ), bổ sung nếu thiếu.
+- PR #21 không đụng registry/patterns nên chỉ conflict ở 3 file docs.
+- Sau khi merge hết: `pnpm install && pnpm test && pnpm typecheck && pnpm lint && pnpm build` trên `main`. `patterns.test.ts` sẽ báo ngay nếu resolve conflict làm thiếu id; `registry.test.ts` (compare) không phụ thuộc đợt 4/5.
+
+## Việc tiếp theo cho phiên sau (theo thứ tự ưu tiên)
+0. **Đọc CLAUDE.md, rồi file này.** Kiểm tra `git log origin/main` xem 9 PR đã merge chưa; nếu chưa, chỉ làm việc trên nhánh mới từ `origin/main` và chấp nhận conflict như trên, hoặc chờ chủ repo merge.
+1. **Dọn sau merge** (nhánh `chore/post-merge`): kiểm tra README nói 64 bài; `/compare` link chéo – id compare `merge-k-sorted` và `kth-largest` không trùng id thuật toán `merge-k-sorted-lists`, `kth-largest-heap` ⇒ cân nhắc đổi id compare cho khớp (sửa thư mục + `id` + registry; URL cũ sẽ đổi).
+2. **Compare đợt 2** (nhánh `feat/compare-batch-2`, 10 bài, mỗi bài 1 commit `Add compare: <Title>`): 3sum (brute / sort+two pointers ★ / hashset), longest-increasing-subsequence (brute / DP O(n²) / patience O(n log n) ★), coin-change (đệ quy / memo / bottom-up ★ / BFS), lru-cache (array / Map thứ tự chèn ★ / doubly linked list + map), course-schedule (DFS 3 màu / Kahn ★), word-ladder (DFS / BFS ★ / bidirectional BFS), min-stack (hai stack ★ / stack cặp / stack chênh lệch), product-except-self (chia / prefix+suffix / prefix+suffix O(1) ★), search-rotated-array (sort / tìm pivot + nhị phân / nhị phân một lượt ★), number-of-islands (DFS ★ / BFS / Union-Find). Mẫu: `src/compare/problems/two-sum/`. Mỗi lời giải impl ≤ 25 dòng, trace ≤ ~300 frame, note tiếng Việt "tại sao".
+3. **Đợt 6 thuật toán** (nếu còn budget): pattern còn ít bài – insert-interval (intervals), middle-of-list (fast-slow), course-schedule (topological-sort), accounts-merge (union-find), jump-game (greedy), minimum-window-substring (sliding-window). Quy trình như đợt 4/5: mỗi cấp một nhánh `feat/<level>-batch-6`, mỗi bài một commit, gắn pattern, test, Playwright, PR.
+4. **Ý tưởng UI**: cheat sheet độ phức tạp (bảng tổng hợp từ `meta.complexity`), lộ trình 4 tuần, lưu input tuỳ chỉnh vào URL, nút "so sánh 2 thuật toán cùng input".
+
+## Quy trình & mẹo đã dùng (tái dùng cho phiên sau)
+- Nhánh mới luôn từ `origin/main`: `git checkout -b feat/<x> origin/main`.
+- **Mỗi bài một commit** kể cả khi nhiều bài cùng sửa `registry.ts`/`patterns.ts`: viết xong cả batch, rồi với từng bài: tạm ghi hai file về trạng thái "chỉ gồm các bài đã commit" (xoá import/phần tử/id của các bài sau), `git add` thư mục bài + hai file, commit, khôi phục bản đầy đủ. Script python ~20 dòng, chạy `git commit --author="Ethan <alanducnguyen@gmail.com>"`.
+- Chụp UI: `pnpm build && (pnpm preview --port 4173 --strictPort > /dev/null 2>&1 &)`, script Playwright phải **đặt trong repo** (vd `./.shot.mjs`, xoá sau) để resolve được package `playwright`; dùng `executablePath: '/opt/pw-browsers/chromium'`, bấm `ArrowRight` vài lần rồi `screenshot`. Preview cũ chết thì chạy lại lệnh trên, không `pkill` trong cùng shell.
+- Lint: React Compiler cấm `useMemo` với dependency là object dẫn xuất (`react-hooks/preserve-manual-memoization`) – bỏ `useMemo`, dùng `key=` để remount.
+- PR body tiếng Việt, không footer AI; mô tả bảng bài/visualizer/pattern + kết quả kiểm tra + lưu ý conflict.
 
 ## Quy ước git (chủ repo yêu cầu – chi tiết trong CLAUDE.md)
 - Nhánh: `feat/...`, `fix/...`, `docs/...`, `chore/...`; KHÔNG dùng `claude/...`.
-- Tác giả `@Ethan <alanducnguyen@gmail.com>` (đã set trong git config của repo). KHÔNG thêm Co-Authored-By / dấu vết AI.
+- Tác giả `@Ethan <alanducnguyen@gmail.com>`. KHÔNG thêm Co-Authored-By / dấu vết AI.
 - Mỗi thuật toán / module một commit riêng, message tiếng Anh ngắn gọn.
-- Lịch sử hiện tại nằm trên nhánh `claude/friendly-lovelace-xncix4` (tạo trước khi có quy ước); chủ repo merge vào `main` rồi xoá.
 
 ## Lưu ý kỹ thuật đã gặp
 - TypeScript phải là bản 5 (typescript-eslint chưa hỗ trợ TS 7).
