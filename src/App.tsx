@@ -5,6 +5,7 @@ import { LevelPage } from '@/pages/LevelPage';
 import { AlgorithmPage } from '@/pages/AlgorithmPage';
 import { EventLoopPage } from '@/pages/EventLoopPage';
 import { PatternsPage } from '@/pages/PatternsPage';
+import { ComparePage } from '@/pages/ComparePage';
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
           <Route path="event-loop" element={<EventLoopPage />} />
           <Route path="patterns" element={<PatternsPage />} />
           <Route path="patterns/:id" element={<PatternsPage />} />
+          <Route path="compare" element={<ComparePage />} />
+          <Route path="compare/:id" element={<ComparePage />} />
           <Route path="*" element={<HomePage />} />
         </Route>
       </Routes>
