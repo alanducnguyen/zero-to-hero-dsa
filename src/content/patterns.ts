@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'n-queens', 'binary-tree-traversal', 'bst-operations'],
+    algorithms: ['number-of-islands', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
