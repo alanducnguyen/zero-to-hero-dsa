@@ -62,7 +62,7 @@ while (l < r) {
       { domain: 'Đối soát tài chính', example: 'Tìm hai giao dịch có tổng bằng số tiền cần khớp trên danh sách đã sắp xếp theo số tiền.' },
       { domain: 'Xử lý chuỗi', example: 'Chuẩn hoá và kiểm tra palindrome, xoá khoảng trắng thừa tại chỗ trong editor.' },
     ],
-    algorithms: ['two-sum-sorted', 'reverse-linked-list', 'linked-list-cycle'],
+    algorithms: ['two-sum-sorted', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle'],
     leetcode: [
       { id: 167, title: 'Two Sum II', slug: 'two-sum-ii-input-array-is-sorted' },
       { id: 15, title: '3Sum', slug: '3sum' },
@@ -235,7 +235,7 @@ for (let i = 0; i < n; i++) {
       { domain: 'Xử lý ảnh / OCR', example: 'Hình chữ nhật trắng lớn nhất trong ảnh nhị phân (Maximal Rectangle) để tách vùng văn bản.' },
       { domain: 'Compiler', example: 'Stack toán tử theo độ ưu tiên khi parse biểu thức (Shunting-yard).' },
     ],
-    algorithms: ['largest-rectangle-histogram', 'valid-parentheses'],
+    algorithms: ['largest-rectangle-histogram', 'trapping-rain-water', 'valid-parentheses'],
     leetcode: [
       { id: 739, title: 'Daily Temperatures', slug: 'daily-temperatures' },
       { id: 84, title: 'Largest Rectangle in Histogram', slug: 'largest-rectangle-in-histogram' },
