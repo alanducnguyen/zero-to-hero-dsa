@@ -8,6 +8,7 @@ import maxSubarray from './problems/max-subarray';
 import fibonacci from './problems/fibonacci';
 import trappingRainWater from './problems/trapping-rain-water';
 import findDuplicate from './problems/find-duplicate';
+import longestPalindromicSubstring from './problems/longest-palindromic-substring';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -18,6 +19,7 @@ export const PROBLEMS: CompareProblem[] = [
   fibonacci,
   trappingRainWater,
   findDuplicate,
+  longestPalindromicSubstring,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
