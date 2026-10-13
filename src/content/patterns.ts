@@ -235,7 +235,7 @@ for (let i = 0; i < n; i++) {
       { domain: 'Xử lý ảnh / OCR', example: 'Hình chữ nhật trắng lớn nhất trong ảnh nhị phân (Maximal Rectangle) để tách vùng văn bản.' },
       { domain: 'Compiler', example: 'Stack toán tử theo độ ưu tiên khi parse biểu thức (Shunting-yard).' },
     ],
-    algorithms: ['largest-rectangle-histogram', 'valid-parentheses'],
+    algorithms: ['largest-rectangle-histogram', 'daily-temperatures', 'valid-parentheses'],
     leetcode: [
       { id: 739, title: 'Daily Temperatures', slug: 'daily-temperatures' },
       { id: 84, title: 'Largest Rectangle in Histogram', slug: 'largest-rectangle-in-histogram' },
