@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'dijkstra', 'merge-sort'],
+    algorithms: ['kth-largest-heap', 'merge-k-sorted-lists', 'dijkstra', 'merge-sort'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },
@@ -890,7 +890,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Thống kê / xếp hạng', example: 'Kendall tau từ số nghịch thế; median với quickselect.' },
       { domain: 'Song song', example: 'Merge sort đa luồng / GPU vì hai nửa độc lập.' },
     ],
-    algorithms: ['merge-sort', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
+    algorithms: ['merge-sort', 'merge-k-sorted-lists', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
     leetcode: [
       { id: 912, title: 'Sort an Array', slug: 'sort-an-array' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },
