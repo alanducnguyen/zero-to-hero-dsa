@@ -805,7 +805,7 @@ startsWith(p) { let n = root; for (const ch of p) { n = n.children.get(ch)!; if 
       { domain: 'Bảo mật', example: 'Snort/IDS quét chữ ký bằng Aho–Corasick; lọc từ nhạy cảm.' },
       { domain: 'Version control', example: 'Patience diff, tìm chuỗi trong editor, grep.' },
     ],
-    algorithms: ['trie', 'kmp', 'edit-distance'],
+    algorithms: ['trie', 'kmp', 'rabin-karp', 'edit-distance'],
     leetcode: [
       { id: 208, title: 'Implement Trie', slug: 'implement-trie-prefix-tree' },
       { id: 212, title: 'Word Search II', slug: 'word-search-ii' },
