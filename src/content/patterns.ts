@@ -890,7 +890,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Thống kê / xếp hạng', example: 'Kendall tau từ số nghịch thế; median với quickselect.' },
       { domain: 'Song song', example: 'Merge sort đa luồng / GPU vì hai nửa độc lập.' },
     ],
-    algorithms: ['merge-sort', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
+    algorithms: ['merge-sort', 'merge-two-sorted-lists', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
     leetcode: [
       { id: 912, title: 'Sort an Array', slug: 'sort-an-array' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },

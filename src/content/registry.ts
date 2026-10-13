@@ -19,6 +19,7 @@ import lruCache from '@/algorithms/intermediate/lru-cache';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
 import bstOperations from '@/algorithms/intermediate/bst-operations';
 import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
+import mergeTwoSortedLists from '@/algorithms/intermediate/merge-two-sorted-lists';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -64,6 +65,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   binaryTreeTraversal,
   bstOperations,
   numberOfIslands,
+  mergeTwoSortedLists,
   // Nâng cao
   bfsGrid,
   dijkstra,
