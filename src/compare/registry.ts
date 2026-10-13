@@ -7,6 +7,7 @@ import majorityElement from './problems/majority-element';
 import maxSubarray from './problems/max-subarray';
 import fibonacci from './problems/fibonacci';
 import trappingRainWater from './problems/trapping-rain-water';
+import findDuplicate from './problems/find-duplicate';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -16,6 +17,7 @@ export const PROBLEMS: CompareProblem[] = [
   maxSubarray,
   fibonacci,
   trappingRainWater,
+  findDuplicate,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
