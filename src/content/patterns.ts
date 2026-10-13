@@ -631,7 +631,7 @@ while (heap.size) {
       { domain: 'Game', example: 'Pathfinding NPC trên navmesh với chi phí địa hình.' },
       { domain: 'Chip design', example: 'Định tuyến dây với chi phí khác nhau theo vùng.' },
     ],
-    algorithms: ['dijkstra', 'bfs-grid-shortest-path', 'kth-largest-heap'],
+    algorithms: ['dijkstra', 'floyd-warshall', 'bfs-grid-shortest-path', 'kth-largest-heap'],
     leetcode: [
       { id: 743, title: 'Network Delay Time', slug: 'network-delay-time' },
       { id: 1631, title: 'Path With Minimum Effort', slug: 'path-with-minimum-effort' },

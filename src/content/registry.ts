@@ -31,6 +31,7 @@ import kruskalMst from '@/algorithms/advanced/kruskal-mst';
 import mergeIntervals from '@/algorithms/advanced/merge-intervals';
 import longestCommonSubsequence from '@/algorithms/advanced/longest-common-subsequence';
 import wordBreak from '@/algorithms/advanced/word-break';
+import floydWarshall from '@/algorithms/advanced/floyd-warshall';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -79,6 +80,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   mergeIntervals,
   longestCommonSubsequence,
   wordBreak,
+  floydWarshall,
   // Siêu cấp
   editDistance,
   trie,
