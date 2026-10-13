@@ -930,7 +930,7 @@ prefix(i) { let s = 0; for (i++; i > 0; i -= i & -i) s += t[i]; return s; }`,
       { domain: 'Editor', example: 'Rope / piece table đếm ký tự và dòng trong khoảng với chèn xoá.' },
       { domain: 'Đồ hoạ', example: 'Sweep line + segment tree cho union area, skyline, va chạm theo trục.' },
     ],
-    algorithms: ['segment-tree', 'prefix-sum'],
+    algorithms: ['segment-tree', 'fenwick-tree', 'prefix-sum'],
     leetcode: [
       { id: 307, title: 'Range Sum Query - Mutable', slug: 'range-sum-query-mutable' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },
