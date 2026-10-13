@@ -31,6 +31,7 @@ import kruskalMst from '@/algorithms/advanced/kruskal-mst';
 import mergeIntervals from '@/algorithms/advanced/merge-intervals';
 import mergeKSortedLists from '@/algorithms/advanced/merge-k-sorted-lists';
 import dailyTemperatures from '@/algorithms/advanced/daily-temperatures';
+import countingBits from '@/algorithms/advanced/counting-bits';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -79,6 +80,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   mergeIntervals,
   mergeKSortedLists,
   dailyTemperatures,
+  countingBits,
   // Siêu cấp
   editDistance,
   trie,

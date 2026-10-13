@@ -721,7 +721,7 @@ dp[i][j] = a[i-1] === b[j-1] ? dp[i-1][j-1] : 1 + Math.min(dp[i-1][j-1], dp[i-1]
       { domain: 'Tài chính / tối ưu', example: 'Phân bổ ngân sách (knapsack), trả tiền thừa (coin change), lịch không chồng lấn.' },
       { domain: 'Nén & mã hoá', example: 'Viterbi (HMM, giải mã kênh), tách từ (word break) trong NLP tiếng Việt/Trung.' },
     ],
-    algorithms: ['house-robber', 'coin-change', 'knapsack-01', 'edit-distance', 'max-subarray-kadane', 'lis-patience'],
+    algorithms: ['house-robber', 'coin-change', 'counting-bits', 'knapsack-01', 'edit-distance', 'max-subarray-kadane', 'lis-patience'],
     leetcode: [
       { id: 70, title: 'Climbing Stairs', slug: 'climbing-stairs' },
       { id: 198, title: 'House Robber', slug: 'house-robber' },
@@ -848,7 +848,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Database', example: 'Bitmap index, Roaring bitmap, Bloom filter.' },
       { domain: 'Mạng', example: 'Subnet mask `ip & mask`, hash `n & (size − 1)` thay cho modulo.' },
     ],
-    algorithms: ['single-number-bits', 'trie'],
+    algorithms: ['single-number-bits', 'counting-bits', 'trie'],
     leetcode: [
       { id: 136, title: 'Single Number', slug: 'single-number' },
       { id: 191, title: 'Number of 1 Bits', slug: 'number-of-1-bits' },
