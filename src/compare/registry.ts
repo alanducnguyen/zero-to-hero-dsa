@@ -5,6 +5,7 @@ import twoSum from './problems/two-sum';
 import validAnagram from './problems/valid-anagram';
 import majorityElement from './problems/majority-element';
 import maxSubarray from './problems/max-subarray';
+import fibonacci from './problems/fibonacci';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -12,6 +13,7 @@ export const PROBLEMS: CompareProblem[] = [
   validAnagram,
   majorityElement,
   maxSubarray,
+  fibonacci,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
