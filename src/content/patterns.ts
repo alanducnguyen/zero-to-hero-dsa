@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'longest-substring-no-repeat', 'lru-cache'],
+    algorithms: ['two-sum-hashmap', 'majority-element', 'longest-substring-no-repeat', 'lru-cache'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
@@ -764,7 +764,7 @@ for (const [s, e] of intervals) {
       { domain: 'Mạng / hạ tầng', example: 'Kruskal/Prim thiết kế mạng, Dijkstra định tuyến.' },
       { domain: 'Vận hành', example: 'Đổ xăng ít lần nhất, xếp thuyền (ghép nặng–nhẹ), cache LRU là heuristic greedy.' },
     ],
-    algorithms: ['merge-intervals', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane'],
+    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane'],
     leetcode: [
       { id: 435, title: 'Non-overlapping Intervals', slug: 'non-overlapping-intervals' },
       { id: 55, title: 'Jump Game', slug: 'jump-game' },
