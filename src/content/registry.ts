@@ -11,6 +11,7 @@ import prefixSum from '@/algorithms/basic/prefix-sum';
 import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
 import climbingStairs from '@/algorithms/basic/climbing-stairs';
 import majorityElement from '@/algorithms/basic/majority-element';
+import mergeSortedArrays from '@/algorithms/basic/merge-sorted-arrays';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
@@ -57,6 +58,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   queueTwoStacks,
   climbingStairs,
   majorityElement,
+  mergeSortedArrays,
   // Middle
   twoSumSorted,
   slidingWindow,
