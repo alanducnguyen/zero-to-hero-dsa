@@ -29,6 +29,7 @@ import coinChange from '@/algorithms/advanced/coin-change';
 import knapsack01 from '@/algorithms/advanced/knapsack-01';
 import kruskalMst from '@/algorithms/advanced/kruskal-mst';
 import mergeIntervals from '@/algorithms/advanced/merge-intervals';
+import longestCommonSubsequence from '@/algorithms/advanced/longest-common-subsequence';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -75,6 +76,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   knapsack01,
   kruskalMst,
   mergeIntervals,
+  longestCommonSubsequence,
   // Siêu cấp
   editDistance,
   trie,
