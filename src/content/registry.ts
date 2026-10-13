@@ -21,6 +21,7 @@ import bstOperations from '@/algorithms/intermediate/bst-operations';
 import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
 import subsets from '@/algorithms/intermediate/subsets';
 import topKFrequent from '@/algorithms/intermediate/top-k-frequent';
+import bipartiteCheck from '@/algorithms/intermediate/bipartite-check';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -68,6 +69,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   numberOfIslands,
   subsets,
   topKFrequent,
+  bipartiteCheck,
   // Nâng cao
   bfsGrid,
   dijkstra,
