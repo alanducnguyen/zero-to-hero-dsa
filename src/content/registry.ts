@@ -41,6 +41,7 @@ import kmp from '@/algorithms/expert/kmp';
 import segmentTree from '@/algorithms/expert/segment-tree';
 import trappingRainWater from '@/algorithms/expert/trapping-rain-water';
 import medianTwoSortedArrays from '@/algorithms/expert/median-two-sorted-arrays';
+import quickselect from '@/algorithms/expert/quickselect';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -90,6 +91,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   segmentTree,
   trappingRainWater,
   medianTwoSortedArrays,
+  quickselect,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
