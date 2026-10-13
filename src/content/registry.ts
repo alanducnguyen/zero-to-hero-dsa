@@ -10,6 +10,7 @@ import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
 import prefixSum from '@/algorithms/basic/prefix-sum';
 import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
 import validAnagram from '@/algorithms/basic/valid-anagram';
+import rotateArray from '@/algorithms/basic/rotate-array';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
@@ -55,6 +56,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   prefixSum,
   queueTwoStacks,
   validAnagram,
+  rotateArray,
   // Middle
   twoSumSorted,
   slidingWindow,
