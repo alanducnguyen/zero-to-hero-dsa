@@ -40,6 +40,7 @@ import lisPatience from '@/algorithms/expert/lis-patience';
 import kmp from '@/algorithms/expert/kmp';
 import segmentTree from '@/algorithms/expert/segment-tree';
 import trappingRainWater from '@/algorithms/expert/trapping-rain-water';
+import medianTwoSortedArrays from '@/algorithms/expert/median-two-sorted-arrays';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -88,6 +89,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   kmp,
   segmentTree,
   trappingRainWater,
+  medianTwoSortedArrays,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
