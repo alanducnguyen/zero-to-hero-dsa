@@ -21,6 +21,7 @@ import bstOperations from '@/algorithms/intermediate/bst-operations';
 import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
 import mergeTwoSortedLists from '@/algorithms/intermediate/merge-two-sorted-lists';
 import lowestCommonAncestor from '@/algorithms/intermediate/lowest-common-ancestor';
+import groupAnagrams from '@/algorithms/intermediate/group-anagrams';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -68,6 +69,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   numberOfIslands,
   mergeTwoSortedLists,
   lowestCommonAncestor,
+  groupAnagrams,
   // Nâng cao
   bfsGrid,
   dijkstra,
