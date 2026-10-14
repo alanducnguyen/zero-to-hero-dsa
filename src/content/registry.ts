@@ -9,6 +9,9 @@ import validParentheses from '@/algorithms/basic/valid-parentheses';
 import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
 import prefixSum from '@/algorithms/basic/prefix-sum';
 import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
+import climbingStairs from '@/algorithms/basic/climbing-stairs';
+import majorityElement from '@/algorithms/basic/majority-element';
+import mergeSortedArrays from '@/algorithms/basic/merge-sorted-arrays';
 import validAnagram from '@/algorithms/basic/valid-anagram';
 import rotateArray from '@/algorithms/basic/rotate-array';
 import minStack from '@/algorithms/basic/min-stack';
@@ -65,6 +68,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   twoSumHashmap,
   prefixSum,
   queueTwoStacks,
+  climbingStairs,
+  majorityElement,
+  mergeSortedArrays,
   validAnagram,
   rotateArray,
   minStack,
