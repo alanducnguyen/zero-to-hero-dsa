@@ -9,6 +9,12 @@ import validParentheses from '@/algorithms/basic/valid-parentheses';
 import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
 import prefixSum from '@/algorithms/basic/prefix-sum';
 import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
+import climbingStairs from '@/algorithms/basic/climbing-stairs';
+import majorityElement from '@/algorithms/basic/majority-element';
+import mergeSortedArrays from '@/algorithms/basic/merge-sorted-arrays';
+import validAnagram from '@/algorithms/basic/valid-anagram';
+import rotateArray from '@/algorithms/basic/rotate-array';
+import minStack from '@/algorithms/basic/min-stack';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
@@ -22,6 +28,9 @@ import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
 import subsets from '@/algorithms/intermediate/subsets';
 import topKFrequent from '@/algorithms/intermediate/top-k-frequent';
 import bipartiteCheck from '@/algorithms/intermediate/bipartite-check';
+import mergeTwoSortedLists from '@/algorithms/intermediate/merge-two-sorted-lists';
+import lowestCommonAncestor from '@/algorithms/intermediate/lowest-common-ancestor';
+import groupAnagrams from '@/algorithms/intermediate/group-anagrams';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -32,6 +41,9 @@ import coinChange from '@/algorithms/advanced/coin-change';
 import knapsack01 from '@/algorithms/advanced/knapsack-01';
 import kruskalMst from '@/algorithms/advanced/kruskal-mst';
 import mergeIntervals from '@/algorithms/advanced/merge-intervals';
+import longestCommonSubsequence from '@/algorithms/advanced/longest-common-subsequence';
+import wordBreak from '@/algorithms/advanced/word-break';
+import floydWarshall from '@/algorithms/advanced/floyd-warshall';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -42,6 +54,9 @@ import slidingWindowMaximum from '@/algorithms/expert/sliding-window-maximum';
 import lisPatience from '@/algorithms/expert/lis-patience';
 import kmp from '@/algorithms/expert/kmp';
 import segmentTree from '@/algorithms/expert/segment-tree';
+import fenwickTree from '@/algorithms/expert/fenwick-tree';
+import bellmanFord from '@/algorithms/expert/bellman-ford';
+import rabinKarp from '@/algorithms/expert/rabin-karp';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -56,6 +71,12 @@ export const ALGORITHMS: AlgorithmModule[] = [
   twoSumHashmap,
   prefixSum,
   queueTwoStacks,
+  climbingStairs,
+  majorityElement,
+  mergeSortedArrays,
+  validAnagram,
+  rotateArray,
+  minStack,
   // Middle
   twoSumSorted,
   slidingWindow,
@@ -70,6 +91,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   subsets,
   topKFrequent,
   bipartiteCheck,
+  mergeTwoSortedLists,
+  lowestCommonAncestor,
+  groupAnagrams,
   // Nâng cao
   bfsGrid,
   dijkstra,
@@ -81,6 +105,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   knapsack01,
   kruskalMst,
   mergeIntervals,
+  longestCommonSubsequence,
+  wordBreak,
+  floydWarshall,
   // Siêu cấp
   editDistance,
   trie,
@@ -92,6 +119,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   lisPatience,
   kmp,
   segmentTree,
+  fenwickTree,
+  bellmanFord,
+  rabinKarp,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
