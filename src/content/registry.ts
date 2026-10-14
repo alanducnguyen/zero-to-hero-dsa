@@ -25,6 +25,9 @@ import lruCache from '@/algorithms/intermediate/lru-cache';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
 import bstOperations from '@/algorithms/intermediate/bst-operations';
 import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
+import subsets from '@/algorithms/intermediate/subsets';
+import topKFrequent from '@/algorithms/intermediate/top-k-frequent';
+import bipartiteCheck from '@/algorithms/intermediate/bipartite-check';
 import mergeTwoSortedLists from '@/algorithms/intermediate/merge-two-sorted-lists';
 import lowestCommonAncestor from '@/algorithms/intermediate/lowest-common-ancestor';
 import groupAnagrams from '@/algorithms/intermediate/group-anagrams';
@@ -85,6 +88,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   binaryTreeTraversal,
   bstOperations,
   numberOfIslands,
+  subsets,
+  topKFrequent,
+  bipartiteCheck,
   mergeTwoSortedLists,
   lowestCommonAncestor,
   groupAnagrams,

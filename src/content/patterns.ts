@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'longest-substring-no-repeat', 'lru-cache'],
+    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
@@ -451,7 +451,7 @@ while (head < q.length) {
       { domain: 'Garbage collector', example: 'Mark phase: đánh dấu object sống từ root set.' },
       { domain: 'Game / robot', example: 'Tìm đường ngắn nhất trên bản đồ ô vuông; lan toả vùng ảnh hưởng.' },
     ],
-    algorithms: ['bfs-grid-shortest-path', 'binary-tree-traversal', 'topological-sort'],
+    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort'],
     leetcode: [
       { id: 1091, title: 'Shortest Path in Binary Matrix', slug: 'shortest-path-in-binary-matrix' },
       { id: 994, title: 'Rotting Oranges', slug: 'rotting-oranges' },
@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations'],
+    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'dijkstra', 'merge-sort'],
+    algorithms: ['kth-largest-heap', 'top-k-frequent', 'dijkstra', 'merge-sort'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },
