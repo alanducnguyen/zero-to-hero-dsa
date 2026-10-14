@@ -42,6 +42,7 @@ Copy cấu trúc `src/algorithms/basic/bubble-sort/`:
 
 ## Mục ngoài DSA
 - `src/content/patterns.ts` – danh mục pattern (bài mới phải được gắn vào ≥ 1 pattern, test bắt buộc).
+- `src/compare/` – mục "Nhiều lời giải": `problems/<id>/` gồm `problem.md`, `comparison.md`, `interview.md`, `index.ts` (export `CompareProblem`, mỗi `Solution` có `rank` 1 = tối ưu) và `solutions/<sol>/{impl.ts,trace.ts}` (trace theo số dòng của impl.ts cùng thư mục). Đăng ký ở `registry.ts`. Test bắt buộc mọi solution cho cùng kết quả.
 - `src/eventloop/` – mô phỏng event loop Node: thêm kịch bản vào `presets.ts` (DSL, không thông dịch JS) và thêm kỳ vọng output vào `simulate.test.ts`; test tự chạy code sinh ra bằng Node thật để đối chiếu. Kịch bản phụ thuộc thứ tự timeout(0)/immediate ở top-level phải đặt `nondeterministic: true`.
 
 ## Git
