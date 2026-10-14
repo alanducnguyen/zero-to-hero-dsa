@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'valid-anagram', 'longest-substring-no-repeat', 'lru-cache'],
+    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'longest-substring-no-repeat', 'lru-cache'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'n-queens', 'binary-tree-traversal', 'bst-operations'],
+    algorithms: ['number-of-islands', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
@@ -890,7 +890,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Thống kê / xếp hạng', example: 'Kendall tau từ số nghịch thế; median với quickselect.' },
       { domain: 'Song song', example: 'Merge sort đa luồng / GPU vì hai nửa độc lập.' },
     ],
-    algorithms: ['merge-sort', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
+    algorithms: ['merge-sort', 'merge-two-sorted-lists', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
     leetcode: [
       { id: 912, title: 'Sort an Array', slug: 'sort-an-array' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },
