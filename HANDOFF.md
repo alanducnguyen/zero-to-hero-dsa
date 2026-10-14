@@ -33,8 +33,8 @@
 - Đợt 2: 24 bài (6/cấp) – đã merge (PR #3–#6).
 - Đợt 3: 40 bài (10/cấp) – đã merge (PR #7–#10).
 - Trang Nhận diện pattern (PR #11), Node.js Event Loop (PR #12) – đã merge.
-- Đợt 4: 52 bài (13/cấp) – 4 PR (#13–#16).
-- Đợt 5: 64 bài (16/cấp) – 4 PR (#17–#20). Cả 8 nhánh đợt 4 + 5 đều tạo từ `main` (40 bài) ⇒ merge sẽ conflict ở `registry.ts`/`patterns.ts` (giữ cả hai phía) và `HANDOFF.md`/`README.md` (lấy bản của PR #20, đã gộp cả đợt 4).
+- Đợt 4: 52 bài (13/cấp) – 4 PR (#13–#16), đã merge.
+- Đợt 5: 64 bài (16/cấp) – 4 PR (#17–#20). Các nhánh đợt 4 + 5 đều tạo từ `main` (40 bài); khi merge cần giữ các bổ sung ở cả `registry.ts`/`patterns.ts`.
 
 | Nhánh | Bài | PR |
 |---|---|---|
@@ -55,7 +55,7 @@ Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8);
 Kỹ thuật chia commit theo bài khi nhiều bài cùng sửa `registry.ts`/`patterns.ts`: tạm ghi hai file về trạng thái "chỉ có các bài đã commit", `git add` thư mục bài + hai file, commit, rồi khôi phục bản đầy đủ cho bài kế tiếp (script python nhỏ, chạy sau khi đã viết xong cả 3 bài).
 
 ## Việc tiếp theo (theo thứ tự)
-1. Merge PR #13 → #16 rồi #17 → #20. Mỗi PR: conflict `registry.ts`/`patterns.ts` giữ cả hai phía; `HANDOFF.md`/`README.md` lấy bản của PR #20.
+1. Merge PR #17 → #20; conflict `registry.ts`/`patterns.ts` thì giữ cả hai phía.
 2. Sau khi merge xong, chạy `pnpm test` trên `main` (test patterns sẽ bắt lỗi nếu thiếu id khi resolve conflict).
 3. Ý tưởng đợt sau: pattern còn ít bài (intervals: insert-interval; fast-slow: middle-of-list; topological-sort: course-schedule; union-find: accounts-merge; greedy: jump-game; sliding-window: minimum-window-substring), hoặc trang "lộ trình 4 tuần".
 4. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL, trang "cheat sheet" độ phức tạp.

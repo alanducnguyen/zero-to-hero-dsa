@@ -62,7 +62,7 @@ while (l < r) {
       { domain: 'Đối soát tài chính', example: 'Tìm hai giao dịch có tổng bằng số tiền cần khớp trên danh sách đã sắp xếp theo số tiền.' },
       { domain: 'Xử lý chuỗi', example: 'Chuẩn hoá và kiểm tra palindrome, xoá khoảng trắng thừa tại chỗ trong editor.' },
     ],
-    algorithms: ['two-sum-sorted', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle'],
+    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle'],
     leetcode: [
       { id: 167, title: 'Two Sum II', slug: 'two-sum-ii-input-array-is-sorted' },
       { id: 15, title: '3Sum', slug: '3sum' },
@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'longest-substring-no-repeat', 'lru-cache'],
+    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
@@ -235,7 +235,7 @@ for (let i = 0; i < n; i++) {
       { domain: 'Xử lý ảnh / OCR', example: 'Hình chữ nhật trắng lớn nhất trong ảnh nhị phân (Maximal Rectangle) để tách vùng văn bản.' },
       { domain: 'Compiler', example: 'Stack toán tử theo độ ưu tiên khi parse biểu thức (Shunting-yard).' },
     ],
-    algorithms: ['largest-rectangle-histogram', 'trapping-rain-water', 'valid-parentheses'],
+    algorithms: ['largest-rectangle-histogram', 'daily-temperatures', 'trapping-rain-water', 'valid-parentheses'],
     leetcode: [
       { id: 739, title: 'Daily Temperatures', slug: 'daily-temperatures' },
       { id: 84, title: 'Largest Rectangle in Histogram', slug: 'largest-rectangle-in-histogram' },
@@ -451,7 +451,7 @@ while (head < q.length) {
       { domain: 'Garbage collector', example: 'Mark phase: đánh dấu object sống từ root set.' },
       { domain: 'Game / robot', example: 'Tìm đường ngắn nhất trên bản đồ ô vuông; lan toả vùng ảnh hưởng.' },
     ],
-    algorithms: ['bfs-grid-shortest-path', 'binary-tree-traversal', 'topological-sort'],
+    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort'],
     leetcode: [
       { id: 1091, title: 'Shortest Path in Binary Matrix', slug: 'shortest-path-in-binary-matrix' },
       { id: 994, title: 'Rotting Oranges', slug: 'rotting-oranges' },
@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'n-queens', 'binary-tree-traversal', 'bst-operations'],
+    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
@@ -631,7 +631,7 @@ while (heap.size) {
       { domain: 'Game', example: 'Pathfinding NPC trên navmesh với chi phí địa hình.' },
       { domain: 'Chip design', example: 'Định tuyến dây với chi phí khác nhau theo vùng.' },
     ],
-    algorithms: ['dijkstra', 'bfs-grid-shortest-path', 'kth-largest-heap'],
+    algorithms: ['dijkstra', 'bellman-ford', 'floyd-warshall', 'bfs-grid-shortest-path', 'kth-largest-heap'],
     leetcode: [
       { id: 743, title: 'Network Delay Time', slug: 'network-delay-time' },
       { id: 1631, title: 'Path With Minimum Effort', slug: 'path-with-minimum-effort' },
@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'quickselect', 'dijkstra', 'merge-sort'],
+    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },
@@ -721,7 +721,7 @@ dp[i][j] = a[i-1] === b[j-1] ? dp[i-1][j-1] : 1 + Math.min(dp[i-1][j-1], dp[i-1]
       { domain: 'Tài chính / tối ưu', example: 'Phân bổ ngân sách (knapsack), trả tiền thừa (coin change), lịch không chồng lấn.' },
       { domain: 'Nén & mã hoá', example: 'Viterbi (HMM, giải mã kênh), tách từ (word break) trong NLP tiếng Việt/Trung.' },
     ],
-    algorithms: ['house-robber', 'coin-change', 'knapsack-01', 'edit-distance', 'max-subarray-kadane', 'lis-patience'],
+    algorithms: ['climbing-stairs', 'house-robber', 'coin-change', 'counting-bits', 'knapsack-01', 'longest-common-subsequence', 'word-break', 'edit-distance', 'max-subarray-kadane', 'lis-patience'],
     leetcode: [
       { id: 70, title: 'Climbing Stairs', slug: 'climbing-stairs' },
       { id: 198, title: 'House Robber', slug: 'house-robber' },
@@ -764,7 +764,7 @@ for (const [s, e] of intervals) {
       { domain: 'Mạng / hạ tầng', example: 'Kruskal/Prim thiết kế mạng, Dijkstra định tuyến.' },
       { domain: 'Vận hành', example: 'Đổ xăng ít lần nhất, xếp thuyền (ghép nặng–nhẹ), cache LRU là heuristic greedy.' },
     ],
-    algorithms: ['merge-intervals', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane'],
+    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane'],
     leetcode: [
       { id: 435, title: 'Non-overlapping Intervals', slug: 'non-overlapping-intervals' },
       { id: 55, title: 'Jump Game', slug: 'jump-game' },
@@ -805,7 +805,7 @@ startsWith(p) { let n = root; for (const ch of p) { n = n.children.get(ch)!; if 
       { domain: 'Bảo mật', example: 'Snort/IDS quét chữ ký bằng Aho–Corasick; lọc từ nhạy cảm.' },
       { domain: 'Version control', example: 'Patience diff, tìm chuỗi trong editor, grep.' },
     ],
-    algorithms: ['trie', 'kmp', 'edit-distance'],
+    algorithms: ['trie', 'kmp', 'rabin-karp', 'edit-distance'],
     leetcode: [
       { id: 208, title: 'Implement Trie', slug: 'implement-trie-prefix-tree' },
       { id: 212, title: 'Word Search II', slug: 'word-search-ii' },
@@ -848,7 +848,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Database', example: 'Bitmap index, Roaring bitmap, Bloom filter.' },
       { domain: 'Mạng', example: 'Subnet mask `ip & mask`, hash `n & (size − 1)` thay cho modulo.' },
     ],
-    algorithms: ['single-number-bits', 'trie'],
+    algorithms: ['single-number-bits', 'counting-bits', 'trie'],
     leetcode: [
       { id: 136, title: 'Single Number', slug: 'single-number' },
       { id: 191, title: 'Number of 1 Bits', slug: 'number-of-1-bits' },
@@ -890,7 +890,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Thống kê / xếp hạng', example: 'Kendall tau từ số nghịch thế; median với quickselect.' },
       { domain: 'Song song', example: 'Merge sort đa luồng / GPU vì hai nửa độc lập.' },
     ],
-    algorithms: ['merge-sort', 'quick-sort', 'quickselect', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
+    algorithms: ['merge-sort', 'merge-two-sorted-lists', 'merge-k-sorted-lists', 'quick-sort', 'quickselect', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
     leetcode: [
       { id: 912, title: 'Sort an Array', slug: 'sort-an-array' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },
@@ -930,7 +930,7 @@ prefix(i) { let s = 0; for (i++; i > 0; i -= i & -i) s += t[i]; return s; }`,
       { domain: 'Editor', example: 'Rope / piece table đếm ký tự và dòng trong khoảng với chèn xoá.' },
       { domain: 'Đồ hoạ', example: 'Sweep line + segment tree cho union area, skyline, va chạm theo trục.' },
     ],
-    algorithms: ['segment-tree', 'prefix-sum'],
+    algorithms: ['segment-tree', 'fenwick-tree', 'prefix-sum'],
     leetcode: [
       { id: 307, title: 'Range Sum Query - Mutable', slug: 'range-sum-query-mutable' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },
@@ -970,7 +970,7 @@ put(k, v) { if (map.has(k)) { update, unlink, pushFront; return; }
       { domain: 'Lập trình hàm', example: 'Banker\'s queue (hai list bất biến) trong Clojure/Scala.' },
       { domain: 'Game / lấy mẫu', example: 'Chọn ngẫu nhiên phần tử với thêm/xoá O(1) (loot table, matchmaking pool).' },
     ],
-    algorithms: ['lru-cache', 'queue-two-stacks', 'kth-largest-heap', 'trie'],
+    algorithms: ['lru-cache', 'min-stack', 'queue-two-stacks', 'kth-largest-heap', 'trie'],
     leetcode: [
       { id: 146, title: 'LRU Cache', slug: 'lru-cache' },
       { id: 380, title: 'Insert Delete GetRandom O(1)', slug: 'insert-delete-getrandom-o1' },
