@@ -41,6 +41,9 @@ import coinChange from '@/algorithms/advanced/coin-change';
 import knapsack01 from '@/algorithms/advanced/knapsack-01';
 import kruskalMst from '@/algorithms/advanced/kruskal-mst';
 import mergeIntervals from '@/algorithms/advanced/merge-intervals';
+import mergeKSortedLists from '@/algorithms/advanced/merge-k-sorted-lists';
+import dailyTemperatures from '@/algorithms/advanced/daily-temperatures';
+import countingBits from '@/algorithms/advanced/counting-bits';
 import longestCommonSubsequence from '@/algorithms/advanced/longest-common-subsequence';
 import wordBreak from '@/algorithms/advanced/word-break';
 import floydWarshall from '@/algorithms/advanced/floyd-warshall';
@@ -105,6 +108,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   knapsack01,
   kruskalMst,
   mergeIntervals,
+  mergeKSortedLists,
+  dailyTemperatures,
+  countingBits,
   longestCommonSubsequence,
   wordBreak,
   floydWarshall,
