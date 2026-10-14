@@ -37,11 +37,11 @@
 | Đợt 3 (PR #7–#10) | 40 bài (10/cấp) | ✅ merged |
 | PR #11 | Trang Nhận diện pattern (22 pattern) | ✅ merged |
 | PR #12 | Node.js Event Loop (7 kịch bản) | ✅ merged |
-| Đợt 4 (PR #13–#16) | 52 bài (13/cấp) | ⏳ PR mở, chưa merge |
-| Đợt 5 (PR #17–#20) | 64 bài (16/cấp) | ⏳ PR mở, chưa merge |
+| Đợt 4 (PR #13–#16) | 52 bài (13/cấp) | ✅ merged |
+| Đợt 5 (PR #17–#20) | 64 bài (16/cấp) | ✅ merged |
 | PR #21 | Mục Nhiều lời giải – pilot 10 bài, 36 lời giải | ⏳ PR mở, chưa merge |
 
-`main` hiện có **40 bài**; sau khi merge hết 9 PR sẽ có 64 bài + patterns + event loop + compare.
+`main` hiện có **64 bài** cùng trang pattern và Node.js Event Loop. PR #21 bổ sung mục Nhiều lời giải.
 
 | PR | Nhánh | Bài |
 |---|---|---|
@@ -62,15 +62,8 @@
 
 Sửa visualizer: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
 
-## Hướng dẫn merge 9 PR đang mở (chủ repo làm)
-Cả 9 nhánh đều tạo từ `main` (40 bài) nên các PR sau sẽ conflict với PR trước ở file dùng chung. Thứ tự: **#13 → #14 → #15 → #16 → #17 → #18 → #19 → #20 → #21**.
-- `src/content/registry.ts`, `src/content/patterns.ts`: giữ **cả hai phía** (thêm import + phần tử của cả hai; thứ tự trong mảng theo cấp).
-- `HANDOFF.md`, `README.md`, `CLAUDE.md`: lấy bản của **PR #21** (mới nhất, đã gộp đủ), bổ sung nếu thiếu.
-- PR #21 không đụng registry/patterns nên chỉ conflict ở 3 file docs.
-- Sau khi merge hết: `pnpm install && pnpm test && pnpm typecheck && pnpm lint && pnpm build` trên `main`. `patterns.test.ts` sẽ báo ngay nếu resolve conflict làm thiếu id; `registry.test.ts` (compare) không phụ thuộc đợt 4/5.
-
 ## Việc tiếp theo cho phiên sau (theo thứ tự ưu tiên)
-0. **Đọc CLAUDE.md, rồi file này.** Kiểm tra `git log origin/main` xem 9 PR đã merge chưa; nếu chưa, chỉ làm việc trên nhánh mới từ `origin/main` và chấp nhận conflict như trên, hoặc chờ chủ repo merge.
+0. **Đọc CLAUDE.md, rồi file này.** Kiểm tra PR #21 đã merge chưa; nếu chưa, tiếp tục compare đợt 2 ở nhánh riêng từ `origin/main` hoặc chờ chủ repo merge.
 1. **Dọn sau merge** (nhánh `chore/post-merge`): kiểm tra README nói 64 bài; `/compare` link chéo – id compare `merge-k-sorted` và `kth-largest` không trùng id thuật toán `merge-k-sorted-lists`, `kth-largest-heap` ⇒ cân nhắc đổi id compare cho khớp (sửa thư mục + `id` + registry; URL cũ sẽ đổi).
 2. **Compare đợt 2** (nhánh `feat/compare-batch-2`, 10 bài, mỗi bài 1 commit `Add compare: <Title>`): 3sum (brute / sort+two pointers ★ / hashset), longest-increasing-subsequence (brute / DP O(n²) / patience O(n log n) ★), coin-change (đệ quy / memo / bottom-up ★ / BFS), lru-cache (array / Map thứ tự chèn ★ / doubly linked list + map), course-schedule (DFS 3 màu / Kahn ★), word-ladder (DFS / BFS ★ / bidirectional BFS), min-stack (hai stack ★ / stack cặp / stack chênh lệch), product-except-self (chia / prefix+suffix / prefix+suffix O(1) ★), search-rotated-array (sort / tìm pivot + nhị phân / nhị phân một lượt ★), number-of-islands (DFS ★ / BFS / Union-Find). Mẫu: `src/compare/problems/two-sum/`. Mỗi lời giải impl ≤ 25 dòng, trace ≤ ~300 frame, note tiếng Việt "tại sao".
 3. **Đợt 6 thuật toán** (nếu còn budget): pattern còn ít bài – insert-interval (intervals), middle-of-list (fast-slow), course-schedule (topological-sort), accounts-merge (union-find), jump-game (greedy), minimum-window-substring (sliding-window). Quy trình như đợt 4/5: mỗi cấp một nhánh `feat/<level>-batch-6`, mỗi bài một commit, gắn pattern, test, Playwright, PR.
