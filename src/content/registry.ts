@@ -9,6 +9,9 @@ import validParentheses from '@/algorithms/basic/valid-parentheses';
 import twoSumHashmap from '@/algorithms/basic/two-sum-hashmap';
 import prefixSum from '@/algorithms/basic/prefix-sum';
 import queueTwoStacks from '@/algorithms/basic/queue-two-stacks';
+import validAnagram from '@/algorithms/basic/valid-anagram';
+import rotateArray from '@/algorithms/basic/rotate-array';
+import minStack from '@/algorithms/basic/min-stack';
 import twoSumSorted from '@/algorithms/intermediate/two-sum-sorted';
 import slidingWindow from '@/algorithms/intermediate/longest-substring-no-repeat';
 import mergeSort from '@/algorithms/intermediate/merge-sort';
@@ -19,6 +22,9 @@ import lruCache from '@/algorithms/intermediate/lru-cache';
 import binaryTreeTraversal from '@/algorithms/intermediate/binary-tree-traversal';
 import bstOperations from '@/algorithms/intermediate/bst-operations';
 import numberOfIslands from '@/algorithms/intermediate/number-of-islands';
+import mergeTwoSortedLists from '@/algorithms/intermediate/merge-two-sorted-lists';
+import lowestCommonAncestor from '@/algorithms/intermediate/lowest-common-ancestor';
+import groupAnagrams from '@/algorithms/intermediate/group-anagrams';
 import bfsGrid from '@/algorithms/advanced/bfs-grid-shortest-path';
 import dijkstra from '@/algorithms/advanced/dijkstra';
 import kthLargest from '@/algorithms/advanced/kth-largest-heap';
@@ -29,6 +35,9 @@ import coinChange from '@/algorithms/advanced/coin-change';
 import knapsack01 from '@/algorithms/advanced/knapsack-01';
 import kruskalMst from '@/algorithms/advanced/kruskal-mst';
 import mergeIntervals from '@/algorithms/advanced/merge-intervals';
+import longestCommonSubsequence from '@/algorithms/advanced/longest-common-subsequence';
+import wordBreak from '@/algorithms/advanced/word-break';
+import floydWarshall from '@/algorithms/advanced/floyd-warshall';
 import editDistance from '@/algorithms/expert/edit-distance';
 import trie from '@/algorithms/expert/trie';
 import monotonicStack from '@/algorithms/expert/largest-rectangle-histogram';
@@ -56,6 +65,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   twoSumHashmap,
   prefixSum,
   queueTwoStacks,
+  validAnagram,
+  rotateArray,
+  minStack,
   // Middle
   twoSumSorted,
   slidingWindow,
@@ -67,6 +79,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   binaryTreeTraversal,
   bstOperations,
   numberOfIslands,
+  mergeTwoSortedLists,
+  lowestCommonAncestor,
+  groupAnagrams,
   // Nâng cao
   bfsGrid,
   dijkstra,
@@ -78,6 +93,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   knapsack01,
   kruskalMst,
   mergeIntervals,
+  longestCommonSubsequence,
+  wordBreak,
+  floydWarshall,
   // Siêu cấp
   editDistance,
   trie,
