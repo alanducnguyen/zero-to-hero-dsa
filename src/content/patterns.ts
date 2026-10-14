@@ -62,7 +62,7 @@ while (l < r) {
       { domain: 'Đối soát tài chính', example: 'Tìm hai giao dịch có tổng bằng số tiền cần khớp trên danh sách đã sắp xếp theo số tiền.' },
       { domain: 'Xử lý chuỗi', example: 'Chuẩn hoá và kiểm tra palindrome, xoá khoảng trắng thừa tại chỗ trong editor.' },
     ],
-    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'reverse-linked-list', 'linked-list-cycle'],
+    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle'],
     leetcode: [
       { id: 167, title: 'Two Sum II', slug: 'two-sum-ii-input-array-is-sorted' },
       { id: 15, title: '3Sum', slug: '3sum' },
@@ -235,7 +235,7 @@ for (let i = 0; i < n; i++) {
       { domain: 'Xử lý ảnh / OCR', example: 'Hình chữ nhật trắng lớn nhất trong ảnh nhị phân (Maximal Rectangle) để tách vùng văn bản.' },
       { domain: 'Compiler', example: 'Stack toán tử theo độ ưu tiên khi parse biểu thức (Shunting-yard).' },
     ],
-    algorithms: ['largest-rectangle-histogram', 'daily-temperatures', 'valid-parentheses'],
+    algorithms: ['largest-rectangle-histogram', 'daily-temperatures', 'trapping-rain-water', 'valid-parentheses'],
     leetcode: [
       { id: 739, title: 'Daily Temperatures', slug: 'daily-temperatures' },
       { id: 84, title: 'Largest Rectangle in Histogram', slug: 'largest-rectangle-in-histogram' },
@@ -321,7 +321,7 @@ return lo;                          // giá trị nhỏ nhất thoả ok`,
       { domain: 'Capacity planning', example: '"Số máy ít nhất để xử lý hết job trong T giờ" – binary search trên số máy với mô phỏng.' },
       { domain: 'Hệ thống phân tán', example: 'Consistent hashing tìm node kế tiếp trên vòng băm.' },
     ],
-    algorithms: ['binary-search', 'linear-search', 'lis-patience', 'bst-operations'],
+    algorithms: ['binary-search', 'median-two-sorted-arrays', 'linear-search', 'lis-patience', 'bst-operations'],
     leetcode: [
       { id: 704, title: 'Binary Search', slug: 'binary-search' },
       { id: 33, title: 'Search in Rotated Sorted Array', slug: 'search-in-rotated-sorted-array' },
@@ -631,7 +631,7 @@ while (heap.size) {
       { domain: 'Game', example: 'Pathfinding NPC trên navmesh với chi phí địa hình.' },
       { domain: 'Chip design', example: 'Định tuyến dây với chi phí khác nhau theo vùng.' },
     ],
-    algorithms: ['dijkstra', 'floyd-warshall', 'bfs-grid-shortest-path', 'kth-largest-heap'],
+    algorithms: ['dijkstra', 'bellman-ford', 'floyd-warshall', 'bfs-grid-shortest-path', 'kth-largest-heap'],
     leetcode: [
       { id: 743, title: 'Network Delay Time', slug: 'network-delay-time' },
       { id: 1631, title: 'Path With Minimum Effort', slug: 'path-with-minimum-effort' },
@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'dijkstra', 'merge-sort'],
+    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },
@@ -890,7 +890,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Thống kê / xếp hạng', example: 'Kendall tau từ số nghịch thế; median với quickselect.' },
       { domain: 'Song song', example: 'Merge sort đa luồng / GPU vì hai nửa độc lập.' },
     ],
-    algorithms: ['merge-sort', 'merge-two-sorted-lists', 'merge-k-sorted-lists', 'quick-sort', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
+    algorithms: ['merge-sort', 'merge-two-sorted-lists', 'merge-k-sorted-lists', 'quick-sort', 'quickselect', 'counting-sort', 'insertion-sort', 'bubble-sort', 'selection-sort'],
     leetcode: [
       { id: 912, title: 'Sort an Array', slug: 'sort-an-array' },
       { id: 315, title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self' },

@@ -57,6 +57,9 @@ import slidingWindowMaximum from '@/algorithms/expert/sliding-window-maximum';
 import lisPatience from '@/algorithms/expert/lis-patience';
 import kmp from '@/algorithms/expert/kmp';
 import segmentTree from '@/algorithms/expert/segment-tree';
+import trappingRainWater from '@/algorithms/expert/trapping-rain-water';
+import medianTwoSortedArrays from '@/algorithms/expert/median-two-sorted-arrays';
+import quickselect from '@/algorithms/expert/quickselect';
 import fenwickTree from '@/algorithms/expert/fenwick-tree';
 import bellmanFord from '@/algorithms/expert/bellman-ford';
 import rabinKarp from '@/algorithms/expert/rabin-karp';
@@ -125,6 +128,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   lisPatience,
   kmp,
   segmentTree,
+  trappingRainWater,
+  medianTwoSortedArrays,
+  quickselect,
   fenwickTree,
   bellmanFord,
   rabinKarp,

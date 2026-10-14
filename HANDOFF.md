@@ -33,27 +33,32 @@
 - Đợt 2: 24 bài (6/cấp) – đã merge (PR #3–#6).
 - Đợt 3: 40 bài (10/cấp) – đã merge (PR #7–#10).
 - Trang Nhận diện pattern (PR #11), Node.js Event Loop (PR #12) – đã merge.
-- Đợt 4: 52 bài (13/cấp) – 4 PR (#13–#16), mỗi cấp một nhánh, mỗi bài một commit.
+- Đợt 4: 52 bài (13/cấp) – 4 PR (#13–#16), đã merge.
+- Đợt 5: 64 bài (16/cấp) – 4 PR (#17–#20). Các nhánh đợt 4 + 5 đều tạo từ `main` (40 bài); khi merge cần giữ các bổ sung ở cả `registry.ts`/`patterns.ts`.
 
-| Nhánh đợt 4 | Bài | Trạng thái |
+| Nhánh | Bài | PR |
 |---|---|---|
-| `feat/basic-batch-4` | valid-anagram, rotate-array, min-stack | ✅ PR #13 |
-| `feat/intermediate-batch-4` | merge-two-sorted-lists, lowest-common-ancestor, group-anagrams | ✅ PR #14 |
-| `feat/advanced-batch-4` | longest-common-subsequence, word-break, floyd-warshall | ✅ PR #15 |
-| `feat/expert-batch-4` | fenwick-tree, bellman-ford, rabin-karp (+ HANDOFF/README) | ✅ PR #16 |
+| `feat/basic-batch-4` | valid-anagram, rotate-array, min-stack | #13 |
+| `feat/intermediate-batch-4` | merge-two-sorted-lists, lowest-common-ancestor, group-anagrams | #14 |
+| `feat/advanced-batch-4` | longest-common-subsequence, word-break, floyd-warshall | #15 |
+| `feat/expert-batch-4` | fenwick-tree, bellman-ford, rabin-karp | #16 |
+| `feat/basic-batch-5` | climbing-stairs, majority-element, merge-sorted-arrays | #17 |
+| `feat/intermediate-batch-5` | subsets, top-k-frequent, bipartite-check | #18 |
+| `feat/advanced-batch-5` | merge-k-sorted-lists, daily-temperatures, counting-bits | #19 |
+| `feat/expert-batch-5` | trapping-rain-water, median-two-sorted-arrays, quickselect (+ HANDOFF/README) | #20 |
 
 - Mục **Node.js Event Loop** (`/event-loop`): `src/eventloop/` gồm `scenario.ts` (DSL + sinh code JS có số dòng), `simulate.ts` (mô phỏng libuv: nextTick → microtask → timers → pending → poll (ngủ/tua giờ ảo) → check → close), `presets.ts` (7 kịch bản), `content.md`, `interview.md`, `simulate.test.ts` (**chạy code sinh ra bằng Node thật** và so output). Visual kind mới `eventloop` (`src/visualizers/EventLoopViz.tsx`, dùng container query). Trang `src/pages/EventLoopPage.tsx` tái dùng DebuggerPanel qua AlgorithmModule giả (`inputs: []`). Thêm kịch bản = thêm vào `PRESETS` + test kỳ vọng output.
 - Trang **Nhận diện pattern** (`/patterns`, `/patterns/:id`): dữ liệu ở `src/content/patterns.ts` (22 pattern: signals, avoid, steps, template, realWorld, algorithms, leetcode) + `DECISION_TREE`; trang `src/pages/PatternsPage.tsx`; chip pattern trên trang thuật toán; test `patterns.test.ts` bắt buộc mọi thuật toán thuộc ≥ 1 pattern (thêm bài mới ⇒ thêm id vào pattern).
 
 Sửa visualizer trong đợt 3: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
 
-Kỹ thuật chia commit theo bài khi nhiều bài cùng sửa `registry.ts`/`patterns.ts`: tạm ghi hai file về trạng thái "chỉ có các bài đã commit", `git add` thư mục bài + hai file, commit, rồi khôi phục bản đầy đủ cho bài kế tiếp.
+Kỹ thuật chia commit theo bài khi nhiều bài cùng sửa `registry.ts`/`patterns.ts`: tạm ghi hai file về trạng thái "chỉ có các bài đã commit", `git add` thư mục bài + hai file, commit, rồi khôi phục bản đầy đủ cho bài kế tiếp (script python nhỏ, chạy sau khi đã viết xong cả 3 bài).
 
 ## Việc tiếp theo (theo thứ tự)
-1. Merge PR #13 → #14 → #15 → #16 (độc lập, cùng tạo từ `main`); conflict ở `registry.ts`/`patterns.ts` thì giữ cả hai phía.
-2. Ý tưởng đợt sau (chưa làm): thêm bài theo pattern còn ít bài (backtracking: permutations/subsets; heap: merge k lists; graph: bipartite check; bits: counting bits), hoặc 2 bài/cấp.
-3. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL,
-   trang tổng hợp "cheat sheet" độ phức tạp, mục "lộ trình 4 tuần".
+1. Merge PR #17 → #20; conflict `registry.ts`/`patterns.ts` thì giữ cả hai phía.
+2. Sau khi merge xong, chạy `pnpm test` trên `main` (test patterns sẽ bắt lỗi nếu thiếu id khi resolve conflict).
+3. Ý tưởng đợt sau: pattern còn ít bài (intervals: insert-interval; fast-slow: middle-of-list; topological-sort: course-schedule; union-find: accounts-merge; greedy: jump-game; sliding-window: minimum-window-substring), hoặc trang "lộ trình 4 tuần".
+4. Ý tưởng cải tiến UI: nút "so sánh thuật toán" (chạy 2 thuật toán cùng input), lưu input tuỳ chỉnh vào URL, trang "cheat sheet" độ phức tạp.
 
 ## Quy ước git (chủ repo yêu cầu – chi tiết trong CLAUDE.md)
 - Nhánh: `feat/...`, `fix/...`, `docs/...`, `chore/...`; KHÔNG dùng `claude/...`.
