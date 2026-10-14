@@ -48,6 +48,9 @@ import slidingWindowMaximum from '@/algorithms/expert/sliding-window-maximum';
 import lisPatience from '@/algorithms/expert/lis-patience';
 import kmp from '@/algorithms/expert/kmp';
 import segmentTree from '@/algorithms/expert/segment-tree';
+import fenwickTree from '@/algorithms/expert/fenwick-tree';
+import bellmanFord from '@/algorithms/expert/bellman-ford';
+import rabinKarp from '@/algorithms/expert/rabin-karp';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -104,6 +107,9 @@ export const ALGORITHMS: AlgorithmModule[] = [
   lisPatience,
   kmp,
   segmentTree,
+  fenwickTree,
+  bellmanFord,
+  rabinKarp,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
