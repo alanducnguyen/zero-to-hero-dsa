@@ -99,6 +99,7 @@ import productExceptSelf from '@/algorithms/basic/product-except-self';
 import onlineStockSpan from '@/algorithms/basic/online-stock-span';
 import longestRepeatingCharacterReplacement from '@/algorithms/intermediate/longest-repeating-character-replacement';
 import houseRobberII from '@/algorithms/intermediate/house-robber-ii';
+import pacificAtlanticWaterFlow from '@/algorithms/advanced/pacific-atlantic-water-flow';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -181,6 +182,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   taskScheduler,
   gasStation,
   uniquePaths,
+  pacificAtlanticWaterFlow,
   // Siêu cấp
   editDistance,
   trie,

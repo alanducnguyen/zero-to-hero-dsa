@@ -451,7 +451,7 @@ while (head < q.length) {
       { domain: 'Garbage collector', example: 'Mark phase: đánh dấu object sống từ root set.' },
       { domain: 'Game / robot', example: 'Tìm đường ngắn nhất trên bản đồ ô vuông; lan toả vùng ảnh hưởng.' },
     ],
-    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort', 'rotting-oranges', 'word-ladder', 'max-depth-binary-tree', 'clone-graph'],
+    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort', 'rotting-oranges', 'word-ladder', 'max-depth-binary-tree', 'clone-graph', 'pacific-atlantic-water-flow'],
     leetcode: [
       { id: 1091, title: 'Shortest Path in Binary Matrix', slug: 'shortest-path-in-binary-matrix' },
       { id: 994, title: 'Rotting Oranges', slug: 'rotting-oranges' },
@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations', 'course-schedule', 'permutations', 'kth-smallest-bst', 'combination-sum', 'max-depth-binary-tree', 'word-search', 'serialize-binary-tree'],
+    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations', 'course-schedule', 'permutations', 'kth-smallest-bst', 'combination-sum', 'max-depth-binary-tree', 'word-search', 'serialize-binary-tree', 'pacific-atlantic-water-flow'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
