@@ -64,6 +64,7 @@ import fenwickTree from '@/algorithms/expert/fenwick-tree';
 import bellmanFord from '@/algorithms/expert/bellman-ford';
 import rabinKarp from '@/algorithms/expert/rabin-karp';
 import middleOfLinkedList from '@/algorithms/basic/middle-of-linked-list';
+import jumpGame from '@/algorithms/basic/jump-game';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -85,6 +86,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   rotateArray,
   minStack,
   middleOfLinkedList,
+  jumpGame,
   // Middle
   twoSumSorted,
   slidingWindow,

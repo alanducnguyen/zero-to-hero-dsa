@@ -764,7 +764,7 @@ for (const [s, e] of intervals) {
       { domain: 'Mạng / hạ tầng', example: 'Kruskal/Prim thiết kế mạng, Dijkstra định tuyến.' },
       { domain: 'Vận hành', example: 'Đổ xăng ít lần nhất, xếp thuyền (ghép nặng–nhẹ), cache LRU là heuristic greedy.' },
     ],
-    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane'],
+    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane', 'jump-game'],
     leetcode: [
       { id: 435, title: 'Non-overlapping Intervals', slug: 'non-overlapping-intervals' },
       { id: 55, title: 'Jump Game', slug: 'jump-game' },
