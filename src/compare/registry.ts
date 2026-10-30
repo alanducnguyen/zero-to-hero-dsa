@@ -29,6 +29,7 @@ import validParentheses from './problems/valid-parentheses';
 import jumpGame from './problems/jump-game';
 import containerWithMostWater from './problems/container-with-most-water';
 import slidingWindowMaximum from './problems/sliding-window-maximum';
+import wordBreak from './problems/word-break';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -60,6 +61,7 @@ export const PROBLEMS: CompareProblem[] = [
   jumpGame,
   containerWithMostWater,
   slidingWindowMaximum,
+  wordBreak,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
