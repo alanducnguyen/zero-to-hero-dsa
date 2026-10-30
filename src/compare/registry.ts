@@ -24,6 +24,7 @@ import mergeIntervals from './problems/merge-intervals';
 import topKFrequent from './problems/top-k-frequent';
 import lruCache from './problems/lru-cache';
 import minStack from './problems/min-stack';
+import kthSmallestBst from './problems/kth-smallest-bst';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -50,6 +51,7 @@ export const PROBLEMS: CompareProblem[] = [
   topKFrequent,
   lruCache,
   minStack,
+  kthSmallestBst,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
