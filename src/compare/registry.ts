@@ -25,6 +25,7 @@ import topKFrequent from './problems/top-k-frequent';
 import lruCache from './problems/lru-cache';
 import minStack from './problems/min-stack';
 import kthSmallestBst from './problems/kth-smallest-bst';
+import validParentheses from './problems/valid-parentheses';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -52,6 +53,7 @@ export const PROBLEMS: CompareProblem[] = [
   lruCache,
   minStack,
   kthSmallestBst,
+  validParentheses,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
