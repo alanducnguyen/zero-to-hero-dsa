@@ -588,7 +588,7 @@ const union = (a: number, b: number): boolean => {
       { domain: 'Compiler', example: 'Unification trong type inference (Hindley–Milner) gộp biến kiểu.' },
       { domain: 'Xử lý ảnh / vật lý', example: 'Connected component labeling, percolation, đếm nhóm quân trong cờ Go.' },
     ],
-    algorithms: ['union-find', 'kruskal-mst', 'number-of-islands'],
+    algorithms: ['union-find', 'kruskal-mst', 'number-of-islands', 'accounts-merge'],
     leetcode: [
       { id: 547, title: 'Number of Provinces', slug: 'number-of-provinces' },
       { id: 684, title: 'Redundant Connection', slug: 'redundant-connection' },
