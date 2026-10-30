@@ -408,7 +408,7 @@ for (const [s, e] of intervals.slice(1)) {
       { domain: 'Mạng', example: 'Gộp dải IP thành CIDR, gộp khoảng cổng trong firewall.' },
       { domain: 'Genomics', example: '`bedtools merge` gộp vùng gen chồng lấn.' },
     ],
-    algorithms: ['merge-intervals', 'kth-largest-heap', 'insert-interval'],
+    algorithms: ['merge-intervals', 'kth-largest-heap', 'insert-interval', 'meeting-rooms-ii'],
     leetcode: [
       { id: 56, title: 'Merge Intervals', slug: 'merge-intervals' },
       { id: 57, title: 'Insert Interval', slug: 'insert-interval' },
@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort'],
+    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort', 'meeting-rooms-ii'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },

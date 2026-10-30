@@ -76,6 +76,7 @@ import searchRotatedArray from '@/algorithms/basic/search-rotated-array';
 import kokoEatingBananas from '@/algorithms/intermediate/koko-eating-bananas';
 import permutations from '@/algorithms/intermediate/permutations';
 import rottingOranges from '@/algorithms/advanced/rotting-oranges';
+import meetingRoomsII from '@/algorithms/advanced/meeting-rooms-ii';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -141,6 +142,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   insertInterval,
   courseSchedule,
   rottingOranges,
+  meetingRoomsII,
   // Siêu cấp
   editDistance,
   trie,
