@@ -100,6 +100,7 @@ import onlineStockSpan from '@/algorithms/basic/online-stock-span';
 import longestRepeatingCharacterReplacement from '@/algorithms/intermediate/longest-repeating-character-replacement';
 import houseRobberII from '@/algorithms/intermediate/house-robber-ii';
 import pacificAtlanticWaterFlow from '@/algorithms/advanced/pacific-atlantic-water-flow';
+import networkDelayTime from '@/algorithms/advanced/network-delay-time';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -183,6 +184,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   gasStation,
   uniquePaths,
   pacificAtlanticWaterFlow,
+  networkDelayTime,
   // Siêu cấp
   editDistance,
   trie,

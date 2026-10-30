@@ -631,7 +631,7 @@ while (heap.size) {
       { domain: 'Game', example: 'Pathfinding NPC trên navmesh với chi phí địa hình.' },
       { domain: 'Chip design', example: 'Định tuyến dây với chi phí khác nhau theo vùng.' },
     ],
-    algorithms: ['dijkstra', 'bellman-ford', 'floyd-warshall', 'bfs-grid-shortest-path', 'kth-largest-heap', 'word-ladder'],
+    algorithms: ['dijkstra', 'bellman-ford', 'floyd-warshall', 'bfs-grid-shortest-path', 'kth-largest-heap', 'word-ladder', 'network-delay-time'],
     leetcode: [
       { id: 743, title: 'Network Delay Time', slug: 'network-delay-time' },
       { id: 1631, title: 'Path With Minimum Effort', slug: 'path-with-minimum-effort' },
@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort', 'meeting-rooms-ii'],
+    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort', 'meeting-rooms-ii', 'network-delay-time'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },
