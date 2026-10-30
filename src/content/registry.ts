@@ -95,6 +95,7 @@ import gasStation from '@/algorithms/advanced/gas-station';
 import uniquePaths from '@/algorithms/advanced/unique-paths';
 import wordSearch from '@/algorithms/expert/word-search';
 import serializeBinaryTree from '@/algorithms/expert/serialize-binary-tree';
+import productExceptSelf from '@/algorithms/basic/product-except-self';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -123,6 +124,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   bestTimeToBuySellStock,
   missingNumber,
   maxDepthBinaryTree,
+  productExceptSelf,
   // Middle
   twoSumSorted,
   slidingWindow,

@@ -151,7 +151,7 @@ for (const x of a) {
       { domain: 'Thị giác máy tính', example: 'Integral image (prefix 2D) cho Haar features trong nhận diện khuôn mặt Viola–Jones, box blur O(1)/pixel.' },
       { domain: 'Đặt chỗ / lịch', example: 'Số ghế đã đặt trên mỗi chặng bay: difference array cộng cho đoạn [from, to] rồi prefix một lần.' },
     ],
-    algorithms: ['prefix-sum', 'max-subarray-kadane', 'subarray-sum-equals-k'],
+    algorithms: ['prefix-sum', 'max-subarray-kadane', 'subarray-sum-equals-k', 'product-except-self'],
     leetcode: [
       { id: 560, title: 'Subarray Sum Equals K', slug: 'subarray-sum-equals-k' },
       { id: 303, title: 'Range Sum Query - Immutable', slug: 'range-sum-query-immutable' },
