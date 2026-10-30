@@ -91,6 +91,7 @@ import missingNumber from '@/algorithms/basic/missing-number';
 import maxDepthBinaryTree from '@/algorithms/basic/max-depth-binary-tree';
 import longestConsecutiveSequence from '@/algorithms/intermediate/longest-consecutive-sequence';
 import cloneGraph from '@/algorithms/intermediate/clone-graph';
+import gasStation from '@/algorithms/advanced/gas-station';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -167,6 +168,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   meetingRoomsII,
   decodeWays,
   taskScheduler,
+  gasStation,
   // Siêu cấp
   editDistance,
   trie,
