@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations'],
+    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations', 'course-schedule'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
@@ -543,7 +543,7 @@ if (order.length !== nodes.length) throw new Error('cycle');`,
       { domain: 'Bảng tính', example: 'Excel tính lại ô theo thứ tự topo của công thức; tham chiếu vòng báo lỗi.' },
       { domain: 'Workflow / ML', example: 'Airflow DAG, thứ tự tính toán trong computation graph (autograd).' },
     ],
-    algorithms: ['topological-sort', 'dijkstra'],
+    algorithms: ['topological-sort', 'dijkstra', 'course-schedule'],
     leetcode: [
       { id: 207, title: 'Course Schedule', slug: 'course-schedule' },
       { id: 210, title: 'Course Schedule II', slug: 'course-schedule-ii' },

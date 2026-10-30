@@ -68,6 +68,7 @@ import jumpGame from '@/algorithms/basic/jump-game';
 import subarraySumEqualsK from '@/algorithms/intermediate/subarray-sum-equals-k';
 import threeSum from '@/algorithms/intermediate/three-sum';
 import insertInterval from '@/algorithms/advanced/insert-interval';
+import courseSchedule from '@/algorithms/advanced/course-schedule';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -127,6 +128,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   wordBreak,
   floydWarshall,
   insertInterval,
+  courseSchedule,
   // Siêu cấp
   editDistance,
   trie,
