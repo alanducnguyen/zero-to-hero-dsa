@@ -88,6 +88,7 @@ import taskScheduler from '@/algorithms/advanced/task-scheduler';
 import findDuplicate from '@/algorithms/expert/find-duplicate';
 import longestPalindromicSubstring from '@/algorithms/expert/longest-palindromic-substring';
 import missingNumber from '@/algorithms/basic/missing-number';
+import maxDepthBinaryTree from '@/algorithms/basic/max-depth-binary-tree';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -115,6 +116,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   validPalindrome,
   bestTimeToBuySellStock,
   missingNumber,
+  maxDepthBinaryTree,
   // Middle
   twoSumSorted,
   slidingWindow,
