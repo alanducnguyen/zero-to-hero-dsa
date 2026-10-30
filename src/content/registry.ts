@@ -67,6 +67,7 @@ import middleOfLinkedList from '@/algorithms/basic/middle-of-linked-list';
 import jumpGame from '@/algorithms/basic/jump-game';
 import subarraySumEqualsK from '@/algorithms/intermediate/subarray-sum-equals-k';
 import threeSum from '@/algorithms/intermediate/three-sum';
+import insertInterval from '@/algorithms/advanced/insert-interval';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -125,6 +126,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   longestCommonSubsequence,
   wordBreak,
   floydWarshall,
+  insertInterval,
   // Siêu cấp
   editDistance,
   trie,

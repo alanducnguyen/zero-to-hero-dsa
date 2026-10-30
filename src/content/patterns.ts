@@ -408,7 +408,7 @@ for (const [s, e] of intervals.slice(1)) {
       { domain: 'Mạng', example: 'Gộp dải IP thành CIDR, gộp khoảng cổng trong firewall.' },
       { domain: 'Genomics', example: '`bedtools merge` gộp vùng gen chồng lấn.' },
     ],
-    algorithms: ['merge-intervals', 'kth-largest-heap'],
+    algorithms: ['merge-intervals', 'kth-largest-heap', 'insert-interval'],
     leetcode: [
       { id: 56, title: 'Merge Intervals', slug: 'merge-intervals' },
       { id: 57, title: 'Insert Interval', slug: 'insert-interval' },
