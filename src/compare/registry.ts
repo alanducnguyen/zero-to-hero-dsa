@@ -34,6 +34,7 @@ import subarraySumEqualsK from './problems/subarray-sum-equals-k';
 import decodeWays from './problems/decode-ways';
 import longestCommonSubsequence from './problems/longest-common-subsequence';
 import editDistance from './problems/edit-distance';
+import minimumWindowSubstring from './problems/minimum-window-substring';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -70,6 +71,7 @@ export const PROBLEMS: CompareProblem[] = [
   decodeWays,
   longestCommonSubsequence,
   editDistance,
+  minimumWindowSubstring,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
