@@ -93,6 +93,7 @@ import longestConsecutiveSequence from '@/algorithms/intermediate/longest-consec
 import cloneGraph from '@/algorithms/intermediate/clone-graph';
 import gasStation from '@/algorithms/advanced/gas-station';
 import uniquePaths from '@/algorithms/advanced/unique-paths';
+import wordSearch from '@/algorithms/expert/word-search';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -194,6 +195,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   partitionEqualSubsetSum,
   findDuplicate,
   longestPalindromicSubstring,
+  wordSearch,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
