@@ -13,6 +13,7 @@ import mergeKSorted from './problems/merge-k-sorted';
 import threeSum from './problems/three-sum';
 import searchRotatedArray from './problems/search-rotated-array';
 import coinChange from './problems/coin-change';
+import longestIncreasingSubsequence from './problems/longest-increasing-subsequence';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -28,6 +29,7 @@ export const PROBLEMS: CompareProblem[] = [
   threeSum,
   searchRotatedArray,
   coinChange,
+  longestIncreasingSubsequence,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
