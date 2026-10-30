@@ -39,6 +39,7 @@ import meetingRoomsII from './problems/meeting-rooms-ii';
 import partitionEqualSubsetSum from './problems/partition-equal-subset-sum';
 import kokoEatingBananas from './problems/koko-eating-bananas';
 import missingNumber from './problems/missing-number';
+import bestTimeToBuySellStock from './problems/best-time-to-buy-sell-stock';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -80,6 +81,7 @@ export const PROBLEMS: CompareProblem[] = [
   partitionEqualSubsetSum,
   kokoEatingBananas,
   missingNumber,
+  bestTimeToBuySellStock,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
