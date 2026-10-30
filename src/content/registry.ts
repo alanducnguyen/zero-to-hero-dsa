@@ -81,6 +81,7 @@ import wordLadder from '@/algorithms/expert/word-ladder';
 import partitionEqualSubsetSum from '@/algorithms/expert/partition-equal-subset-sum';
 import validPalindrome from '@/algorithms/basic/valid-palindrome';
 import bestTimeToBuySellStock from '@/algorithms/basic/best-time-to-buy-sell-stock';
+import kthSmallestBst from '@/algorithms/intermediate/kth-smallest-bst';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -128,6 +129,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   threeSum,
   kokoEatingBananas,
   permutations,
+  kthSmallestBst,
   // Nâng cao
   bfsGrid,
   dijkstra,
