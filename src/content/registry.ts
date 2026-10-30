@@ -89,6 +89,7 @@ import findDuplicate from '@/algorithms/expert/find-duplicate';
 import longestPalindromicSubstring from '@/algorithms/expert/longest-palindromic-substring';
 import missingNumber from '@/algorithms/basic/missing-number';
 import maxDepthBinaryTree from '@/algorithms/basic/max-depth-binary-tree';
+import longestConsecutiveSequence from '@/algorithms/intermediate/longest-consecutive-sequence';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -140,6 +141,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   permutations,
   kthSmallestBst,
   combinationSum,
+  longestConsecutiveSequence,
   // Nâng cao
   bfsGrid,
   dijkstra,
