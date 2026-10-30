@@ -848,7 +848,7 @@ for (let mask = 0; mask < (1 << n); mask++) {               // mọi tập con
       { domain: 'Database', example: 'Bitmap index, Roaring bitmap, Bloom filter.' },
       { domain: 'Mạng', example: 'Subnet mask `ip & mask`, hash `n & (size − 1)` thay cho modulo.' },
     ],
-    algorithms: ['single-number-bits', 'counting-bits', 'trie'],
+    algorithms: ['single-number-bits', 'counting-bits', 'trie', 'missing-number'],
     leetcode: [
       { id: 136, title: 'Single Number', slug: 'single-number' },
       { id: 191, title: 'Number of 1 Bits', slug: 'number-of-1-bits' },
