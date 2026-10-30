@@ -75,6 +75,7 @@ import containerWithMostWater from '@/algorithms/basic/container-with-most-water
 import searchRotatedArray from '@/algorithms/basic/search-rotated-array';
 import kokoEatingBananas from '@/algorithms/intermediate/koko-eating-bananas';
 import permutations from '@/algorithms/intermediate/permutations';
+import rottingOranges from '@/algorithms/advanced/rotting-oranges';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -139,6 +140,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   floydWarshall,
   insertInterval,
   courseSchedule,
+  rottingOranges,
   // Siêu cấp
   editDistance,
   trie,

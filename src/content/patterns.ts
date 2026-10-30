@@ -451,7 +451,7 @@ while (head < q.length) {
       { domain: 'Garbage collector', example: 'Mark phase: đánh dấu object sống từ root set.' },
       { domain: 'Game / robot', example: 'Tìm đường ngắn nhất trên bản đồ ô vuông; lan toả vùng ảnh hưởng.' },
     ],
-    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort'],
+    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort', 'rotting-oranges'],
     leetcode: [
       { id: 1091, title: 'Shortest Path in Binary Matrix', slug: 'shortest-path-in-binary-matrix' },
       { id: 994, title: 'Rotting Oranges', slug: 'rotting-oranges' },
