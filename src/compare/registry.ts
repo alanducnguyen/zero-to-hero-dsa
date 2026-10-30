@@ -17,6 +17,7 @@ import longestIncreasingSubsequence from './problems/longest-increasing-subseque
 import courseSchedule from './problems/course-schedule';
 import wordLadder from './problems/word-ladder';
 import numberOfIslands from './problems/number-of-islands';
+import productExceptSelf from './problems/product-except-self';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -36,6 +37,7 @@ export const PROBLEMS: CompareProblem[] = [
   courseSchedule,
   wordLadder,
   numberOfIslands,
+  productExceptSelf,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
