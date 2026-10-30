@@ -73,6 +73,7 @@ import minimumWindowSubstring from '@/algorithms/expert/minimum-window-substring
 import accountsMerge from '@/algorithms/expert/accounts-merge';
 import containerWithMostWater from '@/algorithms/basic/container-with-most-water';
 import searchRotatedArray from '@/algorithms/basic/search-rotated-array';
+import kokoEatingBananas from '@/algorithms/intermediate/koko-eating-bananas';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -116,6 +117,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   groupAnagrams,
   subarraySumEqualsK,
   threeSum,
+  kokoEatingBananas,
   // Nâng cao
   bfsGrid,
   dijkstra,
