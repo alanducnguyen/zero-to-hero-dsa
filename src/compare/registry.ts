@@ -30,6 +30,7 @@ import jumpGame from './problems/jump-game';
 import containerWithMostWater from './problems/container-with-most-water';
 import slidingWindowMaximum from './problems/sliding-window-maximum';
 import wordBreak from './problems/word-break';
+import subarraySumEqualsK from './problems/subarray-sum-equals-k';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -62,6 +63,7 @@ export const PROBLEMS: CompareProblem[] = [
   containerWithMostWater,
   slidingWindowMaximum,
   wordBreak,
+  subarraySumEqualsK,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
