@@ -18,6 +18,7 @@ import courseSchedule from './problems/course-schedule';
 import wordLadder from './problems/word-ladder';
 import numberOfIslands from './problems/number-of-islands';
 import productExceptSelf from './problems/product-except-self';
+import houseRobber from './problems/house-robber';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -38,6 +39,7 @@ export const PROBLEMS: CompareProblem[] = [
   wordLadder,
   numberOfIslands,
   productExceptSelf,
+  houseRobber,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
