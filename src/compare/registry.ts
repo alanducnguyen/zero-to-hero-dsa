@@ -10,6 +10,36 @@ import trappingRainWater from './problems/trapping-rain-water';
 import findDuplicate from './problems/find-duplicate';
 import longestPalindromicSubstring from './problems/longest-palindromic-substring';
 import mergeKSorted from './problems/merge-k-sorted';
+import threeSum from './problems/three-sum';
+import searchRotatedArray from './problems/search-rotated-array';
+import coinChange from './problems/coin-change';
+import longestIncreasingSubsequence from './problems/longest-increasing-subsequence';
+import courseSchedule from './problems/course-schedule';
+import wordLadder from './problems/word-ladder';
+import numberOfIslands from './problems/number-of-islands';
+import productExceptSelf from './problems/product-except-self';
+import houseRobber from './problems/house-robber';
+import climbingStairs from './problems/climbing-stairs';
+import mergeIntervals from './problems/merge-intervals';
+import topKFrequent from './problems/top-k-frequent';
+import lruCache from './problems/lru-cache';
+import minStack from './problems/min-stack';
+import kthSmallestBst from './problems/kth-smallest-bst';
+import validParentheses from './problems/valid-parentheses';
+import jumpGame from './problems/jump-game';
+import containerWithMostWater from './problems/container-with-most-water';
+import slidingWindowMaximum from './problems/sliding-window-maximum';
+import wordBreak from './problems/word-break';
+import subarraySumEqualsK from './problems/subarray-sum-equals-k';
+import decodeWays from './problems/decode-ways';
+import longestCommonSubsequence from './problems/longest-common-subsequence';
+import editDistance from './problems/edit-distance';
+import minimumWindowSubstring from './problems/minimum-window-substring';
+import meetingRoomsII from './problems/meeting-rooms-ii';
+import partitionEqualSubsetSum from './problems/partition-equal-subset-sum';
+import kokoEatingBananas from './problems/koko-eating-bananas';
+import missingNumber from './problems/missing-number';
+import bestTimeToBuySellStock from './problems/best-time-to-buy-sell-stock';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -22,6 +52,36 @@ export const PROBLEMS: CompareProblem[] = [
   findDuplicate,
   longestPalindromicSubstring,
   mergeKSorted,
+  threeSum,
+  searchRotatedArray,
+  coinChange,
+  longestIncreasingSubsequence,
+  courseSchedule,
+  wordLadder,
+  numberOfIslands,
+  productExceptSelf,
+  houseRobber,
+  climbingStairs,
+  mergeIntervals,
+  topKFrequent,
+  lruCache,
+  minStack,
+  kthSmallestBst,
+  validParentheses,
+  jumpGame,
+  containerWithMostWater,
+  slidingWindowMaximum,
+  wordBreak,
+  subarraySumEqualsK,
+  decodeWays,
+  longestCommonSubsequence,
+  editDistance,
+  minimumWindowSubstring,
+  meetingRoomsII,
+  partitionEqualSubsetSum,
+  kokoEatingBananas,
+  missingNumber,
+  bestTimeToBuySellStock,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));

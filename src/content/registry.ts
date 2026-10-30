@@ -63,6 +63,46 @@ import quickselect from '@/algorithms/expert/quickselect';
 import fenwickTree from '@/algorithms/expert/fenwick-tree';
 import bellmanFord from '@/algorithms/expert/bellman-ford';
 import rabinKarp from '@/algorithms/expert/rabin-karp';
+import middleOfLinkedList from '@/algorithms/basic/middle-of-linked-list';
+import jumpGame from '@/algorithms/basic/jump-game';
+import subarraySumEqualsK from '@/algorithms/intermediate/subarray-sum-equals-k';
+import threeSum from '@/algorithms/intermediate/three-sum';
+import insertInterval from '@/algorithms/advanced/insert-interval';
+import courseSchedule from '@/algorithms/advanced/course-schedule';
+import minimumWindowSubstring from '@/algorithms/expert/minimum-window-substring';
+import accountsMerge from '@/algorithms/expert/accounts-merge';
+import containerWithMostWater from '@/algorithms/basic/container-with-most-water';
+import searchRotatedArray from '@/algorithms/basic/search-rotated-array';
+import kokoEatingBananas from '@/algorithms/intermediate/koko-eating-bananas';
+import permutations from '@/algorithms/intermediate/permutations';
+import rottingOranges from '@/algorithms/advanced/rotting-oranges';
+import meetingRoomsII from '@/algorithms/advanced/meeting-rooms-ii';
+import wordLadder from '@/algorithms/expert/word-ladder';
+import partitionEqualSubsetSum from '@/algorithms/expert/partition-equal-subset-sum';
+import validPalindrome from '@/algorithms/basic/valid-palindrome';
+import bestTimeToBuySellStock from '@/algorithms/basic/best-time-to-buy-sell-stock';
+import kthSmallestBst from '@/algorithms/intermediate/kth-smallest-bst';
+import combinationSum from '@/algorithms/intermediate/combination-sum';
+import decodeWays from '@/algorithms/advanced/decode-ways';
+import taskScheduler from '@/algorithms/advanced/task-scheduler';
+import findDuplicate from '@/algorithms/expert/find-duplicate';
+import longestPalindromicSubstring from '@/algorithms/expert/longest-palindromic-substring';
+import missingNumber from '@/algorithms/basic/missing-number';
+import maxDepthBinaryTree from '@/algorithms/basic/max-depth-binary-tree';
+import longestConsecutiveSequence from '@/algorithms/intermediate/longest-consecutive-sequence';
+import cloneGraph from '@/algorithms/intermediate/clone-graph';
+import gasStation from '@/algorithms/advanced/gas-station';
+import uniquePaths from '@/algorithms/advanced/unique-paths';
+import wordSearch from '@/algorithms/expert/word-search';
+import serializeBinaryTree from '@/algorithms/expert/serialize-binary-tree';
+import productExceptSelf from '@/algorithms/basic/product-except-self';
+import onlineStockSpan from '@/algorithms/basic/online-stock-span';
+import longestRepeatingCharacterReplacement from '@/algorithms/intermediate/longest-repeating-character-replacement';
+import houseRobberII from '@/algorithms/intermediate/house-robber-ii';
+import pacificAtlanticWaterFlow from '@/algorithms/advanced/pacific-atlantic-water-flow';
+import networkDelayTime from '@/algorithms/advanced/network-delay-time';
+import slidingWindowMedian from '@/algorithms/expert/sliding-window-median';
+import lfuCache from '@/algorithms/expert/lfu-cache';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -83,6 +123,16 @@ export const ALGORITHMS: AlgorithmModule[] = [
   validAnagram,
   rotateArray,
   minStack,
+  middleOfLinkedList,
+  jumpGame,
+  containerWithMostWater,
+  searchRotatedArray,
+  validPalindrome,
+  bestTimeToBuySellStock,
+  missingNumber,
+  maxDepthBinaryTree,
+  productExceptSelf,
+  onlineStockSpan,
   // Middle
   twoSumSorted,
   slidingWindow,
@@ -100,6 +150,16 @@ export const ALGORITHMS: AlgorithmModule[] = [
   mergeTwoSortedLists,
   lowestCommonAncestor,
   groupAnagrams,
+  subarraySumEqualsK,
+  threeSum,
+  kokoEatingBananas,
+  permutations,
+  kthSmallestBst,
+  combinationSum,
+  longestConsecutiveSequence,
+  cloneGraph,
+  longestRepeatingCharacterReplacement,
+  houseRobberII,
   // Nâng cao
   bfsGrid,
   dijkstra,
@@ -117,6 +177,16 @@ export const ALGORITHMS: AlgorithmModule[] = [
   longestCommonSubsequence,
   wordBreak,
   floydWarshall,
+  insertInterval,
+  courseSchedule,
+  rottingOranges,
+  meetingRoomsII,
+  decodeWays,
+  taskScheduler,
+  gasStation,
+  uniquePaths,
+  pacificAtlanticWaterFlow,
+  networkDelayTime,
   // Siêu cấp
   editDistance,
   trie,
@@ -134,6 +204,16 @@ export const ALGORITHMS: AlgorithmModule[] = [
   fenwickTree,
   bellmanFord,
   rabinKarp,
+  minimumWindowSubstring,
+  accountsMerge,
+  wordLadder,
+  partitionEqualSubsetSum,
+  findDuplicate,
+  longestPalindromicSubstring,
+  wordSearch,
+  serializeBinaryTree,
+  slidingWindowMedian,
+  lfuCache,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));

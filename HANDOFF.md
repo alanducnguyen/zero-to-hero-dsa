@@ -39,9 +39,10 @@
 | PR #12 | Node.js Event Loop (7 kịch bản) | ✅ merged |
 | Đợt 4 (PR #13–#16) | 52 bài (13/cấp) | ✅ merged |
 | Đợt 5 (PR #17–#20) | 64 bài (16/cấp) | ✅ merged |
-| PR #21 | Mục Nhiều lời giải – pilot 10 bài, 36 lời giải | ⏳ PR mở, chưa merge |
+| PR #21 | Mục Nhiều lời giải – pilot 10 bài, 36 lời giải | ✅ merged |
+| Đợt 6 (`feat/batch-6-patterns`) | 104 bài (26/cấp) + compare 40 bài – lấp pattern còn ít bài (5 đợt × 8 bài) + compare đợt 2–3 | ⏳ PR #22 | ⏳ PR |
 
-`main` hiện có **64 bài** cùng trang pattern và Node.js Event Loop. PR #21 bổ sung mục Nhiều lời giải.
+`main` có **64 bài**, trang pattern, Node.js Event Loop và mục Nhiều lời giải. Nhánh `feat/batch-6-patterns` nâng lên **104 bài** và **40 bài Nhiều lời giải** (PR #22).
 
 | PR | Nhánh | Bài |
 |---|---|---|
@@ -53,6 +54,7 @@
 | #18 | `feat/intermediate-batch-5` | subsets, top-k-frequent, bipartite-check |
 | #19 | `feat/advanced-batch-5` | merge-k-sorted-lists, daily-temperatures, counting-bits |
 | #20 | `feat/expert-batch-5` | trapping-rain-water, median-two-sorted-arrays, quickselect |
+| — | `feat/batch-6-patterns` | middle-of-linked-list (fast-slow), jump-game (greedy), subarray-sum-equals-k (prefix-sum), three-sum (two-pointers), insert-interval (intervals), course-schedule (DFS 3 màu, topo), minimum-window-substring (sliding-window), accounts-merge (union-find); đợt 7 cùng nhánh: container-with-most-water, search-rotated-array, koko-eating-bananas, permutations, rotting-oranges, meeting-rooms-ii, word-ladder, partition-equal-subset-sum; đợt 8: valid-palindrome, best-time-to-buy-sell-stock, kth-smallest-bst, combination-sum, decode-ways, task-scheduler, find-duplicate, longest-palindromic-substring (2 bài cuối trùng id compare ⇒ tự link); đợt 9: missing-number, max-depth-binary-tree, longest-consecutive-sequence, clone-graph, gas-station, unique-paths, word-search, serialize-binary-tree; compare đợt 2: three-sum, search-rotated-array, coin-change, longest-increasing-subsequence, course-schedule, word-ladder, number-of-islands, product-except-self; đợt 10: product-except-self, online-stock-span, longest-repeating-character-replacement, house-robber-ii, pacific-atlantic-water-flow, network-delay-time, sliding-window-median, lfu-cache; compare đợt 3: house-robber, climbing-stairs, merge-intervals, top-k-frequent, lru-cache, min-stack, kth-smallest-bst, valid-parentheses; compare đợt 4: jump-game, container-with-most-water, sliding-window-maximum, word-break, subarray-sum-equals-k, decode-ways, longest-common-subsequence, edit-distance, minimum-window-substring, meeting-rooms-ii, partition-equal-subset-sum, koko-eating-bananas, missing-number, best-time-to-buy-sell-stock |
 | #21 | `feat/compare-solutions` | compare: two-sum, kth-largest, valid-anagram, majority-element, max-subarray, fibonacci, trapping-rain-water, find-duplicate, longest-palindromic-substring, merge-k-sorted |
 
 ### Các mục ngoài DSA
@@ -63,10 +65,10 @@
 Sửa visualizer: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cột nhãn hàng theo nhãn dài nhất (PR #9).
 
 ## Việc tiếp theo cho phiên sau (theo thứ tự ưu tiên)
-0. **Đọc CLAUDE.md, rồi file này.** Kiểm tra PR #21 đã merge chưa; nếu chưa, tiếp tục compare đợt 2 ở nhánh riêng từ `origin/main` hoặc chờ chủ repo merge.
-1. **Dọn sau merge** (nhánh `chore/post-merge`): kiểm tra README nói 64 bài; `/compare` link chéo – id compare `merge-k-sorted` và `kth-largest` không trùng id thuật toán `merge-k-sorted-lists`, `kth-largest-heap` ⇒ cân nhắc đổi id compare cho khớp (sửa thư mục + `id` + registry; URL cũ sẽ đổi).
-2. **Compare đợt 2** (nhánh `feat/compare-batch-2`, 10 bài, mỗi bài 1 commit `Add compare: <Title>`): 3sum (brute / sort+two pointers ★ / hashset), longest-increasing-subsequence (brute / DP O(n²) / patience O(n log n) ★), coin-change (đệ quy / memo / bottom-up ★ / BFS), lru-cache (array / Map thứ tự chèn ★ / doubly linked list + map), course-schedule (DFS 3 màu / Kahn ★), word-ladder (DFS / BFS ★ / bidirectional BFS), min-stack (hai stack ★ / stack cặp / stack chênh lệch), product-except-self (chia / prefix+suffix / prefix+suffix O(1) ★), search-rotated-array (sort / tìm pivot + nhị phân / nhị phân một lượt ★), number-of-islands (DFS ★ / BFS / Union-Find). Mẫu: `src/compare/problems/two-sum/`. Mỗi lời giải impl ≤ 25 dòng, trace ≤ ~300 frame, note tiếng Việt "tại sao".
-3. **Đợt 6 thuật toán** (nếu còn budget): pattern còn ít bài – insert-interval (intervals), middle-of-list (fast-slow), course-schedule (topological-sort), accounts-merge (union-find), jump-game (greedy), minimum-window-substring (sliding-window). Quy trình như đợt 4/5: mỗi cấp một nhánh `feat/<level>-batch-6`, mỗi bài một commit, gắn pattern, test, Playwright, PR.
+0. **Đọc CLAUDE.md, rồi file này.** Kiểm tra PR đợt 6 (`feat/batch-6-patterns`) đã merge chưa. Chủ repo muốn bám danh sách https://thita.ai/dsa-patterns-sheet để chọn bài tiếp – cần cho phép domain `thita.ai` trong network settings của môi trường cloud mới fetch được.
+1. **Dọn sau merge** (nhánh `chore/post-merge`):  `/compare` link chéo – id compare `merge-k-sorted` và `kth-largest` không trùng id thuật toán `merge-k-sorted-lists`, `kth-largest-heap` ⇒ cân nhắc đổi id compare cho khớp (sửa thư mục + `id` + registry; URL cũ sẽ đổi).
+2. **Compare đợt 5** (mỗi bài 1 commit `Add compare: <Title>`, id trùng id thuật toán để tự link): permutations, rotting-oranges, gas-station, task-scheduler, longest-palindromic-substring (đã có) → thêm Manacher, unique-paths (DP / tổ hợp), valid-palindrome, middle-of-linked-list. Lưu ý `-0` vs `0` (dùng `norm`), rank phải phân biệt 1..n, file test tạm đặt tên riêng.
+3. **Đợt 11 thuật toán** (đợt 6–10 đã xong): đối chiếu thita.ai DSA patterns sheet; ứng viên – cyclic sort / first-missing-positive (cân nhắc thêm pattern mới), reorder-list, binary-tree-max-path-sum, alien-dictionary, cheapest-flights-k-stops, burst-balloons, regex-matching, implement-trie-ii, design-twitter. Quy trình đợt 6: chạy song song mỗi cấp một subagent viết thư mục bài (không đụng registry/patterns), rồi script ghép + mỗi bài một commit.
 4. **Ý tưởng UI**: cheat sheet độ phức tạp (bảng tổng hợp từ `meta.complexity`), lộ trình 4 tuần, lưu input tuỳ chỉnh vào URL, nút "so sánh 2 thuật toán cùng input".
 
 ## Quy trình & mẹo đã dùng (tái dùng cho phiên sau)
