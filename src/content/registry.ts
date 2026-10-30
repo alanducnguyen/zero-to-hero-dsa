@@ -83,6 +83,7 @@ import validPalindrome from '@/algorithms/basic/valid-palindrome';
 import bestTimeToBuySellStock from '@/algorithms/basic/best-time-to-buy-sell-stock';
 import kthSmallestBst from '@/algorithms/intermediate/kth-smallest-bst';
 import combinationSum from '@/algorithms/intermediate/combination-sum';
+import decodeWays from '@/algorithms/advanced/decode-ways';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -153,6 +154,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   courseSchedule,
   rottingOranges,
   meetingRoomsII,
+  decodeWays,
   // Siêu cấp
   editDistance,
   trie,
