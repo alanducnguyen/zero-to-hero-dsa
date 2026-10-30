@@ -22,7 +22,7 @@ export const meta: AlgorithmMeta = {
   ],
   presets: [
     { label: 'Đích không có trong list', values: { beginWord: 'hit', endWord: 'cog', wordList: ['hot', 'dot', 'dog', 'lot', 'log'] } },
-    { label: 'Không liên thông', values: { beginWord: 'cat', endWord: 'dog', wordList: ['cot', 'cog', 'dig', 'dog'] } },
+    { label: 'Không liên thông', values: { beginWord: 'hit', endWord: 'cog', wordList: ['hot', 'dot', 'cog'] } },
     { label: 'Nhiều đường cùng độ dài', values: { beginWord: 'cold', endWord: 'warm', wordList: ['cord', 'card', 'ward', 'warm', 'wold', 'word', 'worm', 'corm'] } },
   ],
 };
