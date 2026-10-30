@@ -92,6 +92,7 @@ import maxDepthBinaryTree from '@/algorithms/basic/max-depth-binary-tree';
 import longestConsecutiveSequence from '@/algorithms/intermediate/longest-consecutive-sequence';
 import cloneGraph from '@/algorithms/intermediate/clone-graph';
 import gasStation from '@/algorithms/advanced/gas-station';
+import uniquePaths from '@/algorithms/advanced/unique-paths';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -169,6 +170,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   decodeWays,
   taskScheduler,
   gasStation,
+  uniquePaths,
   // Siêu cấp
   editDistance,
   trie,
