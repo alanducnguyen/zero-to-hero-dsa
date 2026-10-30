@@ -20,6 +20,7 @@ import numberOfIslands from './problems/number-of-islands';
 import productExceptSelf from './problems/product-except-self';
 import houseRobber from './problems/house-robber';
 import climbingStairs from './problems/climbing-stairs';
+import mergeIntervals from './problems/merge-intervals';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -42,6 +43,7 @@ export const PROBLEMS: CompareProblem[] = [
   productExceptSelf,
   houseRobber,
   climbingStairs,
+  mergeIntervals,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
