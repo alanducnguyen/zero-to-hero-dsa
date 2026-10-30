@@ -321,7 +321,7 @@ return lo;                          // giá trị nhỏ nhất thoả ok`,
       { domain: 'Capacity planning', example: '"Số máy ít nhất để xử lý hết job trong T giờ" – binary search trên số máy với mô phỏng.' },
       { domain: 'Hệ thống phân tán', example: 'Consistent hashing tìm node kế tiếp trên vòng băm.' },
     ],
-    algorithms: ['binary-search', 'median-two-sorted-arrays', 'linear-search', 'lis-patience', 'bst-operations'],
+    algorithms: ['binary-search', 'median-two-sorted-arrays', 'linear-search', 'lis-patience', 'bst-operations', 'search-rotated-array'],
     leetcode: [
       { id: 704, title: 'Binary Search', slug: 'binary-search' },
       { id: 33, title: 'Search in Rotated Sorted Array', slug: 'search-in-rotated-sorted-array' },

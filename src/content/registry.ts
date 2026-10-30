@@ -72,6 +72,7 @@ import courseSchedule from '@/algorithms/advanced/course-schedule';
 import minimumWindowSubstring from '@/algorithms/expert/minimum-window-substring';
 import accountsMerge from '@/algorithms/expert/accounts-merge';
 import containerWithMostWater from '@/algorithms/basic/container-with-most-water';
+import searchRotatedArray from '@/algorithms/basic/search-rotated-array';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -95,6 +96,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   middleOfLinkedList,
   jumpGame,
   containerWithMostWater,
+  searchRotatedArray,
   // Middle
   twoSumSorted,
   slidingWindow,
