@@ -102,6 +102,7 @@ import houseRobberII from '@/algorithms/intermediate/house-robber-ii';
 import pacificAtlanticWaterFlow from '@/algorithms/advanced/pacific-atlantic-water-flow';
 import networkDelayTime from '@/algorithms/advanced/network-delay-time';
 import slidingWindowMedian from '@/algorithms/expert/sliding-window-median';
+import lfuCache from '@/algorithms/expert/lfu-cache';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -212,6 +213,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   wordSearch,
   serializeBinaryTree,
   slidingWindowMedian,
+  lfuCache,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));

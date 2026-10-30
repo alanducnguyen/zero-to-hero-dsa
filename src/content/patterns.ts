@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache', 'subarray-sum-equals-k', 'minimum-window-substring', 'longest-consecutive-sequence', 'clone-graph'],
+    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache', 'subarray-sum-equals-k', 'minimum-window-substring', 'longest-consecutive-sequence', 'clone-graph', 'lfu-cache'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
@@ -970,7 +970,7 @@ put(k, v) { if (map.has(k)) { update, unlink, pushFront; return; }
       { domain: 'Lập trình hàm', example: 'Banker\'s queue (hai list bất biến) trong Clojure/Scala.' },
       { domain: 'Game / lấy mẫu', example: 'Chọn ngẫu nhiên phần tử với thêm/xoá O(1) (loot table, matchmaking pool).' },
     ],
-    algorithms: ['lru-cache', 'min-stack', 'queue-two-stacks', 'kth-largest-heap', 'trie', 'serialize-binary-tree'],
+    algorithms: ['lru-cache', 'min-stack', 'queue-two-stacks', 'kth-largest-heap', 'trie', 'serialize-binary-tree', 'lfu-cache'],
     leetcode: [
       { id: 146, title: 'LRU Cache', slug: 'lru-cache' },
       { id: 380, title: 'Insert Delete GetRandom O(1)', slug: 'insert-delete-getrandom-o1' },
