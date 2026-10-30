@@ -77,6 +77,7 @@ import kokoEatingBananas from '@/algorithms/intermediate/koko-eating-bananas';
 import permutations from '@/algorithms/intermediate/permutations';
 import rottingOranges from '@/algorithms/advanced/rotting-oranges';
 import meetingRoomsII from '@/algorithms/advanced/meeting-rooms-ii';
+import wordLadder from '@/algorithms/expert/word-ladder';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -162,6 +163,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   rabinKarp,
   minimumWindowSubstring,
   accountsMerge,
+  wordLadder,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
