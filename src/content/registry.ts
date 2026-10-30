@@ -97,6 +97,7 @@ import wordSearch from '@/algorithms/expert/word-search';
 import serializeBinaryTree from '@/algorithms/expert/serialize-binary-tree';
 import productExceptSelf from '@/algorithms/basic/product-except-self';
 import onlineStockSpan from '@/algorithms/basic/online-stock-span';
+import longestRepeatingCharacterReplacement from '@/algorithms/intermediate/longest-repeating-character-replacement';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -152,6 +153,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   combinationSum,
   longestConsecutiveSequence,
   cloneGraph,
+  longestRepeatingCharacterReplacement,
   // Nâng cao
   bfsGrid,
   dijkstra,
