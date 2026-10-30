@@ -74,6 +74,7 @@ import accountsMerge from '@/algorithms/expert/accounts-merge';
 import containerWithMostWater from '@/algorithms/basic/container-with-most-water';
 import searchRotatedArray from '@/algorithms/basic/search-rotated-array';
 import kokoEatingBananas from '@/algorithms/intermediate/koko-eating-bananas';
+import permutations from '@/algorithms/intermediate/permutations';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -118,6 +119,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   subarraySumEqualsK,
   threeSum,
   kokoEatingBananas,
+  permutations,
   // Nâng cao
   bfsGrid,
   dijkstra,
