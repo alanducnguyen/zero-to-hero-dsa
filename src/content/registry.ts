@@ -85,6 +85,7 @@ import kthSmallestBst from '@/algorithms/intermediate/kth-smallest-bst';
 import combinationSum from '@/algorithms/intermediate/combination-sum';
 import decodeWays from '@/algorithms/advanced/decode-ways';
 import taskScheduler from '@/algorithms/advanced/task-scheduler';
+import findDuplicate from '@/algorithms/expert/find-duplicate';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -178,6 +179,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   accountsMerge,
   wordLadder,
   partitionEqualSubsetSum,
+  findDuplicate,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));

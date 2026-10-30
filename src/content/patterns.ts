@@ -365,7 +365,7 @@ return null;`,
       { domain: 'Hệ thống', example: 'Phát hiện vòng tham chiếu trong cấu trúc liên kết, vòng phụ thuộc "mỗi task chờ đúng một task".' },
       { domain: 'PRNG', example: 'Đo chu kỳ của bộ sinh số ngẫu nhiên.' },
     ],
-    algorithms: ['linked-list-cycle', 'reverse-linked-list', 'middle-of-linked-list'],
+    algorithms: ['linked-list-cycle', 'reverse-linked-list', 'middle-of-linked-list', 'find-duplicate'],
     leetcode: [
       { id: 141, title: 'Linked List Cycle', slug: 'linked-list-cycle' },
       { id: 142, title: 'Linked List Cycle II', slug: 'linked-list-cycle-ii' },
