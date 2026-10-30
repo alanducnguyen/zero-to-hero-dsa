@@ -78,6 +78,7 @@ import permutations from '@/algorithms/intermediate/permutations';
 import rottingOranges from '@/algorithms/advanced/rotting-oranges';
 import meetingRoomsII from '@/algorithms/advanced/meeting-rooms-ii';
 import wordLadder from '@/algorithms/expert/word-ladder';
+import partitionEqualSubsetSum from '@/algorithms/expert/partition-equal-subset-sum';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -164,6 +165,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   minimumWindowSubstring,
   accountsMerge,
   wordLadder,
+  partitionEqualSubsetSum,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
