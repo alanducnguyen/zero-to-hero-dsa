@@ -10,7 +10,7 @@ export function* trace(input: { nums1: number[]; nums2: number[] }): Generator<F
   let lo = 0, hi = m;
   const side = (len: number, cut: number): Record<number, Highlight> => Object.fromEntries(Array.from({ length: len }, (_, k) => [k, (k < cut ? 'range' : 'visited') as Highlight]));
   const viz = (i: number, j: number, s: Record<string, string | number>, h: Record<string, Highlight>) => composite([
-    arr(a, { title: `a (mảng ngắn) – lấy ${i} phần tử vào nửa trái`, highlights: side(m, i), pointers: m ? [{ name: 'lo', index: Math.min(lo, m - 1) }, { name: 'hi', index: Math.max(0, Math.min(hi, m - 1)) }] : [] }),
+    arr(a, { title: `a (mảng ngắn) – lấy ${i} phần tử vào nửa trái${hi >= m ? ` · hi = ${hi} (sau cuối)` : ''}`, highlights: side(m, i), pointers: [{ name: 'lo', index: lo }, { name: 'hi', index: hi }].filter((q) => q.index >= 0 && q.index < m) }), // lo/hi = m nằm ngoài mảng ⇒ không vẽ, xem ở bảng biến
     arr(b, { title: `b – lấy ${j} phần tử vào nửa trái`, highlights: side(n, j) }),
     mapViz(s, h, `Nửa trái phải có ${half} phần tử`),
   ]);
