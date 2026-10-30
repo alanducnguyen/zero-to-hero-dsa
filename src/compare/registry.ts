@@ -12,6 +12,7 @@ import longestPalindromicSubstring from './problems/longest-palindromic-substrin
 import mergeKSorted from './problems/merge-k-sorted';
 import threeSum from './problems/three-sum';
 import searchRotatedArray from './problems/search-rotated-array';
+import coinChange from './problems/coin-change';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -26,6 +27,7 @@ export const PROBLEMS: CompareProblem[] = [
   mergeKSorted,
   threeSum,
   searchRotatedArray,
+  coinChange,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
