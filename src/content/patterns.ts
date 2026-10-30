@@ -499,7 +499,7 @@ while (head < q.length) {
       { domain: 'Compiler / build', example: 'Register allocation (graph coloring), phát hiện import vòng bằng DFS 3 màu.' },
       { domain: 'SAT solver', example: 'DPLL là backtracking với unit propagation và cắt tỉa.' },
     ],
-    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations', 'course-schedule', 'permutations', 'kth-smallest-bst', 'combination-sum', 'max-depth-binary-tree', 'word-search'],
+    algorithms: ['number-of-islands', 'subsets', 'n-queens', 'binary-tree-traversal', 'lowest-common-ancestor', 'bst-operations', 'course-schedule', 'permutations', 'kth-smallest-bst', 'combination-sum', 'max-depth-binary-tree', 'word-search', 'serialize-binary-tree'],
     leetcode: [
       { id: 200, title: 'Number of Islands', slug: 'number-of-islands' },
       { id: 46, title: 'Permutations', slug: 'permutations' },
@@ -970,7 +970,7 @@ put(k, v) { if (map.has(k)) { update, unlink, pushFront; return; }
       { domain: 'Lập trình hàm', example: 'Banker\'s queue (hai list bất biến) trong Clojure/Scala.' },
       { domain: 'Game / lấy mẫu', example: 'Chọn ngẫu nhiên phần tử với thêm/xoá O(1) (loot table, matchmaking pool).' },
     ],
-    algorithms: ['lru-cache', 'min-stack', 'queue-two-stacks', 'kth-largest-heap', 'trie'],
+    algorithms: ['lru-cache', 'min-stack', 'queue-two-stacks', 'kth-largest-heap', 'trie', 'serialize-binary-tree'],
     leetcode: [
       { id: 146, title: 'LRU Cache', slug: 'lru-cache' },
       { id: 380, title: 'Insert Delete GetRandom O(1)', slug: 'insert-delete-getrandom-o1' },

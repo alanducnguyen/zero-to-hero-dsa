@@ -94,6 +94,7 @@ import cloneGraph from '@/algorithms/intermediate/clone-graph';
 import gasStation from '@/algorithms/advanced/gas-station';
 import uniquePaths from '@/algorithms/advanced/unique-paths';
 import wordSearch from '@/algorithms/expert/word-search';
+import serializeBinaryTree from '@/algorithms/expert/serialize-binary-tree';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -196,6 +197,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   findDuplicate,
   longestPalindromicSubstring,
   wordSearch,
+  serializeBinaryTree,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));
