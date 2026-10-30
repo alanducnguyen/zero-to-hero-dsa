@@ -90,6 +90,7 @@ import longestPalindromicSubstring from '@/algorithms/expert/longest-palindromic
 import missingNumber from '@/algorithms/basic/missing-number';
 import maxDepthBinaryTree from '@/algorithms/basic/max-depth-binary-tree';
 import longestConsecutiveSequence from '@/algorithms/intermediate/longest-consecutive-sequence';
+import cloneGraph from '@/algorithms/intermediate/clone-graph';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -142,6 +143,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   kthSmallestBst,
   combinationSum,
   longestConsecutiveSequence,
+  cloneGraph,
   // Nâng cao
   bfsGrid,
   dijkstra,

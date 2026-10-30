@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache', 'subarray-sum-equals-k', 'minimum-window-substring', 'longest-consecutive-sequence'],
+    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache', 'subarray-sum-equals-k', 'minimum-window-substring', 'longest-consecutive-sequence', 'clone-graph'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
@@ -451,7 +451,7 @@ while (head < q.length) {
       { domain: 'Garbage collector', example: 'Mark phase: đánh dấu object sống từ root set.' },
       { domain: 'Game / robot', example: 'Tìm đường ngắn nhất trên bản đồ ô vuông; lan toả vùng ảnh hưởng.' },
     ],
-    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort', 'rotting-oranges', 'word-ladder', 'max-depth-binary-tree'],
+    algorithms: ['bfs-grid-shortest-path', 'bipartite-check', 'binary-tree-traversal', 'topological-sort', 'rotting-oranges', 'word-ladder', 'max-depth-binary-tree', 'clone-graph'],
     leetcode: [
       { id: 1091, title: 'Shortest Path in Binary Matrix', slug: 'shortest-path-in-binary-matrix' },
       { id: 994, title: 'Rotting Oranges', slug: 'rotting-oranges' },
