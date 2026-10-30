@@ -69,6 +69,7 @@ import subarraySumEqualsK from '@/algorithms/intermediate/subarray-sum-equals-k'
 import threeSum from '@/algorithms/intermediate/three-sum';
 import insertInterval from '@/algorithms/advanced/insert-interval';
 import courseSchedule from '@/algorithms/advanced/course-schedule';
+import minimumWindowSubstring from '@/algorithms/expert/minimum-window-substring';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -146,6 +147,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   fenwickTree,
   bellmanFord,
   rabinKarp,
+  minimumWindowSubstring,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));

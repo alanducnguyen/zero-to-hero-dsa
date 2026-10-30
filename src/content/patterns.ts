@@ -107,7 +107,7 @@ for (let right = 0; right < s.length; right++) {
       { domain: 'Nén dữ liệu', example: 'LZ77 tìm chuỗi lặp trong cửa sổ trượt phía trước (zip, gzip, PNG).' },
       { domain: 'Mạng', example: 'TCP sliding window điều khiển lưu lượng gói tin.' },
     ],
-    algorithms: ['longest-substring-no-repeat', 'sliding-window-maximum', 'max-subarray-kadane'],
+    algorithms: ['longest-substring-no-repeat', 'sliding-window-maximum', 'max-subarray-kadane', 'minimum-window-substring'],
     leetcode: [
       { id: 3, title: 'Longest Substring Without Repeating Characters', slug: 'longest-substring-without-repeating-characters' },
       { id: 209, title: 'Minimum Size Subarray Sum', slug: 'minimum-size-subarray-sum' },
@@ -193,7 +193,7 @@ for (let i = 0; i < a.length; i++) {
       { domain: 'Dedupe / cache', example: 'Loại bỏ bản ghi trùng theo khoá, memoization kết quả hàm, cache DNS.' },
       { domain: 'Phân tích log', example: 'Đếm số request theo IP/endpoint, top lỗi theo mã – group by trong bộ nhớ.' },
     ],
-    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache', 'subarray-sum-equals-k'],
+    algorithms: ['two-sum-hashmap', 'valid-anagram', 'group-anagrams', 'majority-element', 'top-k-frequent', 'longest-substring-no-repeat', 'lru-cache', 'subarray-sum-equals-k', 'minimum-window-substring'],
     leetcode: [
       { id: 1, title: 'Two Sum', slug: 'two-sum' },
       { id: 49, title: 'Group Anagrams', slug: 'group-anagrams' },
