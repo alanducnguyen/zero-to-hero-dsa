@@ -71,6 +71,7 @@ import insertInterval from '@/algorithms/advanced/insert-interval';
 import courseSchedule from '@/algorithms/advanced/course-schedule';
 import minimumWindowSubstring from '@/algorithms/expert/minimum-window-substring';
 import accountsMerge from '@/algorithms/expert/accounts-merge';
+import containerWithMostWater from '@/algorithms/basic/container-with-most-water';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -93,6 +94,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   minStack,
   middleOfLinkedList,
   jumpGame,
+  containerWithMostWater,
   // Middle
   twoSumSorted,
   slidingWindow,

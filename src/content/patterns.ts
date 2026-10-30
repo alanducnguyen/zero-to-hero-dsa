@@ -62,7 +62,7 @@ while (l < r) {
       { domain: 'Đối soát tài chính', example: 'Tìm hai giao dịch có tổng bằng số tiền cần khớp trên danh sách đã sắp xếp theo số tiền.' },
       { domain: 'Xử lý chuỗi', example: 'Chuẩn hoá và kiểm tra palindrome, xoá khoảng trắng thừa tại chỗ trong editor.' },
     ],
-    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle', 'middle-of-linked-list', 'three-sum'],
+    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle', 'middle-of-linked-list', 'three-sum', 'container-with-most-water'],
     leetcode: [
       { id: 167, title: 'Two Sum II', slug: 'two-sum-ii-input-array-is-sorted' },
       { id: 15, title: '3Sum', slug: '3sum' },
@@ -764,7 +764,7 @@ for (const [s, e] of intervals) {
       { domain: 'Mạng / hạ tầng', example: 'Kruskal/Prim thiết kế mạng, Dijkstra định tuyến.' },
       { domain: 'Vận hành', example: 'Đổ xăng ít lần nhất, xếp thuyền (ghép nặng–nhẹ), cache LRU là heuristic greedy.' },
     ],
-    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane', 'jump-game'],
+    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane', 'jump-game', 'container-with-most-water'],
     leetcode: [
       { id: 435, title: 'Non-overlapping Intervals', slug: 'non-overlapping-intervals' },
       { id: 55, title: 'Jump Game', slug: 'jump-game' },
