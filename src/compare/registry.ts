@@ -37,6 +37,7 @@ import editDistance from './problems/edit-distance';
 import minimumWindowSubstring from './problems/minimum-window-substring';
 import meetingRoomsII from './problems/meeting-rooms-ii';
 import partitionEqualSubsetSum from './problems/partition-equal-subset-sum';
+import kokoEatingBananas from './problems/koko-eating-bananas';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -76,6 +77,7 @@ export const PROBLEMS: CompareProblem[] = [
   minimumWindowSubstring,
   meetingRoomsII,
   partitionEqualSubsetSum,
+  kokoEatingBananas,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
