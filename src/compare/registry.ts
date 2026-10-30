@@ -27,6 +27,7 @@ import minStack from './problems/min-stack';
 import kthSmallestBst from './problems/kth-smallest-bst';
 import validParentheses from './problems/valid-parentheses';
 import jumpGame from './problems/jump-game';
+import containerWithMostWater from './problems/container-with-most-water';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -56,6 +57,7 @@ export const PROBLEMS: CompareProblem[] = [
   kthSmallestBst,
   validParentheses,
   jumpGame,
+  containerWithMostWater,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
