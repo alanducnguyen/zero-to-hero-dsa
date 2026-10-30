@@ -22,6 +22,7 @@ import houseRobber from './problems/house-robber';
 import climbingStairs from './problems/climbing-stairs';
 import mergeIntervals from './problems/merge-intervals';
 import topKFrequent from './problems/top-k-frequent';
+import lruCache from './problems/lru-cache';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -46,6 +47,7 @@ export const PROBLEMS: CompareProblem[] = [
   climbingStairs,
   mergeIntervals,
   topKFrequent,
+  lruCache,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
