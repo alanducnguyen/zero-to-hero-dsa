@@ -15,6 +15,7 @@ import searchRotatedArray from './problems/search-rotated-array';
 import coinChange from './problems/coin-change';
 import longestIncreasingSubsequence from './problems/longest-increasing-subsequence';
 import courseSchedule from './problems/course-schedule';
+import wordLadder from './problems/word-ladder';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -32,6 +33,7 @@ export const PROBLEMS: CompareProblem[] = [
   coinChange,
   longestIncreasingSubsequence,
   courseSchedule,
+  wordLadder,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
