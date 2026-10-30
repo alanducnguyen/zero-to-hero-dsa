@@ -84,6 +84,7 @@ import bestTimeToBuySellStock from '@/algorithms/basic/best-time-to-buy-sell-sto
 import kthSmallestBst from '@/algorithms/intermediate/kth-smallest-bst';
 import combinationSum from '@/algorithms/intermediate/combination-sum';
 import decodeWays from '@/algorithms/advanced/decode-ways';
+import taskScheduler from '@/algorithms/advanced/task-scheduler';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -155,6 +156,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   rottingOranges,
   meetingRoomsII,
   decodeWays,
+  taskScheduler,
   // Siêu cấp
   editDistance,
   trie,
