@@ -66,6 +66,7 @@ import rabinKarp from '@/algorithms/expert/rabin-karp';
 import middleOfLinkedList from '@/algorithms/basic/middle-of-linked-list';
 import jumpGame from '@/algorithms/basic/jump-game';
 import subarraySumEqualsK from '@/algorithms/intermediate/subarray-sum-equals-k';
+import threeSum from '@/algorithms/intermediate/three-sum';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -106,6 +107,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   lowestCommonAncestor,
   groupAnagrams,
   subarraySumEqualsK,
+  threeSum,
   // Nâng cao
   bfsGrid,
   dijkstra,
