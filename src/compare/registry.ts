@@ -35,6 +35,7 @@ import decodeWays from './problems/decode-ways';
 import longestCommonSubsequence from './problems/longest-common-subsequence';
 import editDistance from './problems/edit-distance';
 import minimumWindowSubstring from './problems/minimum-window-substring';
+import meetingRoomsII from './problems/meeting-rooms-ii';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -72,6 +73,7 @@ export const PROBLEMS: CompareProblem[] = [
   longestCommonSubsequence,
   editDistance,
   minimumWindowSubstring,
+  meetingRoomsII,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
