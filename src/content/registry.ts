@@ -80,6 +80,7 @@ import meetingRoomsII from '@/algorithms/advanced/meeting-rooms-ii';
 import wordLadder from '@/algorithms/expert/word-ladder';
 import partitionEqualSubsetSum from '@/algorithms/expert/partition-equal-subset-sum';
 import validPalindrome from '@/algorithms/basic/valid-palindrome';
+import bestTimeToBuySellStock from '@/algorithms/basic/best-time-to-buy-sell-stock';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -105,6 +106,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   containerWithMostWater,
   searchRotatedArray,
   validPalindrome,
+  bestTimeToBuySellStock,
   // Middle
   twoSumSorted,
   slidingWindow,

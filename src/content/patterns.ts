@@ -721,7 +721,7 @@ dp[i][j] = a[i-1] === b[j-1] ? dp[i-1][j-1] : 1 + Math.min(dp[i-1][j-1], dp[i-1]
       { domain: 'Tài chính / tối ưu', example: 'Phân bổ ngân sách (knapsack), trả tiền thừa (coin change), lịch không chồng lấn.' },
       { domain: 'Nén & mã hoá', example: 'Viterbi (HMM, giải mã kênh), tách từ (word break) trong NLP tiếng Việt/Trung.' },
     ],
-    algorithms: ['climbing-stairs', 'house-robber', 'coin-change', 'counting-bits', 'knapsack-01', 'longest-common-subsequence', 'word-break', 'edit-distance', 'max-subarray-kadane', 'lis-patience', 'partition-equal-subset-sum'],
+    algorithms: ['climbing-stairs', 'house-robber', 'coin-change', 'counting-bits', 'knapsack-01', 'longest-common-subsequence', 'word-break', 'edit-distance', 'max-subarray-kadane', 'lis-patience', 'partition-equal-subset-sum', 'best-time-to-buy-sell-stock'],
     leetcode: [
       { id: 70, title: 'Climbing Stairs', slug: 'climbing-stairs' },
       { id: 198, title: 'House Robber', slug: 'house-robber' },
@@ -764,7 +764,7 @@ for (const [s, e] of intervals) {
       { domain: 'Mạng / hạ tầng', example: 'Kruskal/Prim thiết kế mạng, Dijkstra định tuyến.' },
       { domain: 'Vận hành', example: 'Đổ xăng ít lần nhất, xếp thuyền (ghép nặng–nhẹ), cache LRU là heuristic greedy.' },
     ],
-    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane', 'jump-game', 'container-with-most-water'],
+    algorithms: ['merge-intervals', 'majority-element', 'kruskal-mst', 'dijkstra', 'max-subarray-kadane', 'jump-game', 'container-with-most-water', 'best-time-to-buy-sell-stock'],
     leetcode: [
       { id: 435, title: 'Non-overlapping Intervals', slug: 'non-overlapping-intervals' },
       { id: 55, title: 'Jump Game', slug: 'jump-game' },
