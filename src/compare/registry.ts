@@ -40,6 +40,8 @@ import partitionEqualSubsetSum from './problems/partition-equal-subset-sum';
 import kokoEatingBananas from './problems/koko-eating-bananas';
 import missingNumber from './problems/missing-number';
 import bestTimeToBuySellStock from './problems/best-time-to-buy-sell-stock';
+import largestRectangleHistogram from './problems/largest-rectangle-histogram';
+import medianTwoSortedArrays from './problems/median-two-sorted-arrays';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -82,6 +84,8 @@ export const PROBLEMS: CompareProblem[] = [
   kokoEatingBananas,
   missingNumber,
   bestTimeToBuySellStock,
+  largestRectangleHistogram,
+  medianTwoSortedArrays,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
