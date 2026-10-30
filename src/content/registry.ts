@@ -101,6 +101,7 @@ import longestRepeatingCharacterReplacement from '@/algorithms/intermediate/long
 import houseRobberII from '@/algorithms/intermediate/house-robber-ii';
 import pacificAtlanticWaterFlow from '@/algorithms/advanced/pacific-atlantic-water-flow';
 import networkDelayTime from '@/algorithms/advanced/network-delay-time';
+import slidingWindowMedian from '@/algorithms/expert/sliding-window-median';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -210,6 +211,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   longestPalindromicSubstring,
   wordSearch,
   serializeBinaryTree,
+  slidingWindowMedian,
 ];
 
 export const byId = new Map(ALGORITHMS.map((m) => [m.meta.id, m]));

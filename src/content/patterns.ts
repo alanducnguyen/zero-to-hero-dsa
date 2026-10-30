@@ -107,7 +107,7 @@ for (let right = 0; right < s.length; right++) {
       { domain: 'Nén dữ liệu', example: 'LZ77 tìm chuỗi lặp trong cửa sổ trượt phía trước (zip, gzip, PNG).' },
       { domain: 'Mạng', example: 'TCP sliding window điều khiển lưu lượng gói tin.' },
     ],
-    algorithms: ['longest-substring-no-repeat', 'sliding-window-maximum', 'max-subarray-kadane', 'minimum-window-substring', 'longest-repeating-character-replacement'],
+    algorithms: ['longest-substring-no-repeat', 'sliding-window-maximum', 'max-subarray-kadane', 'minimum-window-substring', 'longest-repeating-character-replacement', 'sliding-window-median'],
     leetcode: [
       { id: 3, title: 'Longest Substring Without Repeating Characters', slug: 'longest-substring-without-repeating-characters' },
       { id: 209, title: 'Minimum Size Subarray Sum', slug: 'minimum-size-subarray-sum' },
@@ -674,7 +674,7 @@ return heap.peek();                   // phần tử lớn thứ k`,
       { domain: 'Log aggregation', example: 'Merge k file log theo timestamp (external sort k-way merge).' },
       { domain: 'Nén', example: 'Huffman coding luôn gộp hai cây tần suất nhỏ nhất.' },
     ],
-    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort', 'meeting-rooms-ii', 'network-delay-time'],
+    algorithms: ['kth-largest-heap', 'top-k-frequent', 'merge-k-sorted-lists', 'quickselect', 'dijkstra', 'merge-sort', 'meeting-rooms-ii', 'network-delay-time', 'sliding-window-median'],
     leetcode: [
       { id: 215, title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array' },
       { id: 347, title: 'Top K Frequent Elements', slug: 'top-k-frequent-elements' },
