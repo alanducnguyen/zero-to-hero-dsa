@@ -62,7 +62,7 @@ while (l < r) {
       { domain: 'Đối soát tài chính', example: 'Tìm hai giao dịch có tổng bằng số tiền cần khớp trên danh sách đã sắp xếp theo số tiền.' },
       { domain: 'Xử lý chuỗi', example: 'Chuẩn hoá và kiểm tra palindrome, xoá khoảng trắng thừa tại chỗ trong editor.' },
     ],
-    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle'],
+    algorithms: ['two-sum-sorted', 'rotate-array', 'merge-sorted-arrays', 'trapping-rain-water', 'reverse-linked-list', 'linked-list-cycle', 'middle-of-linked-list'],
     leetcode: [
       { id: 167, title: 'Two Sum II', slug: 'two-sum-ii-input-array-is-sorted' },
       { id: 15, title: '3Sum', slug: '3sum' },
@@ -365,7 +365,7 @@ return null;`,
       { domain: 'Hệ thống', example: 'Phát hiện vòng tham chiếu trong cấu trúc liên kết, vòng phụ thuộc "mỗi task chờ đúng một task".' },
       { domain: 'PRNG', example: 'Đo chu kỳ của bộ sinh số ngẫu nhiên.' },
     ],
-    algorithms: ['linked-list-cycle', 'reverse-linked-list'],
+    algorithms: ['linked-list-cycle', 'reverse-linked-list', 'middle-of-linked-list'],
     leetcode: [
       { id: 141, title: 'Linked List Cycle', slug: 'linked-list-cycle' },
       { id: 142, title: 'Linked List Cycle II', slug: 'linked-list-cycle-ii' },

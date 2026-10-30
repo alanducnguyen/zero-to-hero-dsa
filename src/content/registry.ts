@@ -63,6 +63,7 @@ import quickselect from '@/algorithms/expert/quickselect';
 import fenwickTree from '@/algorithms/expert/fenwick-tree';
 import bellmanFord from '@/algorithms/expert/bellman-ford';
 import rabinKarp from '@/algorithms/expert/rabin-karp';
+import middleOfLinkedList from '@/algorithms/basic/middle-of-linked-list';
 
 /** Thứ tự = thứ tự học đề xuất. */
 export const ALGORITHMS: AlgorithmModule[] = [
@@ -83,6 +84,7 @@ export const ALGORITHMS: AlgorithmModule[] = [
   validAnagram,
   rotateArray,
   minStack,
+  middleOfLinkedList,
   // Middle
   twoSumSorted,
   slidingWindow,
