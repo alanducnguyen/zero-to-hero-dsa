@@ -32,6 +32,7 @@ import slidingWindowMaximum from './problems/sliding-window-maximum';
 import wordBreak from './problems/word-break';
 import subarraySumEqualsK from './problems/subarray-sum-equals-k';
 import decodeWays from './problems/decode-ways';
+import longestCommonSubsequence from './problems/longest-common-subsequence';
 
 export const PROBLEMS: CompareProblem[] = [
   twoSum,
@@ -66,6 +67,7 @@ export const PROBLEMS: CompareProblem[] = [
   wordBreak,
   subarraySumEqualsK,
   decodeWays,
+  longestCommonSubsequence,
 ];
 
 export const problemById = new Map(PROBLEMS.map((p) => [p.id, p]));
