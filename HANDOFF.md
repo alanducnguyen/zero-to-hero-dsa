@@ -40,9 +40,9 @@
 | Đợt 4 (PR #13–#16) | 52 bài (13/cấp) | ✅ merged |
 | Đợt 5 (PR #17–#20) | 64 bài (16/cấp) | ✅ merged |
 | PR #21 | Mục Nhiều lời giải – pilot 10 bài, 36 lời giải | ✅ merged |
-| Đợt 6 (`feat/batch-6-patterns`) | 72 bài (18/cấp) – lấp pattern còn ít bài | ⏳ PR |
+| Đợt 6 (`feat/batch-6-patterns`) | 80 bài (20/cấp) – lấp pattern còn ít bài (2 đợt × 8 bài) | ⏳ PR |
 
-`main` có **64 bài**, trang pattern, Node.js Event Loop và mục Nhiều lời giải. Nhánh `feat/batch-6-patterns` nâng lên **72 bài**.
+`main` có **64 bài**, trang pattern, Node.js Event Loop và mục Nhiều lời giải. Nhánh `feat/batch-6-patterns` nâng lên **80 bài**.
 
 | PR | Nhánh | Bài |
 |---|---|---|
@@ -54,7 +54,7 @@
 | #18 | `feat/intermediate-batch-5` | subsets, top-k-frequent, bipartite-check |
 | #19 | `feat/advanced-batch-5` | merge-k-sorted-lists, daily-temperatures, counting-bits |
 | #20 | `feat/expert-batch-5` | trapping-rain-water, median-two-sorted-arrays, quickselect |
-| — | `feat/batch-6-patterns` | middle-of-linked-list (fast-slow), jump-game (greedy), subarray-sum-equals-k (prefix-sum), three-sum (two-pointers), insert-interval (intervals), course-schedule (DFS 3 màu, topo), minimum-window-substring (sliding-window), accounts-merge (union-find) |
+| — | `feat/batch-6-patterns` | middle-of-linked-list (fast-slow), jump-game (greedy), subarray-sum-equals-k (prefix-sum), three-sum (two-pointers), insert-interval (intervals), course-schedule (DFS 3 màu, topo), minimum-window-substring (sliding-window), accounts-merge (union-find); đợt 7 cùng nhánh: container-with-most-water, search-rotated-array, koko-eating-bananas, permutations, rotting-oranges, meeting-rooms-ii, word-ladder, partition-equal-subset-sum |
 | #21 | `feat/compare-solutions` | compare: two-sum, kth-largest, valid-anagram, majority-element, max-subarray, fibonacci, trapping-rain-water, find-duplicate, longest-palindromic-substring, merge-k-sorted |
 
 ### Các mục ngoài DSA
@@ -68,7 +68,7 @@ Sửa visualizer: ArrayViz ô tự giãn theo nhãn dài (PR #8); MatrixViz cộ
 0. **Đọc CLAUDE.md, rồi file này.** Kiểm tra PR đợt 6 (`feat/batch-6-patterns`) đã merge chưa. Chủ repo muốn bám danh sách https://thita.ai/dsa-patterns-sheet để chọn bài tiếp – cần cho phép domain `thita.ai` trong network settings của môi trường cloud mới fetch được.
 1. **Dọn sau merge** (nhánh `chore/post-merge`):  `/compare` link chéo – id compare `merge-k-sorted` và `kth-largest` không trùng id thuật toán `merge-k-sorted-lists`, `kth-largest-heap` ⇒ cân nhắc đổi id compare cho khớp (sửa thư mục + `id` + registry; URL cũ sẽ đổi).
 2. **Compare đợt 2** (nhánh `feat/compare-batch-2`, 10 bài, mỗi bài 1 commit `Add compare: <Title>`): 3sum (brute / sort+two pointers ★ / hashset), longest-increasing-subsequence (brute / DP O(n²) / patience O(n log n) ★), coin-change (đệ quy / memo / bottom-up ★ / BFS), lru-cache (array / Map thứ tự chèn ★ / doubly linked list + map), course-schedule (DFS 3 màu / Kahn ★), word-ladder (DFS / BFS ★ / bidirectional BFS), min-stack (hai stack ★ / stack cặp / stack chênh lệch), product-except-self (chia / prefix+suffix / prefix+suffix O(1) ★), search-rotated-array (sort / tìm pivot + nhị phân / nhị phân một lượt ★), number-of-islands (DFS ★ / BFS / Union-Find). Mẫu: `src/compare/problems/two-sum/`. Mỗi lời giải impl ≤ 25 dòng, trace ≤ ~300 frame, note tiếng Việt "tại sao".
-3. **Đợt 7 thuật toán**: đối chiếu thita.ai DSA patterns sheet; ứng viên – container-with-most-water, find-duplicate (cyclic sort), kth-smallest-bst, combination-sum/permutations (backtracking), meeting-rooms-ii (intervals+heap), gas-station (greedy), clone-graph, rotting-oranges (multi-source BFS), search-rotated-array, koko-eating-bananas (binary search on answer), decode-ways, partition-equal-subset. Quy trình đợt 6: chạy song song mỗi cấp một subagent viết thư mục bài (không đụng registry/patterns), rồi script ghép + mỗi bài một commit.
+3. **Đợt 7 thuật toán**: đối chiếu thita.ai DSA patterns sheet; ứng viên – find-duplicate / missing-number (cyclic sort – cân nhắc thêm pattern mới), kth-smallest-bst, combination-sum, gas-station (greedy), clone-graph, decode-ways, longest-palindromic-substring, word-search, task-scheduler, longest-consecutive-sequence. Quy trình đợt 6: chạy song song mỗi cấp một subagent viết thư mục bài (không đụng registry/patterns), rồi script ghép + mỗi bài một commit.
 4. **Ý tưởng UI**: cheat sheet độ phức tạp (bảng tổng hợp từ `meta.complexity`), lộ trình 4 tuần, lưu input tuỳ chỉnh vào URL, nút "so sánh 2 thuật toán cùng input".
 
 ## Quy trình & mẹo đã dùng (tái dùng cho phiên sau)
